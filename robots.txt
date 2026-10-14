@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.gawooint.com/sitemap.xml

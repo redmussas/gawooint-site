@@ -1,0 +1,1505 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAWOO INTERNATIONAL</title>
+<meta name="description" content="We specialize in intermediary trade between Korea and the CIS region.">
+<meta property="og:title" content="GAWOO INTERNATIONAL">
+<meta property="og:description" content="We specialize in intermediary trade between Korea and the CIS region.">
+<meta property="og:url" content="https://www.gawooint.com/">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<meta property="og:image" content="https://www.gawooint.com/images/logo.png">
+<link rel="canonical" href="https://www.gawooint.com/">
+<link rel="alternate" hreflang="ko" href="https://www.gawooint.com/?lang=ko">
+<link rel="alternate" hreflang="en" href="https://www.gawooint.com/?lang=en">
+<link rel="alternate" hreflang="ru" href="https://www.gawooint.com/?lang=ru">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+:root{
+  --indigo:#1E2A5A;
+  --indigo-deep:#141C3E;
+  --tile:#1C8C8C;
+  --saffron:#E3A72F;
+  --paper:#F4F6F9;
+  --ink:#16192B;
+  --muted:#5B6075;
+  --line:#D9DDE6;
+  --display:"Bricolage Grotesque", "Pretendard", sans-serif;
+  --body:"Pretendard", -apple-system, "Apple SD Gothic Neo", sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.top{position:absolute;inset:0 0 auto 0;z-index:10;color:#fff}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--display);font-weight:800;font-size:22px;letter-spacing:.01em;text-decoration:none}
+.brand span{color:var(--saffron)}
+.nav{display:flex;gap:28px;list-style:none}
+.nav a{text-decoration:none;font-size:15px;opacity:.85}
+.nav a:hover{opacity:1}
+.menu-btn{display:none;background:none;border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:6px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+
+/* Hero */
+.hero{background:var(--indigo);color:#fff;position:relative;overflow:hidden;padding:150px 0 0}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(40px,7vw,88px);line-height:1.02;letter-spacing:-.02em;max-width:13ch}
+.hero p.lead{margin-top:24px;font-size:clamp(17px,2vw,20px);max-width:36ch;color:#C9D0E6}
+.hero .cta{margin-top:36px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none}
+.btn-primary{background:var(--saffron);color:var(--indigo-deep)}
+.btn-ghost{border:1px solid rgba(255,255,255,.35);color:#fff}
+.btn:hover{filter:brightness(1.07)}
+
+.worldmap{margin-top:56px;position:relative}
+.worldmap svg{width:100%;height:auto;display:block;overflow:visible}
+#wmDots circle{fill:#34427A}
+.wm-arc{fill:none;stroke:var(--saffron);stroke-width:1.6;stroke-linecap:round;opacity:.9}
+.wm-arc.drawn{stroke-dasharray:4 5;transition:none}
+.wm-run{fill:#FFE3A3}
+.wm-city circle.pt{fill:#fff}
+.wm-city circle.pulse{fill:none;stroke:#fff;stroke-width:1.2;opacity:0;transform-box:fill-box;transform-origin:center}
+.wm-city.on circle.pulse{animation:wmPulse 2.6s ease-out infinite}
+@keyframes wmPulse{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
+.wm-city text{fill:#fff;font-family:var(--display);font-weight:700;font-size:var(--wm-fs,14px);paint-order:stroke;stroke:var(--indigo);stroke-width:4px;stroke-linejoin:round;opacity:0;transition:opacity .5s}
+.wm-city text.sub{fill:#9AA4C8;font-family:var(--body);font-weight:500;font-size:var(--wm-fs2,11px)}
+.wm-city.on text{opacity:1}
+.wm-hub circle.pt{fill:var(--saffron)}
+.wm-hub text{fill:var(--saffron);opacity:1}
+@media (prefers-reduced-motion:reduce){.wm-city.on circle.pulse{animation:none}.wm-city text{transition:none}}
+.hero-foot{background:var(--indigo-deep);margin-top:-2px}
+.hero-foot .wrap{display:flex;gap:40px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px;color:#AEB6D3;font-size:15px}
+.hero-foot strong{color:#fff;font-weight:600;margin-right:8px}
+
+/* Sections */
+section.block{padding:110px 0}
+.block h2{font-family:var(--display);font-weight:700;font-size:clamp(32px,4.4vw,52px);line-height:1.1;letter-spacing:-.015em}
+.block .kr{display:block;font-family:var(--body);font-size:16px;font-weight:500;color:var(--tile);letter-spacing:0;margin-top:10px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center;margin-top:48px}
+.about-photo{border-radius:4px 40px 4px 4px;overflow:hidden;background:var(--line);aspect-ratio:4/3}
+.about-photo img{width:100%;height:100%;object-fit:cover}
+.about-text p{color:var(--muted);max-width:44ch}
+.about-text p+p{margin-top:16px}
+.about-text .big{font-size:22px;line-height:1.5;color:var(--ink);font-weight:500}
+.sign{margin-top:28px;display:flex;align-items:center;gap:14px}
+.sign b{font-size:17px}
+.sign small{color:var(--muted);font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:64px}
+.gallery figure{aspect-ratio:16/10;overflow:hidden;border-radius:4px;background:var(--line)}
+.gallery img{width:100%;height:100%;object-fit:cover}
+
+/* Business */
+.biz{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.biz-grid{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.biz-card{margin:0;display:block;width:100%;background:none;border:0;padding:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.biz-card .ph{aspect-ratio:4/3;background:var(--paper);border:1px solid var(--line);border-radius:4px;overflow:hidden;display:flex;align-items:center;justify-content:center;position:relative}
+.biz-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.biz-card .ph.fit img{object-fit:contain;padding:12px}
+.biz-card .count{position:absolute;right:8px;bottom:8px;background:rgba(20,28,62,.82);color:#fff;font-size:12px;padding:3px 9px;border-radius:999px}
+.biz-card .cap{display:block;margin-top:12px;padding-left:12px;border-left:3px solid var(--tile)}
+.biz-card b{display:block;font-family:var(--display);font-size:19px;font-weight:700;line-height:1.3}
+.biz-card .cap span{font-size:15px;color:var(--muted)}
+.biz-card:hover .ph{border-color:var(--tile)}
+.biz-card:hover .ph img{transform:scale(1.03)}
+@media (prefers-reduced-motion:reduce){.biz-card .ph img{transition:none}}
+
+
+/* Business thumbnails */
+.biz-card.th{position:relative;display:block;aspect-ratio:16/11;border-radius:8px;overflow:hidden;background:var(--indigo);color:#fff;isolation:isolate;box-shadow:0 1px 0 rgba(20,28,62,.06)}
+.th .th-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s ease}
+.th::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(16,22,52,.55) 0%,rgba(16,22,52,0) 20%,rgba(16,22,52,0) 30%,rgba(16,22,52,.82) 50%,rgba(16,22,52,.96) 66%,rgba(16,22,52,.98) 100%)}
+.th:hover .th-img{transform:scale(1.05)}
+.th-top{position:absolute;left:14px;right:14px;top:12px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+.th-tag{min-width:0;flex:0 1 auto;font-size:12.5px;font-weight:600;background:rgba(255,255,255,.95);color:var(--indigo);padding:3px 10px;border-radius:999px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.th-mark{flex:none;font-family:var(--display);font-weight:800;font-size:12px;letter-spacing:.02em;color:#fff;opacity:.92;white-space:nowrap}
+.th-mark i{font-style:normal;color:var(--saffron)}
+.th-bottom{position:absolute;left:16px;right:16px;bottom:14px}
+.th-head{display:flex;align-items:center;gap:12px}
+.th-icon{flex:none;width:48px;height:48px;border-radius:12px;background:var(--saffron);color:var(--indigo-deep);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.th-icon svg{width:32px;height:32px}
+.th-names{min-width:0;display:flex;flex-direction:column}
+.th-name{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.1vw,28px);line-height:1.08;letter-spacing:-.01em;color:#fff}
+.th-sub{font-size:13px;font-weight:600;color:var(--saffron);margin-top:3px;letter-spacing:.01em}
+.th-line{display:block;font-size:14px;color:#E1E6F5;margin-top:10px;line-height:1.45}
+.th-meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.2);font-size:12.5px;color:#AEB6D3}
+.th-more{color:#fff;font-weight:600}
+.th:hover .th-more,.th:focus-visible .th-more{color:var(--saffron)}
+.th-svc{background:var(--indigo) radial-gradient(circle at 85% 15%,rgba(28,140,140,.5),transparent 55%)}
+.th-svc::before{background:none}
+.th-svc-list{position:absolute;left:18px;right:18px;top:50px;display:flex;flex-direction:column;gap:6px}
+.th-svc-list span{font-size:clamp(16px,1.6vw,19px);font-weight:700;padding-left:11px;border-left:3px solid var(--saffron);line-height:1.2}
+@media (max-width:700px){
+  .biz-card.th{aspect-ratio:3/4}
+  .biz-card.th-svc{grid-column:1/-1;aspect-ratio:16/8}
+  .th-top{left:10px;right:10px;top:9px}
+  .th-mark{display:none}
+  .th-tag{font-size:11px;max-width:100%}
+  .th-bottom{left:11px;right:11px;bottom:10px}
+  .th-head{gap:8px}
+  .th-icon{width:32px;height:32px;border-radius:8px}.th-icon svg{width:21px;height:21px}
+  .th-name{font-size:17px}.th-sub{font-size:11.5px}.th-line{font-size:12px;margin-top:6px}
+  .th-meta{font-size:11px;margin-top:7px;padding-top:7px}
+  .th-more{display:none}
+  .th-svc .th-head{flex-direction:row;align-items:center}
+  .th-svc-list{left:12px;top:42px;gap:6px}.th-svc-list span{font-size:15px}
+}
+@media (prefers-reduced-motion:reduce){.th .th-img{transition:none}}
+
+/* Product detail */
+dialog.detail{margin:auto;border:0;padding:0;width:min(1080px,100% - 24px);max-height:calc(100% - 24px);border-radius:8px;background:#fff;color:var(--ink);box-shadow:0 24px 60px rgba(20,28,62,.35)}
+dialog.detail::backdrop{background:rgba(20,28,62,.72)}
+.detail-head{position:sticky;top:0;z-index:2;background:var(--indigo);color:#fff;display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:22px clamp(18px,4vw,36px)}
+.detail-head .cat{font-size:14px;color:var(--saffron)}
+.detail-head h3{font-family:var(--display);font-size:clamp(26px,3.6vw,38px);font-weight:800;line-height:1.1;margin-top:2px}
+.detail-head p{margin-top:8px;color:#C9D0E6;white-space:pre-line;font-size:16px;line-height:1.55}
+.close{flex:none;background:rgba(255,255,255,.12);border:0;color:#fff;width:40px;height:40px;border-radius:50%;font-size:22px;line-height:1;cursor:pointer}
+.close:hover{background:rgba(255,255,255,.22)}
+.detail-body{padding:24px clamp(18px,4vw,36px) 36px}
+.detail-body h4{font-size:16px;font-weight:700;margin:6px 0 12px;color:var(--muted)}
+.videos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:28px}
+.videos iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:4px;background:#000}
+.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.photos button{border:1px solid var(--line);border-radius:4px;padding:0;background:var(--paper);aspect-ratio:1;overflow:hidden;cursor:zoom-in}
+.photos img{width:100%;height:100%;object-fit:cover}
+.detail-cta{margin-top:28px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.detail-cta .btn-primary{color:var(--indigo-deep)}
+.detail-cta .btn-line{border:1px solid var(--line);color:var(--ink)}
+
+
+/* Consulting card & popup */
+.biz-card .ph.svc-ph{background:var(--indigo);border-color:var(--indigo);flex-direction:column;align-items:flex-start;justify-content:space-between;padding:18px}
+.svc-list{display:flex;flex-direction:column;gap:6px}
+.svc-list span{color:#fff;font-size:clamp(17px,1.8vw,21px);font-weight:700;line-height:1.2;padding-left:12px;border-left:3px solid var(--saffron)}
+.svc-mark{font-size:13px;color:var(--saffron)}
+.biz-card.svc-card:hover .ph{border-color:var(--saffron)}
+.svc-items{list-style:none;counter-reset:svc;display:grid;gap:22px;margin-bottom:28px}
+.svc-items li{counter-increment:svc;display:grid;grid-template-columns:44px 1fr;column-gap:14px}
+.svc-items li::before{content:counter(svc);grid-row:span 2;width:36px;height:36px;border-radius:50%;background:var(--paper);border:1px solid var(--line);color:var(--tile);font-family:var(--display);font-weight:800;display:flex;align-items:center;justify-content:center}
+.svc-items h4{margin:4px 0 6px;color:var(--ink);font-size:19px;line-height:1.4}
+.svc-items h4 span{display:block;font-family:var(--display);font-weight:500;font-size:14px;color:var(--muted)}
+.svc-items p{color:var(--muted);font-size:16px;max-width:62ch}
+.tradeit{display:grid;grid-template-columns:1fr auto;gap:20px 32px;align-items:end;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--tile);border-radius:4px;padding:22px clamp(18px,3vw,28px)}
+.ti-kicker{font-size:14px;font-weight:600;color:var(--tile)}
+.tradeit h4{margin:4px 0 10px;color:var(--ink);font-size:20px;line-height:1.4}
+.tradeit ul{padding-left:18px;color:var(--ink);font-size:15.5px;display:grid;gap:3px}
+.ti-note{margin-top:12px;font-size:14px;color:var(--muted);max-width:60ch}
+.ti-btn{background:var(--tile);color:#fff;white-space:nowrap}
+@media (max-width:860px){.tradeit{grid-template-columns:1fr}.ti-btn{text-align:center}.biz-card .ph.svc-ph{padding:12px 14px}.svc-list span{font-size:16px}.svc-mark{font-size:11.5px;line-height:1.3}.svc-items li{grid-template-columns:36px 1fr;column-gap:10px}.svc-items li::before{width:30px;height:30px}}
+
+/* Lightbox */
+dialog.lightbox{border:0;padding:0;background:transparent;width:100%;height:100%;max-width:100%;max-height:100%}
+dialog.lightbox::backdrop{background:rgba(10,12,24,.94)}
+.lb-wrap{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:56px 64px}
+.lb-wrap img{max-width:100%;max-height:100%;object-fit:contain;border-radius:2px}
+.lb-btn{position:fixed;background:rgba(255,255,255,.12);border:0;color:#fff;width:48px;height:48px;border-radius:50%;font-size:24px;cursor:pointer}
+.lb-btn:hover{background:rgba(255,255,255,.25)}
+.lb-prev{left:12px;top:50%;transform:translateY(-50%)}
+.lb-next{right:12px;top:50%;transform:translateY(-50%)}
+.lb-close{right:12px;top:12px}
+.lb-count{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);color:#C9D0E6;font-size:14px}
+@media (max-width:860px){
+  .photos{grid-template-columns:repeat(3,1fr);gap:6px}
+  .videos{grid-template-columns:1fr}
+  .lb-wrap{padding:56px 8px}
+}
+
+/* Partners */
+.partners-intro{margin-top:18px;color:var(--muted);max-width:52ch}
+.pc{margin-top:40px}
+.pc-view{overflow:hidden;border-top:3px solid var(--tile);border-bottom:1px solid var(--line);background:#fff}
+.pc-track{list-style:none;display:flex;transition:transform .7s cubic-bezier(.6,0,.25,1)}
+.pc-track li,.partner-all li{flex:0 0 calc(100% / var(--per,4));border-right:1px solid var(--line)}
+.plogo{display:flex;align-items:center;justify-content:center;height:128px;padding:18px;text-decoration:none;color:inherit;position:relative}
+a.plogo:hover{background:var(--paper)}
+a.plogo::after{content:attr(data-hp);position:absolute;right:10px;bottom:8px;font-size:12px;color:var(--tile);opacity:0;transition:opacity .2s}
+a.plogo:hover::after,a.plogo:focus-visible::after{opacity:1}
+.plogo .sp{background-repeat:no-repeat;flex:none}
+.plogo img{max-width:85%;max-height:84px;object-fit:contain}
+.pc-ctrl{display:flex;gap:8px;align-items:center;margin-top:14px}
+.pc-btn{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#fff;color:var(--indigo);font-size:20px;cursor:pointer}
+.pc-btn:hover{border-color:var(--tile)}
+.pc-all{margin-left:auto;background:none;border:0;color:var(--tile);font:inherit;font-size:15px;font-weight:600;cursor:pointer;padding:6px 2px}
+.partner-all{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);margin-top:20px;border-top:1px solid var(--line);border-left:1px solid var(--line);background:#fff}
+.partner-all li{border-bottom:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){.pc-track{transition:none}}
+
+/* Contact */
+.contact{background:var(--indigo);color:#fff}
+.contact h2 .kr{color:var(--saffron)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;margin-top:48px}
+.contact dl{display:grid;grid-template-columns:96px 1fr;row-gap:18px;font-size:17px}
+.contact dt{color:#8F99BE}
+.contact dd a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.contact dd a:hover{border-color:var(--saffron)}
+.contact-actions{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.contact-actions .note{color:#AEB6D3;font-size:15px;margin-bottom:8px;max-width:36ch}
+
+/* Footer */
+footer{background:var(--indigo-deep);color:#8F99BE;font-size:14px;padding:40px 0;line-height:1.9}
+footer .brand{color:#fff;font-size:18px;display:inline-block;margin-bottom:10px}
+footer .row{display:flex;flex-wrap:wrap;column-gap:20px}
+footer .bank{margin-top:12px}
+
+@media (max-width:860px){
+  .nav{display:none;position:absolute;top:70px;right:24px;flex-direction:column;gap:0;background:var(--indigo-deep);border-radius:10px;padding:8px 0;min-width:180px}
+  .nav.open{display:flex}
+  .nav a{display:block;padding:10px 20px}
+  .menu-btn{display:block}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .biz-grid{grid-template-columns:repeat(2,1fr);gap:24px 14px}
+  .partner-all{grid-template-columns:repeat(2,1fr)}
+  .plogo{height:104px;padding:12px}
+  .gallery{grid-template-columns:1fr 1fr}
+  .gallery figure:last-child{grid-column:1/-1}
+  section.block{padding:80px 0}
+}
+
+/* Language switch */
+.top-right{display:flex;align-items:center;gap:22px}
+.lang{display:flex;border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:2px;gap:2px}
+.lang button{background:none;border:0;color:#fff;font:inherit;font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px;cursor:pointer;opacity:.75;line-height:1.2}
+.lang button:hover{opacity:1}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--indigo);opacity:1}
+@media (max-width:860px){.top-right{gap:8px}.lang button{padding:5px 9px;font-size:12.5px}}
+@media (max-width:380px){.lang button{padding:5px 7px}}
+
+/* Consulting detail with video */
+.svc-top{display:grid;grid-template-columns:1fr 280px;gap:32px;align-items:start;margin-bottom:28px}
+.svc-top .svc-items{margin-bottom:0}
+.svc-video{margin:0}
+.svc-video video{width:100%;aspect-ratio:9/16;background:#0d1230;border-radius:10px;display:block;object-fit:cover}
+.svc-video figcaption{font-size:13.5px;color:var(--muted);margin-top:8px;text-align:center}
+@media (max-width:860px){.svc-top{grid-template-columns:1fr}.svc-video{max-width:300px;margin:0 auto}}
+
+/* TradeIt entry popup */
+dialog.promo{margin:auto;border:0;padding:0;width:min(760px,100% - 24px);max-height:calc(100% - 24px);border-radius:12px;overflow:auto;background:#fff;color:var(--ink);box-shadow:0 30px 70px rgba(10,14,32,.45)}
+dialog.promo::backdrop{background:rgba(16,22,52,.66)}
+.promo-grid{display:grid;grid-template-columns:1fr 230px}
+.promo-main{padding:30px 30px 26px}
+.promo-kicker{font-size:13.5px;font-weight:700;color:var(--tile)}
+.promo h3{font-family:var(--display);font-size:clamp(23px,3vw,30px);line-height:1.2;font-weight:800;margin:6px 0 10px;letter-spacing:-.01em}
+.promo-lead{color:var(--muted);font-size:15.5px;line-height:1.6}
+.promo ul{margin:14px 0 0;padding-left:18px;display:grid;gap:4px;font-size:15px}
+.promo-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px}
+.promo-actions .btn{background:var(--tile);color:#fff}
+.promo-later{background:none;border:0;font:inherit;font-size:14px;color:var(--muted);cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:6px 2px}
+.promo-note{margin-top:12px;font-size:12.5px;color:var(--muted)}
+.promo-side{background:var(--indigo);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:26px 20px;text-align:center}
+.promo-side img{width:170px;height:170px;border-radius:8px;background:#fff;padding:6px}
+.promo-side p{font-size:13px;color:#C9D0E6;line-height:1.5}
+.promo-side b{font-family:var(--display);font-size:20px;font-weight:800}
+.promo-side b i{font-style:normal;color:var(--saffron)}
+.promo-close{position:absolute;right:12px;top:12px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.18);color:#fff;font-size:20px;cursor:pointer}
+.promo-close:hover{background:rgba(255,255,255,.3)}
+@media (max-width:640px){
+  .promo-grid{grid-template-columns:1fr}
+  .promo-side{order:-1;flex-direction:row;justify-content:flex-start;text-align:left;padding:18px 56px 18px 18px}
+  .promo-side img{width:92px;height:92px;padding:4px}
+  .promo-main{padding:20px 18px 18px}
+  .promo ul{font-size:14px}
+}
+
+/* Korean line breaking & header fit */
+html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
+.brand{white-space:nowrap}
+.lang button{white-space:nowrap}
+@media (max-width:860px){.brand{font-size:19px}}
+@media (max-width:400px){.brand{font-size:17px}.top .wrap{gap:8px}.menu-btn{padding:6px 9px}}
+
+/* Text wordmark for partners without a logo file */
+.pword{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:-.01em;color:var(--indigo)}
+@media (max-width:560px){.pword{font-size:22px}}
+
+/* Business grid: 3 columns down to tablet, tighter cards */
+.biz-grid{gap:18px}
+@media (max-width:1000px){.th-line{font-size:13px}.th-name{font-size:21px}.th-icon{width:42px;height:42px}.th-icon svg{width:28px;height:28px}.th-bottom{left:13px;right:13px;bottom:11px}.th-top{left:12px;right:12px;top:10px}.th-mark{display:none}}
+@media (max-width:860px) and (min-width:701px){.biz-grid{grid-template-columns:repeat(3,1fr);gap:14px}.biz-card.th{aspect-ratio:4/4.2}.th-meta .th-more{display:none}}
+@media (max-width:700px){.biz-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+
+/* Tag types: service / origin / brand / field */
+.th-tag{display:inline-flex;align-items:center;gap:6px;padding:3px 10px 3px 4px}
+.th-tag .tag-k{font-size:11px;font-weight:700;padding:1px 7px;border-radius:999px;line-height:1.5;flex:none}
+.th-tag.tag-service{background:var(--saffron);color:var(--indigo-deep)}
+.th-tag.tag-service .tag-k{background:var(--indigo-deep);color:var(--saffron)}
+.th-tag.tag-origin{background:#fff;color:var(--indigo)}
+.th-tag.tag-origin .tag-k{background:var(--tile);color:#fff}
+.th-tag.tag-brand{background:#F1E9FF;color:#3B2A72}
+.th-tag.tag-brand .tag-k{background:#6B4FC8;color:#fff}
+.th-tag.tag-field{background:#E5F6E9;color:#1E5A33}
+.th-tag.tag-field .tag-k{background:#2F8A4E;color:#fff}
+.tag-legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:22px;font-size:13.5px;color:var(--muted)}
+.tag-legend .lg{display:inline-flex;align-items:center;gap:6px}
+.tag-legend i{width:12px;height:12px;border-radius:3px;display:inline-block}
+.lg-service i{background:var(--saffron)}.lg-origin i{background:var(--tile)}.lg-brand i{background:#6B4FC8}.lg-field i{background:#2F8A4E}
+@media (max-width:700px){.th-tag{padding:2px 8px 2px 3px;gap:4px}.th-tag .tag-k{font-size:10px;padding:1px 5px}}
+
+/* Consulting partner logos */
+.svc-partners{margin:0 0 24px;padding:18px 0 4px;border-top:1px solid var(--line)}
+.svc-partners h4{margin:0 0 12px;font-size:15px;color:var(--muted)}
+.svc-logos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.svc-logo{display:flex;align-items:center;justify-content:center;height:88px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:12px 16px;text-decoration:none}
+.svc-logo:hover{border-color:var(--tile)}
+.svc-logo img{max-width:100%;max-height:58px;object-fit:contain}
+.svc-logo .pword{font-size:26px}
+.svc-partners p{margin-top:10px;font-size:14px;color:var(--muted)}
+@media (max-width:560px){.svc-logos{gap:8px}.svc-logo{height:64px;padding:8px}.svc-logo img{max-height:40px}.svc-logo .pword{font-size:18px}}
+.th-tag .tag-v{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* Telegram button */
+.btn-tg{display:inline-flex;align-items:center;gap:8px;background:#229ED9;color:#fff}
+.btn-tg svg{width:20px;height:20px}
+.btn-tg:hover{background:#1C8BC0}
+.contact dl{align-content:start}
+
+/* Company logo */
+.top .wrap{height:92px}
+.top .brand img{height:76px;width:auto;display:block}
+.foot-logo img{height:84px;width:auto;display:block;margin-bottom:6px}
+@media (max-width:860px){.top .wrap{height:76px}.top .brand img{height:58px}}
+@media (max-width:400px){.top .brand img{height:52px}}
+
+/* ===== Trade tools ===== */
+.tools{background:var(--paper)}
+#toolGroups{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tool-group{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;border-top:4px solid var(--g)}
+.g-calc{--g:var(--saffron);--gs:#FFF4DC;--gi:#8A5A00}
+.g-lookup{--g:var(--tile);--gs:#E2F4F4;--gi:#11605F}
+.g-market{--g:#6B4FC8;--gs:#F1ECFF;--gi:#4A35A0}
+.tg-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:12px}
+.tg-head h3{font-size:18px;font-weight:800;color:var(--ink)}
+.tg-head span{font-size:12.5px;color:var(--muted);text-align:right}
+.tool-grid{display:grid;grid-template-columns:1fr;gap:8px}
+.tool-tile{position:relative;display:flex;align-items:center;gap:12px;width:100%;text-align:left;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:inherit;color:var(--ink);text-decoration:none;cursor:pointer;transition:border-color .15s,background .15s}
+.tool-tile:hover{border-color:var(--g);background:var(--gs)}
+.tt-ic{flex:none;width:38px;height:38px;border-radius:9px;background:var(--gs);color:var(--gi);display:flex;align-items:center;justify-content:center}
+.tt-ic svg{width:22px;height:22px}
+.tt-tx{min-width:0;display:flex;flex-direction:column;line-height:1.3}
+.tt-tx b{font-size:15px;font-weight:700}
+.tt-tx small{font-size:12.5px;color:var(--muted);margin-top:2px}
+.tt-ext{margin-left:auto;flex:none;width:16px;height:16px;color:#9AA1B5}
+.tt-ext svg{width:16px;height:16px}
+.tt-dot{position:absolute;top:7px;right:7px;width:8px;height:8px;border-radius:50%;background:#E5484D}
+@media (max-width:1000px){#toolGroups{grid-template-columns:1fr 1fr}.g-market{grid-column:1/-1}.g-market .tool-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){#toolGroups{grid-template-columns:1fr}.g-market .tool-grid{grid-template-columns:1fr}.tool-group{padding:14px}}
+
+/* Tool dialog */
+dialog.tooldlg{margin:auto;border:0;padding:0;width:min(860px,100% - 24px);max-height:calc(100% - 24px);border-radius:12px;background:#fff;color:var(--ink);box-shadow:0 24px 60px rgba(20,28,62,.35);overflow:auto}
+dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
+.tool-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;gap:14px;background:var(--indigo);color:#fff;padding:18px clamp(16px,3vw,28px)}
+.tool-head .tool-ic{flex:none;width:44px;height:44px;border-radius:11px;background:var(--saffron);color:var(--indigo-deep);display:flex;align-items:center;justify-content:center}
+.tool-head .tool-ic svg{width:26px;height:26px}
+.tool-head h3{font-size:22px;font-weight:800;line-height:1.2}
+.tool-sub{font-size:14px;color:#C9D0E6}
+.tool-head .close{margin-left:auto}
+.tool-body{padding:20px clamp(16px,3vw,28px) 26px}
+.tool-note{margin-top:14px;font-size:13.5px;color:var(--muted)}
+.tool-note.top{margin:0 0 12px}
+.btn-line.sm{background:#fff;border:1px dashed var(--line);border-radius:8px;padding:8px 14px;font:inherit;font-size:14px;color:var(--tile);cursor:pointer;font-weight:600}
+.btn-line.sm:hover{border-color:var(--tile)}
+
+/* CBM */
+.cbm-rows{display:grid;gap:10px;margin-bottom:10px}
+.cbm-row{position:relative;display:grid;grid-template-columns:70px repeat(5,1fr) 32px;gap:8px;align-items:end;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px}
+.cbm-n{font-size:13px;font-weight:700;color:var(--muted);align-self:center}
+.cbm-row label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--muted)}
+.cbm-row input,.unit-box input{width:100%;font:inherit;font-size:15px;padding:8px 9px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
+.cbm-row input:focus,.unit-box input:focus{outline:2px solid var(--tile);outline-offset:0;border-color:var(--tile)}
+.cbm-del{width:32px;height:36px;border:0;background:none;color:#9AA1B5;font-size:22px;cursor:pointer;border-radius:6px}
+.cbm-del:hover{color:#E5484D;background:#fff}
+.cbm-out{margin-top:16px}
+.cbm-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.cbm-sum div{background:var(--indigo);color:#fff;border-radius:8px;padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.cbm-sum span{font-size:12.5px;color:#C9D0E6}
+.cbm-sum b{font-size:19px;font-weight:800}
+.cbm-fill-t{margin:16px 0 8px;font-size:14px;font-weight:700}
+.cbm-fill{display:grid;gap:8px}
+.fill{display:grid;grid-template-columns:70px 1fr 64px;align-items:center;gap:10px;font-size:14px}
+.fill .bar{height:12px;background:var(--paper);border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.fill .bar i{display:block;height:100%;background:var(--tile);border-radius:999px;transition:width .25s}
+.fill .bar i.over{background:#E5484D}
+.fill b{text-align:right}
+@media (max-width:640px){
+  .cbm-row{grid-template-columns:repeat(3,1fr);padding:10px 40px 10px 10px}
+  .cbm-n{grid-column:1/-1}
+  .cbm-del{position:absolute;right:4px;top:4px}
+  .cbm-sum{grid-template-columns:1fr 1fr}
+}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;min-width:560px}
+.tbl th,.tbl td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.tbl thead th{background:var(--paper);font-size:13px;color:var(--muted);font-weight:700}
+.tbl tbody th{font-weight:700;white-space:nowrap}
+.tbl tr:last-child>*{border-bottom:0}
+.tbl .grp th{background:#FFF4DC;color:#8A5A00;font-size:13px}
+.inco tbody th b{display:inline-block;min-width:44px;background:var(--indigo);color:#fff;border-radius:5px;padding:2px 6px;text-align:center;font-size:13px}
+
+/* Units */
+.unit{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.unit-box{border:1px solid var(--line);border-radius:8px;padding:10px 12px 12px;display:grid;gap:8px}
+.unit-box legend{font-weight:700;font-size:14px;padding:0 4px}
+.unit-box label{display:grid;grid-template-columns:1fr 72px;align-items:center;gap:8px;font-size:13.5px;color:var(--muted)}
+@media (max-width:640px){.unit{grid-template-columns:1fr}}
+
+/* Clocks */
+.clocks{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.ck{border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:2px;background:#fff}
+.ck-city{font-size:13.5px;font-weight:700}
+.ck b{font-family:var(--display);font-size:26px;font-weight:800;line-height:1.1;color:var(--ink)}
+.ck-date{font-size:12.5px;color:var(--muted)}
+.ck-st{margin-top:4px;align-self:flex-start;font-size:11.5px;font-weight:700;padding:1px 8px;border-radius:999px;background:var(--paper);color:var(--muted)}
+.ck.on{border-color:var(--tile)}
+.ck.on .ck-st{background:#E2F4F4;color:#11605F}
+@media (max-width:760px){.clocks{grid-template-columns:repeat(2,1fr)}}
+
+/* Floating quick menu */
+.fab{position:fixed;right:18px;bottom:18px;z-index:50}
+.fab-btn{display:flex;align-items:center;gap:8px;border:0;border-radius:999px;background:var(--indigo);color:#fff;padding:12px 18px 12px 14px;font:inherit;font-weight:700;font-size:14.5px;cursor:pointer;box-shadow:0 10px 28px rgba(20,28,62,.35)}
+.fab-btn svg{width:22px;height:22px;color:var(--saffron)}
+.fab-btn:hover{background:var(--indigo-deep)}
+.fab.open .fab-btn{background:var(--indigo-deep)}
+.fab-panel{position:absolute;right:0;bottom:62px;width:340px;max-height:min(70vh,620px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 20px 50px rgba(20,28,62,.3);color:var(--ink)}
+.fab-head{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;background:var(--indigo);color:#fff;padding:12px 14px}
+.fab-head b{font-size:15px}
+.fab-x{border:0;background:rgba(255,255,255,.15);color:#fff;width:30px;height:30px;border-radius:50%;font-size:18px;cursor:pointer}
+.fab-body{padding:10px 12px 4px}
+.fab-group{margin-bottom:10px}
+.fab-group p{font-size:12px;font-weight:700;color:var(--gi);margin:2px 2px 6px;display:flex;align-items:center;gap:6px}
+.fab-group p::before{content:"";width:8px;height:8px;border-radius:2px;background:var(--g)}
+.fab-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fab-grid .tool-tile{padding:7px 8px;gap:8px;border-radius:7px}
+.fab-grid .tt-ic{width:28px;height:28px;border-radius:7px}
+.fab-grid .tt-ic svg{width:17px;height:17px}
+.fab-grid .tt-tx b{font-size:13px;font-weight:600}
+.fab-grid .tt-ext{display:none}
+.fab-grid .tt-dot{top:5px;right:5px;width:7px;height:7px}
+.fab-all{display:block;text-align:center;margin:4px 12px 12px;padding:9px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;font-weight:600;color:var(--tile);text-decoration:none}
+.fab-all:hover{border-color:var(--tile)}
+@media (max-width:640px){
+  .fab{right:12px;bottom:12px}
+  .fab-btn{padding:11px 14px 11px 12px;font-size:13.5px}
+  .fab-panel{position:fixed;right:12px;left:12px;bottom:70px;width:auto}
+}
+
+/* Uniform tool button sizes */
+.tool-tile{height:66px}
+.tt-tx{flex:1}
+.tt-tx b,.tt-tx small{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fab-grid .tool-tile{height:44px}
+.fab-grid .tt-tx b{font-size:13px}
+
+/* ===== Trade news ===== */
+.news{background:#fff;border-bottom:1px solid var(--line)}
+.news-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.news-updated{font-size:13.5px;color:var(--muted);padding-bottom:6px}
+.news-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.nchip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:999px;padding:7px 14px;font:inherit;font-size:14px;font-weight:600;cursor:pointer}
+.nchip span{font-size:12px;color:var(--muted);font-weight:700}
+.nchip:hover{border-color:var(--tile)}
+.nchip[aria-pressed="true"]{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.nchip[aria-pressed="true"] span{color:var(--saffron)}
+.news-days{margin-top:18px}
+.news-day+.news-day{margin-top:26px}
+.nday{display:flex;align-items:baseline;gap:10px;padding-bottom:8px;border-bottom:2px solid var(--indigo);font-size:17px}
+.nday b{font-weight:800;color:var(--ink)}
+.nday span{font-size:13px;color:var(--muted);font-weight:500}
+.nday i{margin-left:auto;font-style:normal;font-size:12px;font-weight:700;color:var(--indigo);background:var(--paper);border-radius:999px;padding:1px 9px}
+.news-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.news-more{display:block;margin:22px auto 0;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 22px;font:inherit;font-size:14.5px;font-weight:600;color:var(--indigo);cursor:pointer}
+.news-more:hover{border-color:var(--tile);color:var(--tile)}
+.news-item{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.nrank{flex:none;width:28px;height:28px;border-radius:7px;background:var(--paper);color:var(--indigo);font-family:var(--display);font-weight:800;font-size:15px;display:flex;align-items:center;justify-content:center}
+.news-item:nth-child(-n+3) .nrank{background:var(--indigo);color:var(--saffron)}
+.nbody{min-width:0;display:flex;flex-direction:column;gap:6px}
+.nbody a{color:var(--ink);text-decoration:none;font-size:16px;font-weight:600;line-height:1.45}
+.nbody a:hover{color:var(--tile);text-decoration:underline;text-underline-offset:3px}
+.nmeta{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;font-size:12.5px;color:var(--muted)}
+.ncat{font-weight:700;padding:1px 8px;border-radius:999px;font-size:11.5px}
+.ncat.c-policy{background:#FFF4DC;color:#8A5A00}
+.ncat.c-world{background:#FDECEC;color:#A12A2E}
+.ncat.c-cis{background:#E2F4F4;color:#11605F}
+.ncat.c-logistics{background:#F1ECFF;color:#4A35A0}
+.news-empty{grid-column:1/-1;padding:28px 0;color:var(--muted);text-align:center}
+.news-note{margin-top:14px;font-size:12.5px;color:var(--muted)}
+@media (max-width:860px){.news-list{grid-template-columns:1fr}}
+
+/* Visitor counter */
+.visits{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:#8F99BE}
+.visits b{color:#fff;font-weight:700;margin-left:4px}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="GAWOO INTERNATIONAL"><img src="images/logo-white.png" alt="GAWOO INTERNATIONAL" width="246" height="202"></a>
+    <div class="top-right">
+      <ul class="nav" id="nav">
+        <li><a href="#about" data-i18n="nav.about"></a></li>
+        <li><a href="#business" data-i18n="nav.business"></a></li>
+        <li><a href="#news" data-i18n="nav.news"></a></li>
+        <li><a href="#tools" data-i18n="nav.tools"></a></li>
+        <li><a href="#partners" data-i18n="nav.partners"></a></li>
+        <li><a href="#contact" data-i18n="nav.contact"></a></li>
+      </ul>
+      <div class="lang" role="group" aria-label="Language / 언어 / Язык">
+        <button type="button" data-lang="ko" lang="ko">한국어</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+        <button type="button" data-lang="ru" lang="ru">RU</button>
+      </div>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav" data-i18n="menu"></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <h1 data-i18n="hero.h1"></h1>
+    <p class="lead" data-i18n="hero.lead"></p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#contact" data-i18n="cta.contact"></a>
+      <a class="btn btn-ghost" href="#business" data-i18n="cta.business"></a>
+    </div>
+  </div>
+
+  <div class="worldmap" role="img" data-i18n-aria="map.aria">
+    <svg id="worldSvg" viewBox="0 0 1200 372" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <defs>
+        <radialGradient id="hubGlow"><stop offset="0" stop-color="#E3A72F" stop-opacity=".55"/><stop offset="1" stop-color="#E3A72F" stop-opacity="0"/></radialGradient>
+      </defs>
+      <g id="wmDots"></g><g id="wmArcs"></g><g id="wmCities"></g>
+    </svg>
+  </div>
+
+  <div class="hero-foot">
+    <div class="wrap">
+      <span><strong data-i18n="foot.tel"></strong>+82-61-930-0663</span>
+      <span><strong data-i18n="foot.email"></strong>info@gawooint.com</span>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <h2><span data-i18n="about.h2"></span><span class="kr" data-i18n="about.sub"></span></h2>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="images/about.jpeg" data-i18n-alt="about.photo" alt="" onerror="this.onerror=null;this.src='https://cdn.qshop.ai/46788/gallery/md_e5611e152000b.jpeg/resize?v=w1920'">
+      </div>
+      <div class="about-text">
+        <p class="big" data-i18n="about.big"></p>
+        <p data-i18n="about.p1"></p>
+        <div class="sign"><b data-i18n="about.name"></b><small data-i18n="about.role"></small></div>
+      </div>
+    </div>
+    <div class="gallery">
+      <figure><img src="images/slide1.png" alt="" onerror="this.onerror=null;this.src='https://cdn.qshop.ai/46788/gallery/md_de102da4b2aae.png/resize?v=w1920'"></figure>
+      <figure><img src="images/slide2.jpeg" alt="" onerror="this.onerror=null;this.src='https://cdn.qshop.ai/46788/gallery/md_505af6fe2af25.jpeg/resize?v=w1920'"></figure>
+      <figure><img src="images/slide3.png" alt="" onerror="this.onerror=null;this.src='https://cdn.qshop.ai/46788/gallery/md_370a46333df43.png/resize?v=w1920'"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block biz" id="business">
+  <div class="wrap">
+    <h2><span data-i18n="biz.h2"></span><span class="kr" data-i18n="biz.sub"></span></h2>
+    <p class="partners-intro" data-i18n="biz.intro"></p>
+    <div class="tag-legend" id="tagLegend" role="note"></div>
+    <div class="biz-grid" id="bizGrid"></div>
+  </div>
+</section>
+
+<section class="block news" id="news">
+  <div class="wrap">
+    <div class="news-top">
+      <h2><span data-nt="n.h2"></span><span class="kr" data-nt="n.sub"></span></h2>
+      <span class="news-updated" id="newsUpdated"></span>
+    </div>
+    <p class="partners-intro" data-nt="n.intro"></p>
+    <div class="news-chips" id="newsChips" role="group"></div>
+    <div class="news-days" id="newsList"></div>
+    <button type="button" class="news-more" id="newsMore" hidden></button>
+    <p class="news-note" data-nt="n.note"></p>
+  </div>
+</section>
+
+<section class="block tools" id="tools">
+  <div class="wrap">
+    <h2><span data-tt="tl.h2"></span><span class="kr" data-tt="tl.sub"></span></h2>
+    <p class="partners-intro" data-tt="tl.intro"></p>
+    <div id="toolGroups"></div>
+  </div>
+</section>
+
+<section class="block" id="partners">
+  <div class="wrap">
+    <h2><span data-i18n="pa.h2"></span><span class="kr" data-i18n="pa.sub"></span></h2>
+    <p class="partners-intro" data-i18n="pa.intro"></p>
+    <div class="pc" id="partnerCarousel" aria-roledescription="carousel" data-i18n-aria="pa.aria">
+      <div class="pc-view"><ul class="pc-track" id="pcTrack"></ul></div>
+      <div class="pc-ctrl">
+        <button type="button" class="pc-btn" data-dir="-1" data-i18n-aria="pa.prev">‹</button>
+        <button type="button" class="pc-btn" data-dir="1" data-i18n-aria="pa.next">›</button>
+        <button type="button" class="pc-all" aria-expanded="false" aria-controls="partnerAll"></button>
+      </div>
+    </div>
+    <ul class="partner-all" id="partnerAll" hidden></ul>
+  </div>
+</section>
+
+<section class="block contact" id="contact">
+  <div class="wrap">
+    <h2><span data-i18n="ct.h2"></span><span class="kr" data-i18n="ct.sub"></span></h2>
+    <div class="contact-grid">
+      <dl>
+        <dt data-i18n="ct.tel"></dt><dd><a href="tel:+82-61-930-0663">+82-61-930-0663</a></dd>
+        <dt data-i18n="ct.email"></dt><dd><a href="mailto:info@gawooint.com">info@gawooint.com</a></dd>
+      </dl>
+      <div class="contact-actions">
+        <p class="note" data-i18n="ct.note"></p>
+        <a class="btn btn-primary" href="mailto:info@gawooint.com" data-i18n="ct.mail"></a>
+        <a class="btn btn-tg" href="https://t.me/red_mussa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 4.2 2.9 11.3c-1.3.5-1.2 2.3.1 2.6l4.7 1.4 1.8 5.5c.3 1 1.6 1.3 2.3.5l2.6-2.6 4.6 3.4c.8.6 2 .2 2.2-.8l3-14.6c.3-1.3-1-2.4-2.3-1.9zM9.6 14.6l-.6 3.8-1.2-3.7 9.6-6.1-7.8 6z"/></svg><span data-i18n="ct.tg"></span></a>
+        <a class="btn btn-ghost" href="https://talk.naver.com/ct/w4o9rm?frm=pmd" target="_blank" rel="noopener" data-i18n="ct.talk"></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand foot-logo" href="#" aria-label="GAWOO INTERNATIONAL"><img src="images/logo-white.png" alt="GAWOO INTERNATIONAL" width="246" height="202"></a>
+    <div class="row"><span data-i18n="f.company"></span><span data-i18n="f.ceo"></span></div>
+    <div class="row"><span data-i18n="f.bizno"></span><span data-i18n="f.ecom"></span></div>
+    <div class="row"><span data-i18n="f.tel"></span><span data-i18n="f.email"></span></div>
+    <div class="row bank"><span data-i18n="f.bank"></span></div>
+    <div class="row" style="margin-top:12px"><span>© GAWOO INTERNATIONAL</span></div>
+    <div class="visits" id="visitCount" hidden aria-live="polite"></div>
+  </div>
+</footer>
+
+<dialog class="detail" id="detail" aria-labelledby="detailTitle">
+  <div class="detail-head">
+    <div><div class="cat"></div><h3 id="detailTitle"></h3><p></p></div>
+    <button type="button" class="close" data-i18n-aria="det.close">×</button>
+  </div>
+  <div class="detail-body">
+    <div class="svc-wrap" hidden>
+      <div class="svc-top">
+        <ol class="svc-items"></ol>
+        <figure class="svc-video">
+          <video id="tiVideo" controls playsinline preload="none" poster="videos/tradeit-poster.jpg">
+            <source src="videos/tradeit.mp4" type="video/mp4">
+          </video>
+          <figcaption data-i18n="ti.video"></figcaption>
+        </figure>
+      </div>
+      <section class="svc-partners" aria-labelledby="svcPaTitle">
+        <h4 id="svcPaTitle" data-i18n="svc.partners"></h4>
+        <div class="svc-logos">
+          <a href="https://www.gbca.or.kr/" target="_blank" rel="noopener" class="svc-logo"><img src="images/partner-gbca.png" alt="GBCA 사단법인 글로벌비즈니스컨설팅협회"></a>
+          <a href="https://www.tradeit.global/en?code=6KH0LP46" target="_blank" rel="noopener sponsored" class="svc-logo"><img src="images/partner-tradeit.png" alt="TradeIt"></a>
+          <a href="https://www.nicednb.com" target="_blank" rel="noopener" class="svc-logo"><img src="images/partner-nicednb.png" alt="NICE D&amp;B 나이스디앤비"></a>
+        </div>
+        <p data-i18n="svc.partnersNote"></p>
+      </section>
+      <aside class="tradeit" aria-labelledby="tiTitle">
+        <div class="ti-text">
+          <p class="ti-kicker" data-i18n="ti.kicker"></p>
+          <h4 id="tiTitle" data-i18n="ti.title"></h4>
+          <ul>
+            <li data-i18n="ti.b1"></li><li data-i18n="ti.b2"></li><li data-i18n="ti.b3"></li><li data-i18n="ti.b4"></li>
+          </ul>
+          <p class="ti-note" data-i18n="ti.note"></p>
+        </div>
+        <a class="btn ti-btn" href="https://www.tradeit.global/en?code=6KH0LP46" target="_blank" rel="noopener sponsored" data-i18n="ti.btn"></a>
+      </aside>
+    </div>
+    <div class="videos-wrap"><h4 data-i18n="det.videos"></h4><div class="videos"></div></div>
+    <h4 class="photo-title"></h4>
+    <div class="photos"></div>
+    <div class="detail-cta">
+      <a class="btn btn-primary ask" href="mailto:info@gawooint.com"></a>
+      <a class="btn btn-line" href="https://t.me/red_mussa" target="_blank" rel="noopener" data-i18n="ct.tg"></a>
+      <a class="btn btn-line" href="https://talk.naver.com/ct/w4o9rm?frm=pmd" target="_blank" rel="noopener" data-i18n="det.talk"></a>
+    </div>
+  </div>
+</dialog>
+
+<dialog class="lightbox" id="lightbox" data-i18n-aria="lb.aria">
+  <div class="lb-wrap"><img alt=""></div>
+  <button type="button" class="lb-btn lb-prev" data-i18n-aria="lb.prev">‹</button>
+  <button type="button" class="lb-btn lb-next" data-i18n-aria="lb.next">›</button>
+  <button type="button" class="lb-btn lb-close" data-i18n-aria="det.close">×</button>
+  <div class="lb-count"></div>
+</dialog>
+
+<dialog class="promo" id="promo" aria-labelledby="promoTitle">
+  <div class="promo-grid">
+    <div class="promo-main">
+      <p class="promo-kicker" data-i18n="ti.kicker"></p>
+      <h3 id="promoTitle" data-i18n="pr.title"></h3>
+      <p class="promo-lead" data-i18n="pr.lead"></p>
+      <ul><li data-i18n="pr.ai"></li><li data-i18n="ti.b1"></li><li data-i18n="ti.b2"></li></ul>
+      <div class="promo-actions">
+        <a class="btn" href="https://www.tradeit.global/en?code=6KH0LP46" target="_blank" rel="noopener sponsored" data-i18n="pr.btn"></a>
+        <button type="button" class="promo-later" data-i18n="pr.later"></button>
+      </div>
+      <p class="promo-note" data-i18n="pr.note"></p>
+    </div>
+    <div class="promo-side">
+      <img src="images/tradeit-qr.svg" alt="TradeIt QR">
+      <div><b data-i18n-html="pr.free"></b><p data-i18n="pr.scan"></p></div>
+    </div>
+  </div>
+  <button type="button" class="promo-close" data-i18n-aria="det.close">×</button>
+</dialog>
+
+<dialog class="tooldlg" id="toolDlg" aria-labelledby="toolTitle">
+  <div class="tool-head">
+    <span class="tool-ic"></span>
+    <div><h3 id="toolTitle"></h3><p class="tool-sub"></p></div>
+    <button type="button" class="close" data-tt-aria="tl.close">×</button>
+  </div>
+  <div class="tool-body"></div>
+</dialog>
+
+<div class="fab" id="fab">
+  <div class="fab-panel" id="fabPanel" hidden role="dialog" aria-labelledby="fabTitle">
+    <div class="fab-head"><b id="fabTitle" data-tt="tl.panel"></b><button type="button" class="fab-x" data-tt-aria="tl.close">×</button></div>
+    <div class="fab-body" id="fabGroups"></div>
+    <a class="fab-all" href="#tools" data-tt="tl.all"></a>
+  </div>
+  <button type="button" class="fab-btn" id="fabBtn" aria-expanded="false" aria-controls="fabPanel">
+    <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="3"/><rect x="27" y="8" width="13" height="13" rx="3"/><rect x="8" y="27" width="13" height="13" rx="3"/><rect x="27" y="27" width="13" height="13" rx="3"/></svg>
+    <span data-tt="tl.fab"></span>
+  </button>
+</div>
+
+<script>
+// ===== 사이트 설정 (여기만 고치면 됩니다) =====
+// counterUrl: Cloudflare Worker 주소 (예: 'https://gawoo-counter.아이디.workers.dev')
+// cfAnalyticsToken: Cloudflare Web Analytics 토큰 (스니펫의 token 값)
+const SITE_CONFIG={ counterUrl:'', cfAnalyticsToken:'' };
+// ===== 다국어 문구 (한국어 / English / Русский) =====
+const I18N={
+ko:{
+  'pr.ai':'AI를 활용한 빅데이터 분석·조회',
+  'nav.news':'뉴스',
+  'ct.tg':'텔레그램으로 메시지 보내기',
+  'nav.tools':'무역 도구',
+  'tag.service':'서비스','tag.origin':'원산지','tag.brand':'브랜드','tag.field':'분야','tag.legend':'태그 구분','svc.partners':'함께하는 기관','svc.partnersNote':'GBCA의 교육·컨설팅 네트워크, TradeIt의 무역 데이터, NICE D&B의 기업 정보를 함께 활용합니다.',
+  'nav.about':'회사 소개','nav.business':'사업 분야','nav.partners':'협력사','nav.contact':'문의','menu':'메뉴',
+  'hero.h1':'한국과 CIS를 잇는 믿을 수 있는 무역 파트너',
+  'hero.lead':'가우인터네셔널은 한국과 CIS 지역을 잇는 중개무역 전문기업입니다.',
+  'cta.contact':'문의하기','cta.business':'사업 분야 보기',
+  'foot.tel':'전화','foot.email':'이메일','foot.office':'사무실',
+  'map.aria':'한국에서 워싱턴 D.C., 마드리드, 베를린, 모스크바, 리야드, 타슈켄트, 아스타나, 베이징, 도쿄, 하노이, 방콕으로 이어지는 무역 네트워크 지도',
+  'about.h2':'회사 소개','about.sub':'About Us',
+  'about.big':'가우인터네셔널을 찾아주셔서 감사합니다.',
+  'about.p1':'가우인터네셔널은 한국 기업과 CIS 지역 바이어 사이에서 거래를 연결하는 중개무역 전문기업입니다.',
+  'about.name':'김전우','about.role':'대표 · CEO','about.photo':'가우인터네셔널 김전우 대표',
+  'biz.h2':'사업 분야','biz.sub':'Business Area',
+  'biz.intro':'수출입 컨설팅과 한국·CIS 지역 사이에서 다루고 있는 품목입니다. 항목을 누르면 자세한 내용과 사진을 볼 수 있습니다.',
+  'biz.photos':n=>`사진 ${n}`,'biz.videos':n=>`영상 ${n}`,'biz.services':n=>`서비스 ${n}`,'biz.more':'자세히 보기','biz.open':n=>`${n} 자세히 보기`,
+  'det.close':'닫기','det.videos':'영상','det.photos':n=>`사진 ${n}장`,'det.photo':(n,k)=>`${n} 사진 ${k} 크게 보기`,
+  'det.ask':'이 품목 문의하기','det.askSvc':'컨설팅 문의하기','det.talk':'네이버 톡톡 상담','mail.subj':n=>`[문의] ${n}`,
+  'lb.aria':'사진 크게 보기','lb.prev':'이전 사진','lb.next':'다음 사진',
+  'ti.kicker':'무역 빅데이터 서비스 TradeIt',
+  'ti.title':'우리 제품을 이미 수입하고 있는 바이어를 직접 찾아보세요',
+  'ti.b1':'200여 개 국가·지역의 80억 건이 넘는 무역 기록',
+  'ti.b2':'품목, HS코드, 회사명으로 실제 수입사·수출사와 거래 이력 조회',
+  'ti.b3':'AI로 경쟁사와 시장 기회 분석, 바이어 관리(CRM)와 이메일 발송까지',
+  'ti.b4':'무료 플랜으로 바로 시작 (가입 시 1,000 크레딧 제공)',
+  'ti.note':'시작하기 버튼은 가우인터네셔널의 TradeIt 파트너 링크입니다. 조회한 데이터를 어떻게 활용할지 막막하다면 분석과 전략 수립을 함께 도와드립니다.',
+  'ti.btn':'TradeIt 무료로 시작하기','ti.video':'TradeIt 소개 영상',
+  'pr.title':'해외 바이어, 아직도 검색으로 하나씩 찾고 계세요?',
+  'pr.lead':'TradeIt은 전 세계 선하증권(B/L) 데이터로 지금 실제로 수입하고 있는 바이어를 찾아주는 무역 데이터 서비스입니다.',
+  'pr.btn':'무료로 가입하기','pr.later':'오늘 하루 보지 않기','pr.scan':'휴대폰 카메라로 QR을 찍으면 가입 페이지로 이동합니다','pr.free':'지금 <i>무료</i>로 시작',
+  'pr.note':'가우인터네셔널의 TradeIt 파트너 링크입니다.',
+  'pa.h2':'협력사','pa.sub':'Partners',
+  'pa.intro':'한국과 CIS 지역의 기업·기관과 함께하고 있습니다. 로고를 누르면 해당 기관의 홈페이지로 이동합니다.',
+  'pa.aria':'협력사 로고','pa.prev':'이전 협력사','pa.next':'다음 협력사','pa.all':'협력사 전체 보기','pa.fold':'협력사 접기','pa.hp':'홈페이지','pa.open':n=>`${n} 홈페이지 열기`,
+  'ct.h2':'문의하기','ct.sub':'Contact Us',
+  'ct.addr':'주소','ct.tel':'전화','ct.email':'이메일',
+  'ct.note':'거래 문의, 견적 요청 모두 편하게 연락 주세요. 텔레그램과 네이버 톡톡으로도 상담할 수 있습니다.',
+  'ct.mail':'이메일 보내기','ct.talk':'네이버 톡톡 상담','ct.map':'네이버 지도에서 보기',
+  'f.company':'가우인터네셔널','f.ceo':'대표 김전우','f.bizno':'사업자등록번호 350-34-00405','f.ecom':'통신판매업 신고번호 2021-전남나주-0192호',
+  'f.tel':'전화 061-930-0663','f.email':'이메일 info@gawooint.com','f.bank':'계좌 국민은행 777101-01-369-641 (예금주 김전우(가우인터네셔널))',
+  'city':{hub:['한국','GAWOO INT.'],was:['워싱턴 D.C.','미국'],mad:['마드리드','스페인'],ber:['베를린','독일'],mos:['모스크바','러시아'],tas:['타슈켄트','우즈베키스탄'],ast:['아스타나','카자흐스탄'],bei:['베이징','중국'],tok:['도쿄','일본'],han:['하노이','베트남'],ban:['방콕','태국'],riy:['리야드','사우디아라비아']}
+},
+en:{
+  'pr.ai':'Big data search and analysis powered by AI',
+  'nav.news':'News',
+  'ct.tg':'Message us on Telegram',
+  'nav.tools':'Tools',
+  'tag.service':'Service','tag.origin':'Origin','tag.brand':'Brand','tag.field':'Field','tag.legend':'Tag types','svc.partners':'Working with','svc.partnersNote':'We combine GBCA’s training and consulting network, TradeIt’s trade data and NICE D&B’s company information.',
+  'nav.about':'About','nav.business':'Business','nav.partners':'Partners','nav.contact':'Contact','menu':'Menu',
+  'hero.h1':'Korea to the CIS, one trusted route.',
+  'hero.lead':'GAWOO INTERNATIONAL is a trading company specializing in intermediary trade between Korea and the CIS region.',
+  'cta.contact':'Contact us','cta.business':'Our business',
+  'foot.tel':'Tel','foot.email':'Email','foot.office':'Office',
+  'map.aria':'Trade network map linking Korea with Washington, D.C., Madrid, Berlin, Moscow, Riyadh, Tashkent, Astana, Beijing, Tokyo, Hanoi and Bangkok',
+  'about.h2':'About Us','about.sub':'회사 소개',
+  'about.big':'Thank you for visiting GAWOO INTERNATIONAL.',
+  'about.p1':'We specialize in intermediary trade between Korea and the CIS region, connecting Korean companies with buyers across the CIS.',
+  'about.name':'Kim Jeonwoo','about.role':'CEO','about.photo':'Kim Jeonwoo, CEO of GAWOO INTERNATIONAL',
+  'biz.h2':'Business Area','biz.sub':'사업 분야',
+  'biz.intro':'Trade consulting and the products we handle between Korea and the CIS. Select an item to see details and photos.',
+  'biz.photos':n=>`${n} photos`,'biz.videos':n=>`${n} videos`,'biz.services':n=>`${n} services`,'biz.more':'View details','biz.open':n=>`View details: ${n}`,
+  'det.close':'Close','det.videos':'Videos','det.photos':n=>`${n} photos`,'det.photo':(n,k)=>`View ${n} photo ${k}`,
+  'det.ask':'Ask about this product','det.askSvc':'Ask about consulting','det.talk':'Chat on Naver TalkTalk','mail.subj':n=>`[Inquiry] ${n}`,
+  'lb.aria':'Photo viewer','lb.prev':'Previous photo','lb.next':'Next photo',
+  'ti.kicker':'TradeIt · Global trade data',
+  'ti.title':'Find buyers who are already importing products like yours',
+  'ti.b1':'Over 8 billion trade records from 200+ countries and regions',
+  'ti.b2':'Search real importers, exporters and shipment history by product, HS code or company',
+  'ti.b3':'AI competitor and market analysis, plus built-in CRM and email outreach',
+  'ti.b4':'Start free with 1,000 credits when you sign up',
+  'ti.note':'The start button is GAWOO INTERNATIONAL’s TradeIt partner link. If you are not sure how to use the data, we can help with analysis and strategy.',
+  'ti.btn':'Start TradeIt for free','ti.video':'TradeIt introduction video',
+  'pr.title':'Still searching for overseas buyers one by one?',
+  'pr.lead':'TradeIt is a trade data service that uses worldwide bill of lading (B/L) data to find buyers who are actively importing right now.',
+  'pr.btn':'Sign up free','pr.later':'Don’t show again today','pr.scan':'Scan with your phone camera to open the sign-up page','pr.free':'Start <i>free</i> now',
+  'pr.note':'GAWOO INTERNATIONAL’s TradeIt partner link.',
+  'pa.h2':'Partners','pa.sub':'협력사',
+  'pa.intro':'We work with companies and institutions in Korea and the CIS. Select a logo to visit their website.',
+  'pa.aria':'Partner logos','pa.prev':'Previous partners','pa.next':'Next partners','pa.all':'See all partners','pa.fold':'Show fewer','pa.hp':'Website','pa.open':n=>`Open ${n} website`,
+  'ct.h2':'Contact Us','ct.sub':'문의',
+  'ct.addr':'Address','ct.tel':'Phone','ct.email':'Email',
+  'ct.note':'Feel free to contact us for trade inquiries or quotations by email or Telegram.',
+  'ct.mail':'Send an email','ct.talk':'Chat on Naver TalkTalk','ct.map':'View on Google Maps',
+  'f.company':'GAWOO INTERNATIONAL','f.ceo':'CEO Kim Jeonwoo','f.bizno':'Business Reg. No. 350-34-00405','f.ecom':'E-commerce Reg. No. 2021-Jeonnam Naju-0192',
+  'f.tel':'Tel +82-61-930-0663','f.email':'Email info@gawooint.com','f.bank':'Bank: KB Kookmin Bank 777101-01-369-641 (Account holder: GAWOO INTERNATIONAL, Kim Jeonwoo)',
+  'city':{hub:['Korea','GAWOO INT.'],was:['Washington, D.C.','USA'],mad:['Madrid','Spain'],ber:['Berlin','Germany'],mos:['Moscow','Russia'],tas:['Tashkent','Uzbekistan'],ast:['Astana','Kazakhstan'],bei:['Beijing','China'],tok:['Tokyo','Japan'],han:['Hanoi','Vietnam'],ban:['Bangkok','Thailand'],riy:['Riyadh','Saudi Arabia']}
+},
+ru:{
+  'pr.ai':'Поиск и анализ больших данных с помощью ИИ',
+  'nav.news':'Новости',
+  'ct.tg':'Написать в Telegram',
+  'nav.tools':'Инструменты',
+  'tag.service':'Услуга','tag.origin':'Происхождение','tag.brand':'Бренд','tag.field':'Отрасль','tag.legend':'Типы меток','svc.partners':'Работаем вместе с','svc.partnersNote':'Мы используем образовательную и консалтинговую сеть GBCA, торговые данные TradeIt и информацию о компаниях NICE D&B.',
+  'nav.about':'О компании','nav.business':'Направления','nav.partners':'Партнёры','nav.contact':'Контакты','menu':'Меню',
+  'hero.h1':'Корея — СНГ: надёжный торговый маршрут',
+  'hero.lead':'GAWOO INTERNATIONAL — компания, специализирующаяся на посреднической торговле между Кореей и странами СНГ.',
+  'cta.contact':'Связаться с нами','cta.business':'Наши направления',
+  'foot.tel':'Тел.','foot.email':'E-mail','foot.office':'Офис',
+  'map.aria':'Карта торговой сети: Корея — Вашингтон, Мадрид, Берлин, Москва, Эр-Рияд, Ташкент, Астана, Пекин, Токио, Ханой, Бангкок',
+  'about.h2':'О компании','about.sub':'About Us',
+  'about.big':'Благодарим вас за посещение GAWOO INTERNATIONAL.',
+  'about.p1':'Мы специализируемся на посреднической торговле между Кореей и странами СНГ и помогаем корейским компаниям находить покупателей в регионе.',
+  'about.name':'Ким Чжон У','about.role':'Генеральный директор','about.photo':'Ким Чжон У, генеральный директор GAWOO INTERNATIONAL',
+  'biz.h2':'Направления','biz.sub':'Business Area',
+  'biz.intro':'Консалтинг в сфере ВЭД и товары, с которыми мы работаем между Кореей и странами СНГ. Нажмите на карточку, чтобы увидеть подробности и фото.',
+  'biz.photos':n=>`Фото: ${n}`,'biz.videos':n=>`Видео: ${n}`,'biz.services':n=>`Услуги: ${n}`,'biz.more':'Подробнее','biz.open':n=>`Подробнее: ${n}`,
+  'det.close':'Закрыть','det.videos':'Видео','det.photos':n=>`Фото: ${n}`,'det.photo':(n,k)=>`${n}: фото ${k}`,
+  'det.ask':'Запросить информацию','det.askSvc':'Запросить консультацию','det.talk':'Чат в Naver TalkTalk','mail.subj':n=>`[Запрос] ${n}`,
+  'lb.aria':'Просмотр фото','lb.prev':'Предыдущее фото','lb.next':'Следующее фото',
+  'ti.kicker':'TradeIt · Данные мировой торговли',
+  'ti.title':'Найдите покупателей, которые уже импортируют такие товары, как ваши',
+  'ti.b1':'Более 8 млрд торговых записей из 200+ стран и регионов',
+  'ti.b2':'Поиск реальных импортёров, экспортёров и истории поставок по товару, коду ТН ВЭД или компании',
+  'ti.b3':'ИИ-анализ конкурентов и рынков, встроенная CRM и email-рассылки',
+  'ti.b4':'Бесплатный старт: 1 000 кредитов при регистрации',
+  'ti.note':'Кнопка ведёт по партнёрской ссылке GAWOO INTERNATIONAL на TradeIt. Если не знаете, как использовать данные, мы поможем с анализом и стратегией.',
+  'ti.btn':'Начать работу с TradeIt бесплатно','ti.video':'Видео о TradeIt',
+  'pr.title':'Всё ещё ищете зарубежных покупателей вручную?',
+  'pr.lead':'TradeIt — сервис торговых данных, который по мировым данным коносаментов (B/L) находит покупателей, импортирующих прямо сейчас.',
+  'pr.btn':'Зарегистрироваться бесплатно','pr.later':'Не показывать сегодня','pr.scan':'Наведите камеру телефона на QR-код, чтобы открыть страницу регистрации','pr.free':'Начните <i>бесплатно</i>',
+  'pr.note':'Партнёрская ссылка GAWOO INTERNATIONAL на TradeIt.',
+  'pa.h2':'Партнёры','pa.sub':'Partners',
+  'pa.intro':'Мы сотрудничаем с компаниями и организациями Кореи и стран СНГ. Нажмите на логотип, чтобы перейти на их сайт.',
+  'pa.aria':'Логотипы партнёров','pa.prev':'Предыдущие партнёры','pa.next':'Следующие партнёры','pa.all':'Все партнёры','pa.fold':'Свернуть','pa.hp':'Сайт','pa.open':n=>`Открыть сайт: ${n}`,
+  'ct.h2':'Контакты','ct.sub':'Contact Us',
+  'ct.addr':'Адрес','ct.tel':'Телефон','ct.email':'E-mail',
+  'ct.note':'Свяжитесь с нами по электронной почте или в Telegram по вопросам сотрудничества или чтобы получить коммерческое предложение.',
+  'ct.mail':'Написать письмо','ct.talk':'Чат в Naver TalkTalk','ct.map':'Открыть в Google Картах',
+  'f.company':'GAWOO INTERNATIONAL','f.ceo':'Генеральный директор Ким Чжон У','f.bizno':'Рег. номер предприятия 350-34-00405','f.ecom':'Рег. номер интернет-торговли 2021-Jeonnam Naju-0192',
+  'f.tel':'Тел. +82-61-930-0663','f.email':'E-mail info@gawooint.com','f.bank':'Банк: KB Kookmin Bank 777101-01-369-641 (получатель: GAWOO INTERNATIONAL, Ким Чжон У)',
+  'city':{hub:['Корея','GAWOO INT.'],was:['Вашингтон','США'],mad:['Мадрид','Испания'],ber:['Берлин','Германия'],mos:['Москва','Россия'],tas:['Ташкент','Узбекистан'],ast:['Астана','Казахстан'],bei:['Пекин','Китай'],tok:['Токио','Япония'],han:['Ханой','Вьетнам'],ban:['Бангкок','Таиланд'],riy:['Эр-Рияд','Саудовская Аравия']}
+}};
+const LANGS=['ko','en','ru'];
+let LANG=(function(){
+  try{ const q=new URLSearchParams(location.search).get('lang'); if(LANGS.includes(q)) return q; }catch(e){}
+  try{ const s=localStorage.getItem('gawoo-lang'); if(LANGS.includes(s)) return s; }catch(e){}
+  const n=(navigator.language||'ko').toLowerCase();
+  if(n.startsWith('ko')) return 'ko';
+  if(/^(ru|uz|kk|ky|tg|be|uk|az|hy|ka|tk|mn)/.test(n)) return 'ru';
+  return 'en';
+})();
+const t=(k,...a)=>{ const v=(I18N[LANG]&&I18N[LANG][k]!==undefined)?I18N[LANG][k]:I18N.ko[k]; return typeof v==='function'?v(...a):v; };
+const L=o=>o?(o[LANG]!==undefined&&o[LANG]!==''?o[LANG]:(o[LANG]===''?'':o.en||o.ko)):'';
+
+// 품목별 아이콘 (직접 그린 선 아이콘, 48x48)
+const ICON_PATHS={
+  consulting:'<path d="M9 39h30"/><path d="M14 39V30M22 39V24M30 39V18"/><path d="M11 24l9-8 6 5 12-11"/><path d="M32 10h6v6"/>',
+  rice:'<path d="M24 42c0-10 1-20 6-32"/><ellipse cx="18.5" cy="30" rx="3" ry="5.6" transform="rotate(-35 18.5 30)"/><ellipse cx="30" cy="27" rx="3" ry="5.6" transform="rotate(40 30 27)"/><ellipse cx="20" cy="19.5" rx="3" ry="5.6" transform="rotate(-35 20 19.5)"/><ellipse cx="32" cy="16" rx="3" ry="5.6" transform="rotate(45 32 16)"/><ellipse cx="27" cy="9" rx="2.7" ry="5" transform="rotate(10 27 9)"/>',
+  machinery:'<path d="M21.6 6h4.8l1.1 5.2 3.6 1.5 4.5-2.9 3.4 3.4-2.9 4.5 1.5 3.6 5.2 1.1v4.8l-5.2 1.1-1.5 3.6 2.9 4.5-3.4 3.4-4.5-2.9-3.6 1.5-1.1 5.2h-4.8l-1.1-5.2-3.6-1.5-4.5 2.9-3.4-3.4 2.9-4.5-1.5-3.6L6 26.4v-4.8l5.2-1.1 1.5-3.6-2.9-4.5 3.4-3.4 4.5 2.9 3.6-1.5z"/><circle cx="24" cy="24" r="6.5"/>',
+  wood:'<circle cx="16" cy="27" r="10"/><circle cx="16" cy="27" r="5.5"/><circle cx="16" cy="27" r="1.6"/><path d="M16 17h18a10 10 0 0 1 0 20H16"/><path d="M30 22h6M28 32h5"/>',
+  pellet:'<rect x="7" y="25" width="19" height="8" rx="4" transform="rotate(-24 16.5 29)"/><rect x="22" y="28" width="19" height="8" rx="4" transform="rotate(14 31.5 32)"/><rect x="15" y="10" width="19" height="8" rx="4" transform="rotate(-6 24.5 14)"/><path d="M14 40h20"/>',
+  textile:'<path d="M13 9h22M13 39h22"/><rect x="17" y="13" width="14" height="22" rx="2"/><path d="M17 18.5h14M17 24h14M17 29.5h14"/><path d="M31 31c7 1 9 5 7 9"/>',
+  nutrients:'<path d="M24 6c7.5 9.5 12.5 15.5 12.5 22.5a12.5 12.5 0 0 1-25 0C11.5 21.5 16.5 15.5 24 6z"/><path d="M24 23v12M18 29h12"/>',
+  liquorice:'<path d="M11 37C11 21 23 10 38 9c0 15-11 28-27 28z"/><path d="M11 37l17-17"/><path d="M19 29h7M23 24v-6"/>',
+  greenhouse:'<path d="M6 39h36"/><path d="M10 39V25a14 14 0 0 1 28 0v14"/><path d="M24 11v28M10 30h28"/><path d="M17 14v25M31 14v25"/>'
+};
+const icon=(k,cls='')=>`<svg class="${cls}" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ICON_PATHS[k]||''}</svg>`;
+
+const BIZ=[{"slug":"consulting","type":"service","icon":"consulting","name":{"ko":"컨설팅","en":"Consulting","ru":"Консалтинг"},"tag":{"ko":"GBCA · TradeIt","en":"GBCA · TradeIt","ru":"GBCA · TradeIt"},"line":{"ko":"수출입 컨설팅 · 교육 · 무역 데이터","en":"Trade consulting · Training · Trade data","ru":"ВЭД-консалтинг · Обучение · Торговые данные"},"title":{"ko":"무역 컨설팅","en":"Trade Consulting","ru":"Консалтинг в сфере ВЭД"},"desc":{"ko":"수출입 전문 컨설팅 · 전문 교육 · 무역 빅데이터 기반 사업전략","en":"Export & import consulting · Professional training · Strategy built on global trade data","ru":"Консалтинг по экспорту и импорту · Профессиональное обучение · Стратегия на основе данных мировой торговли"},"services":[{"short":{"ko":"수출입 컨설팅","en":"Export & Import","ru":"Экспорт и импорт"},"t":{"ko":"수출입 전문 컨설팅","en":"Export & Import Consulting","ru":"Консалтинг по экспорту и импорту"},"d":{"ko":"해외시장 진출 전략부터 바이어·공급처 발굴, 계약, 통관, 물류까지 수출입 전 과정을 함께 설계하고 실행합니다. 한국과 CIS 지역을 오가며 쌓은 현장 경험을 바탕으로 기업 상황에 맞는 현실적인 방법을 제안합니다.","en":"We plan and carry out the whole export and import process with you, from market entry strategy and finding buyers and suppliers to contracts, customs clearance and logistics. Hands-on experience between Korea and the CIS lets us propose practical solutions that fit your company.","ru":"Вместе с вами планируем и проводим весь цикл ВЭД: от стратегии выхода на рынок и поиска покупателей и поставщиков до контрактов, таможенного оформления и логистики. Практический опыт работы между Кореей и странами СНГ позволяет нам предлагать решения, подходящие именно вашей компании."}},{"short":{"ko":"GBCA 전문 교육","en":"Training with GBCA","ru":"Обучение с GBCA"},"t":{"ko":"GBCA 네트워크와 커리큘럼을 활용한 전문 교육","en":"Professional Training with GBCA","ru":"Профессиональное обучение с GBCA"},"d":{"ko":"사단법인 글로벌비즈니스컨설팅협회(GBCA)의 전문가 네트워크와 교육 커리큘럼을 활용해 수출 실무, 해외 마케팅, 경영 역량 교육을 기업 맞춤형으로 진행합니다.","en":"Drawing on the expert network and curriculum of the Global Business Consulting Association (GBCA), we deliver training in export practice, overseas marketing and management, tailored to each company.","ru":"Используя экспертную сеть и учебные программы Ассоциации глобального бизнес-консалтинга (GBCA), проводим обучение по практике экспорта, зарубежному маркетингу и управлению с учётом задач компании."}},{"short":{"ko":"TradeIt 무역 데이터","en":"TradeIt trade data","ru":"Данные TradeIt"},"t":{"ko":"TradeIt B/L 빅데이터 기반 유통정보 조회 및 사업전략 구축","en":"Trade Data & Strategy with TradeIt","ru":"Торговые данные и стратегия с TradeIt"},"d":{"ko":"전 세계 선하증권(B/L) 기반 무역 데이터로 품목·HS코드별 실제 수입사와 수출사, 거래 이력, 주요 공급 국가를 조회합니다. 조회 결과를 바탕으로 타깃 시장과 바이어를 정하고 진출 전략을 함께 세웁니다.","en":"Using worldwide bill of lading (B/L) data, we look up real importers and exporters, shipment histories and key supplier countries by product and HS code, then build your target market and buyer strategy from the results.","ru":"По мировым данным коносаментов (B/L) находим реальных импортёров и экспортёров, историю поставок и основные страны-поставщики по товару и коду ТН ВЭД, а затем на основе результатов выстраиваем стратегию выхода на целевой рынок и работы с покупателями."}}],"tagType":"service","imgs":[],"videos":[]},{"slug":"rice","icon":"rice","cover":"md_c0325aa6590a7.jpeg","pos":"50% 50%","name":{"ko":"쌀","en":"Rice","ru":"Рис"},"tag":{"ko":"한국 · 나주","en":"Korea · Naju","ru":"Корея · Наджу"},"line":{"ko":"나주 쌀 · 왕건이 탐낸 쌀","en":"Premium rice from Naju, Korea","ru":"Рис премиум-класса из Наджу, Корея"},"title":{"ko":"나주 쌀","en":"Naju Rice","ru":"Рис из Наджу"},"desc":{"ko":"왕건이 탐낸 쌀","en":"The rice that the emperor\nWang Geon coveted","ru":"Рис, которого желал\nимператор Ван Гон"},"tagType":"origin","imgs":["md_706fbb8bbe29e.jpeg","md_71497ced33dd8.jpeg","md_1a2cc1e60297c.jpeg","md_c0325aa6590a7.jpeg","md_40ebafa4065c8.jpeg","md_da015bbcff5c2.jpeg","md_266d9d1d4b0ac.jpeg","md_9814ac43be0f2.jpeg","md_ea6c71493c01a.jpeg","md_4012e16c29d18.jpeg","md_4e121c6eb708c.png","md_17f7c9f8efcae.jpeg","md_de0ff5d3e1c89.png","md_69fd59ed828be.jpeg","md_7fb713bc79518.png","md_81e359f67a11d.png"],"videos":[],"fit":true},{"slug":"machinery","icon":"machinery","cover":"md_9df5804192a14.jpeg","pos":"50% 50%","name":{"ko":"기계","en":"Machinery","ru":"Оборудование"},"tag":{"ko":"한국","en":"Korea","ru":"Корея"},"line":{"ko":"수출용 양파망 생산 라인","en":"Onion net production line for export","ru":"Линия производства сеток для лука на экспорт"},"title":{"ko":"양파망 제조기","en":"Onion net machine","ru":"Оборудование для производства сеток для лука"},"desc":{"ko":"수출용 양파망 생산 라인","en":"Net production line for export","ru":"Линия производства сеток на экспорт"},"tagType":"origin","imgs":["md_9df5804192a14.jpeg","md_a3c8d53ea6226.jpeg","md_0ac69e494e1a2.jpeg","md_0ae9c960dad0a.jpeg","md_6a2331096384b.jpeg","md_a899d7aae2007.jpeg","md_2ea44b0e6e8a1.jpeg","md_74a90d4fd66d1.jpeg","md_0df656c339773.jpeg","md_52118b7ffc6b9.jpeg","md_f80ef62288463.jpeg","md_d352890965f0d.jpeg","md_35c465855a42b.jpeg","md_16a9087410b72.png","md_d63cda198ed93.png","md_81f762b61c2f7.png","md_17b62c2215ca6.png","md_7c3c830c5838b.png","md_1efcb32b2d2be.png","md_c7a6eb2ea2028.png","md_4b0a5699f720c.png"],"videos":[],"fit":false},{"slug":"wood","icon":"wood","cover":"md_6ed7426ef5772.jpeg","pos":"50% 40%","name":{"ko":"수입 목재","en":"Imported wood","ru":"Древесина"},"tag":{"ko":"러시아","en":"Russia","ru":"Россия"},"line":{"ko":"러시아산 집성목","en":"Glued laminated timber from Russia","ru":"Клеёный брус из России"},"title":{"ko":"집성목","en":"Glued Wood","ru":"Клеёная древесина"},"desc":{"ko":"러시아산 엔지니어드 우드","en":"Russian Engineered Wood","ru":"Инженерная древесина из России"},"tagType":"origin","imgs":["md_6ed7426ef5772.jpeg","md_623cf2b502e01.jpeg","md_19dd0c9e6864f.jpeg","md_2373214953000.jpeg","md_bfd3ce8b1cfc7.jpeg","md_5ebd9a148a401.jpeg","md_23f49130ee7ec.jpeg","md_e7fe08014bcea.jpeg","md_947421f4d314d.jpeg","md_e337155fff0ec.jpeg","md_61c9fd40aad33.jpeg","md_89f04ad01e020.jpeg","md_76219e3db9a5a.jpeg","md_96cfca4fd177b.jpeg","md_ecf4a430d4771.jpeg","md_e69843a53276b.jpeg","md_ff0a2612c033c.jpeg","md_7ed367b394f02.jpeg","md_6ae0073a463e1.jpeg","md_7890487e6bc4f.jpeg","md_1a71f8a27d33e.jpeg","md_965af72ba39ea.jpeg","md_5689e43719aa5.jpeg","md_01b2d39624a2a.jpeg","md_53d17220f0473.jpeg","md_6f899a972a929.jpeg","md_392abb171ec75.jpeg","md_0ee905029baec.jpeg","md_d6b66822c078a.png","md_94435e425849b.png","md_71255342df7c4.jpeg","md_5450bb79761f8.jpeg","md_bea4644e5849c.jpeg","md_b86a8478c19bb.jpeg","md_84f8adf299ab5.jpeg","md_0f44c6ee1512d.jpeg","md_1ccd98d1c197c.jpeg","md_75bc6bcac1854.jpeg"],"videos":["LoKHJ4iEkZ4","-kQXgV7_uWs"],"fit":false},{"slug":"pellet","icon":"pellet","cover":"md_52dc75bff51c7.jpeg","pos":"50% 50%","name":{"ko":"목재 펠릿","en":"Wood pellet","ru":"Пеллеты"},"tag":{"ko":"러시아 · 인도네시아 · 베트남","en":"Russia · Indonesia · Vietnam","ru":"Россия · Индонезия · Вьетнам"},"line":{"ko":"바이오매스 연료","en":"Biomass fuel","ru":"Биотопливо"},"title":{"ko":"목재 펠릿","en":"Wood Pellet","ru":"Древесные пеллеты"},"desc":{"ko":"러시아산, 인도네시아산, 베트남산","en":"Russia, Indonesia, Vietnam","ru":"Россия, Индонезия, Вьетнам"},"tagType":"origin","imgs":["md_52dc75bff51c7.jpeg","md_7f44c1bfc57c2.jpeg","md_1bedc3299d5bf.jpeg","md_54c43a333d62f.jpeg","md_323c7a5b03b06.jpeg","md_7826027e72f74.jpeg","md_a5b2a001ccb1a.jpeg","md_6ea680f42720b.jpeg","md_a9609157c6fd9.png","md_d77d6ccc4a1a3.png"],"videos":[],"fit":false},{"slug":"textile","icon":"textile","cover":"md_f2defc9c85de6.jpeg","pos":"50% 50%","name":{"ko":"섬유","en":"Textile","ru":"Текстиль"},"tag":{"ko":"TEKSIZE","en":"TEKSIZE","ru":"TEKSIZE"},"line":{"ko":"경사 사이징제","en":"Warp sizing agents","ru":"Средства для шлихтования основы"},"title":{"ko":"TEKSIZE","en":"TEKSIZE","ru":"TEKSIZE"},"desc":{"ko":"경사 사이징","en":"Warp Sizing","ru":"Шлихтование основы"},"tagType":"brand","imgs":["md_1789a9bb90850.jpeg","md_f2defc9c85de6.jpeg","md_84745f6441273.jpeg","md_c1708dee81e6c.jpeg","md_5bc3e1580799d.jpeg","md_9cca52a6cfc03.jpeg","md_dc93b76d82931.jpeg","md_03455ece577e3.jpeg","md_0306226cc6750.jpeg","md_4b2d9303b2d7e.jpeg","md_b6ad30acbc3a4.jpeg","md_d9bd697f2f48a.jpeg","md_dc143ebca096c.jpeg","md_f4a413835cb0d.jpeg","md_2c5b47af21393.jpeg","md_b1604899a606a.jpeg","md_1e0f7cd8b0d06.jpeg","md_e27b6c4a0602c.jpeg","md_48200da8bbd60.jpeg","md_b7fabcd74b31d.jpeg","md_3ece730526f01.jpeg"],"videos":[],"fit":true},{"slug":"nutrients","icon":"nutrients","cover":"md_2078a090f8ffc.jpeg","pos":"50% 50%","name":{"ko":"영양제","en":"Nutrients","ru":"Добавки"},"tag":{"ko":"Albit-BIO","en":"Albit-BIO","ru":"Альбит-БИО"},"line":{"ko":"가축용 영양 보충제","en":"Nutritional supplement for livestock","ru":"Кормовая добавка для животных"},"title":{"ko":"Albit-BIO","en":"Albit-BIO","ru":"Альбит-БИО"},"desc":{"ko":"","en":"","ru":""},"tagType":"brand","imgs":["md_cbec7e1478bf3.png","md_60cbfd1ff1571.png","md_7d4cfbe07fe8f.jpeg","md_2078a090f8ffc.jpeg","md_46d51f080cbb9.jpeg","md_70d09e263ce75.jpeg","md_59ee1bd244ce3.jpeg","md_491481611fe69.jpeg","md_5811bddafc74b.jpeg","md_62eff6e251663.jpeg","md_2fa7fcbb40d51.png","md_6582c04efbcaf.png","md_b147015773238.png","md_1281d916fc9fe.png","md_aaed9fbf89454.png","md_101c5f929617c.png","md_df11607b12601.jpeg"],"videos":[],"fit":true},{"slug":"liquorice","icon":"liquorice","cover":"md_3c8b6ecba943f.png","pos":"50% 30%","name":{"ko":"감초","en":"Liquorice","ru":"Солодка"},"tag":{"ko":"우즈베키스탄","en":"Uzbekistan","ru":"Узбекистан"},"line":{"ko":"슬라이스 · 분말 · 추출물","en":"Slice · Powder · Extract","ru":"Слайсы · Порошок · Экстракт"},"title":{"ko":"감초","en":"Licorice","ru":"Солодка"},"desc":{"ko":"우즈베키스탄\n슬라이스 / 분말 / 추출물","en":"UZBEKISTAN\nSlice / Powder / Extract","ru":"УЗБЕКИСТАН\nСлайсы / Порошок / Экстракт"},"tagType":"origin","imgs":["md_3c8b6ecba943f.png","md_ee653abf1bfec.jpeg","md_0e96a70d2c77b.jpeg","md_9babf6cca8ccc.jpeg","md_c2a1428e7c60c.jpeg","md_78edc962b23c7.jpeg","md_daafcbc2419d2.jpeg","md_ca437f01b4197.jpeg","md_efd0d1e1cea9d.jpeg","md_b8f92932400ad.jpeg","md_0fe419e8c5a40.jpeg","md_73e18fa4926a3.jpeg","md_8638f8bbf4b0d.jpeg","md_cdfddebab3328.jpeg","md_aebe6423a8052.jpeg","md_ac3a54d6f6e25.jpeg","md_9eabc9eb32186.jpeg","md_64b10d55e88b3.jpeg","md_38ebb1a03083f.jpeg","md_302cc5b0aff12.png","md_4da28ad7a157e.png"],"videos":[],"fit":false},{"slug":"greenhouse","icon":"greenhouse","cover":"md_645d14022c090.jpeg","pos":"50% 50%","name":{"ko":"온실","en":"Greenhouse","ru":"Теплицы"},"tag":{"ko":"스마트팜","en":"Smart Farm","ru":"Умная ферма"},"line":{"ko":"스마트팜 첨단 온실","en":"High-tech smart farm greenhouses","ru":"Современные теплицы для умных ферм"},"title":{"ko":"온실","en":"GREENHOUSE","ru":"Теплицы"},"desc":{"ko":"스마트팜","en":"Smart Farm","ru":"Умная ферма"},"tagType":"field","imgs":["md_645d14022c090.jpeg","md_1251b432fa730.jpeg","md_eb5f9734162b3.jpeg","md_c326ce12167ef.jpeg","md_5238c0d949ce2.jpeg","md_e7b1259e11967.jpeg","md_513858c874112.jpeg","md_8742c248437cd.jpeg","md_4a42419bc20fd.jpeg","md_40958280ee9ae.jpeg","md_233f016857720.jpeg","md_dd07d72515bd5.jpeg","md_d4e173a9eb536.jpeg","md_b14aa15d378d8.jpeg","md_4ffa4a06066bf.jpeg","md_1bcb169168bcd.jpeg","md_bec690a92494f.jpeg","md_1f83d733e7635.jpeg","md_7c7ccabcfdb6d.jpeg","md_82fc6686cd913.jpeg","md_8d28a049303d5.jpeg","md_d46b52d7bd413.jpeg","md_c4c8cc43b049e.jpeg","md_ff141baf6dbf7.jpeg","md_db3b8ab25456b.jpeg","md_196b033625996.jpeg","md_9243890716d27.jpeg","md_1796f3fe83405.jpeg"],"videos":["4uICnZ-jO3w","el4bpsXD69U"],"fit":false}];
+const RUNS="2.2,5.5,11.1,14.2,19.8,37.16,90.2,99.2,103.26,134.5|0.1,6.8,15.4,22.9,37.16,75.5,98.43|0.7,10.3,15.1,17.3,21.3,26.1,28.4,38.10,72.13,87.1,90.11,102.39|0.21,27.3,31.2,38.8,53.1,55.2,71.11,85.56|0.20,21.3,28.4,39.5,53.3,69.6,76.65|0.18,24.4,40.3,67.6,75.66|0.17,26.4,67.7,76.1,79.62|0.18,26.7,62.1,70.3,77.58|0.21,26.8,62.1,69.3,75.58|0.23,25.11,60.1,63.1,69.2,72.61,134.1|1.23,25.12,60.1,62.3,67.69|0.31,36.1,65.70,136.1|2.30,35.3,62.72,135.1|3.30,34.1,64.16,81.1,83.6,91.42|2.28,31.1,64.7,72.7,84.4,90.42,135.2|2.28,60.6,70.2,74.4,81.1,85.4,91.39,134.1|2.25,60.5,72.1,74.3,78.11,91.33,125.3,134.1|3.23,60.4,71.2,75.2,78.11,91.33,127.2,134.1|4.23,65.5,83.42,128.1,132.3|5.21,61.9,82.43,130.3|6.18,60.12,74.3,82.43|8.12,23.1,60.29,90.35|7.1,9.7,23.1,58.31,90.35|8.1,10.6,57.25,83.7,93.31|9.1,11.5,57.25,84.9,98.25|12.4,22.1,24.2,56.27,84.10,99.22|12.4,19.2,26.1,56.27,85.8,101.7,111.7,119.1|13.7,31.1,56.28,85.8,101.5,112.6,125.1|16.4,21.1,56.28,86.5,101.4,113.6,124.1|19.4,56.29,86.3,102.3,114.5,125.1|21.2,28.2,56.30,102.2,116.3|22.1,27.6,57.33,103.1,117.1|25.10,58.32,104.1,114.1,126.2|26.10,59.6,67.22,115.1|26.13,69.19,113.1,115.1,121.2|25.14,69.18,114.1,116.1,120.3|24.15,69.17,114.2,119.4,124.1,128.1|24.18,69.16,115.2,120.3,124.1,131.1,133.1|24.21,70.14,116.1,124.2,132.5|24.23,71.13,117.1,134.4,139.1|25.22,71.13,120.2,133.3,137.2|25.22,71.13,124.1,126.1,138.2|26.20,71.14,131.2,135.1";
+const PARTNERS=[
+  {name:'GBCA 사단법인 글로벌비즈니스컨설팅협회', img:'images/partner-gbca.png', url:'https://www.gbca.or.kr/'},
+  {name:'KITA 한국무역협회', box:[600,760,848,984], url:'https://www.kita.net'},
+  {name:'KOTRA', box:[1120,816,1400,928], url:'https://www.kotra.or.kr'},
+  {name:'NICE D&B 나이스디앤비', img:'images/partner-nicednb.png', url:'https://www.nicednb.com'},
+  {name:'Design Alimi', box:[1504,120,1800,240], url:''},
+  {name:'World-OKTA', box:[1512,840,1816,912], url:'https://www.okta.net'},
+  {name:'전남테크노파크 JEONNAM TECHNOPARK', img:'images/partner-jntp.png', imgAlt:'https://www.jntp.or.kr/template/resources/images/theme/base/header-logo-color.png', url:'https://www.jntp.or.kr/base/main/view'},
+  {name:'SMARTGUIDE 스마트가이드', img:'images/partner-smartguide.svg', url:'https://smartguide-studio.com'},
+  {name:'TradeIt', img:'images/partner-tradeit.png', url:'https://www.tradeit.global/en?code=6KH0LP46', sponsored:true},
+  {name:'JCI Korea', box:[120,808,408,952], url:'https://www.jcikorea.or.kr'},
+  {name:'UZTEX GROUP', box:[584,344,1312,488], url:'https://uztexgroup.com/en/'},
+  {name:'IRU 이루', box:[88,112,408,216], url:''},
+  {name:'UNICO', box:[536,88,880,240], url:''},
+  {name:'GOC', box:[72,352,496,480], url:''},
+  {name:'ARTHOUSE', box:[1573,305,1668,496], url:''},
+  {name:'GRAND FOREST', box:[88,536,496,720], url:''},
+  {name:'LIDER TEAM', box:[680,584,1184,680], url:''},
+  {name:'Promavtomatika KIP', box:[1408,534,1855,719], url:''}
+];
+const TRADEIT_URL='https://www.tradeit.global/en?code=6KH0LP46';
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+
+// ===== 고정 문구 적용 =====
+function applyStatic(){
+  document.documentElement.lang=LANG;
+  document.querySelectorAll('[data-i18n]').forEach(e=>e.textContent=t(e.dataset.i18n));
+  document.querySelectorAll('[data-i18n-html]').forEach(e=>e.innerHTML=t(e.dataset.i18nHtml));
+  document.querySelectorAll('[data-i18n-aria]').forEach(e=>e.setAttribute('aria-label',t(e.dataset.i18nAria)));
+  document.querySelectorAll('[data-i18n-alt]').forEach(e=>e.alt=t(e.dataset.i18nAlt));
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===LANG));
+}
+
+// ===== 사업 분야 =====
+const CDN='https://cdn.qshop.ai/46788/gallery/';
+const local=(d,f)=>`images/biz/${d.slug}/${f}`;
+const fb=(f,w)=>`this.onerror=null;this.src='${CDN}${f}/resize?v=w${w}'`;
+const bizGrid=document.getElementById('bizGrid');
+function renderBiz(){
+  const lg=document.getElementById('tagLegend');
+  lg.setAttribute('aria-label',t('tag.legend'));
+  lg.innerHTML=['service','origin','brand','field'].map(k=>`<span class="lg lg-${k}"><i></i>${t('tag.'+k)}</span>`).join('');
+  bizGrid.innerHTML=BIZ.map((d,i)=>{
+    const svc=d.type==='service', name=L(d.name), sub=LANG==='en'?'':d.name.en;
+    const bg=svc?'':`<img class="th-img" loading="lazy" src="${local(d,d.cover)}" alt="" style="object-position:${d.pos}" onerror="${fb(d.cover,1280)}">`;
+    const count=svc?t('biz.services',d.services.length):t('biz.photos',d.imgs.length)+(d.videos.length?' · '+t('biz.videos',d.videos.length):'');
+    return `<button type="button" class="biz-card th${svc?' th-svc':''}" data-i="${i}" aria-haspopup="dialog" aria-label="${esc(t('biz.open',name))}">
+      ${bg}
+      <span class="th-top"><span class="th-tag tag-${d.tagType}"><span class="tag-k">${t('tag.'+d.tagType)}</span><span class="tag-v">${esc(L(d.tag))}</span></span><span class="th-mark">GAWOO INT<i>.</i></span></span>
+      <span class="th-bottom">
+        <span class="th-head"><span class="th-icon">${icon(d.icon)}</span><span class="th-names"><b class="th-name">${esc(name)}</b>${sub?`<span class="th-sub">${esc(sub)}</span>`:''}</span></span>
+        <span class="th-line">${esc(svc?d.services.map(v=>L(v.short)).join(' · '):L(d.line))}</span>
+        <span class="th-meta"><span>${count}</span><span class="th-more">${t('biz.more')}</span></span>
+      </span>
+    </button>`;}).join('');
+}
+
+const dlg=document.getElementById('detail'), lb=document.getElementById('lightbox'), tiVideo=document.getElementById('tiVideo');
+let cur=null, idx=0;
+function fillDetail(){
+  if(!cur) return;
+  const isSvc=cur.type==='service';
+  dlg.querySelector('.cat').textContent=`${L(cur.name)}${LANG==='en'?'':' · '+cur.name.en}`;
+  dlg.querySelector('h3').textContent=L(cur.title);
+  const p=dlg.querySelector('.detail-head p'); p.textContent=L(cur.desc); p.hidden=!L(cur.desc);
+  dlg.querySelector('.svc-wrap').hidden=!isSvc;
+  dlg.querySelector('.svc-items').innerHTML=isSvc?cur.services.map(v=>`<li><h4>${esc(L(v.t))}${LANG==='en'?'':`<span>${esc(v.t.en)}</span>`}</h4><p>${esc(L(v.d))}</p></li>`).join(''):'';
+  const pt=dlg.querySelector('.photo-title'); pt.hidden=isSvc; pt.textContent=t('det.photos',cur.imgs.length);
+  const ask=dlg.querySelector('.ask'); ask.textContent=isSvc?t('det.askSvc'):t('det.ask');
+  ask.href=`mailto:info@gawooint.com?subject=${encodeURIComponent(t('mail.subj',L(cur.name)+(LANG==='en'?'':' ('+cur.name.en+')')))}`;
+  dlg.querySelectorAll('.photos button').forEach((b,k)=>b.setAttribute('aria-label',t('det.photo',L(cur.name),k+1)));
+}
+function openDetail(i){
+  cur=BIZ[i];
+  const v=dlg.querySelector('.videos-wrap'); v.hidden=!cur.videos.length;
+  v.querySelector('.videos').innerHTML=cur.videos.map(id=>`<iframe loading="lazy" src="https://www.youtube-nocookie.com/embed/${id}" title="${esc(cur.name.en)} video" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`).join('');
+  dlg.querySelector('.photos').innerHTML=cur.imgs.map((f,k)=>`<button type="button" data-k="${k}"><img loading="lazy" src="${local(cur,f)}" alt="" onerror="${fb(f,640)}"></button>`).join('');
+  fillDetail();
+  dlg.showModal(); dlg.scrollTop=0;
+  history.replaceState(null,'',location.pathname+location.search+'#item-'+cur.slug);
+}
+function closeDetail(){ dlg.querySelector('.videos').innerHTML=''; try{tiVideo.pause()}catch(e){} dlg.close(); cur=null; history.replaceState(null,'',location.pathname+location.search+'#business'); }
+function showPhoto(k){
+  idx=(k+cur.imgs.length)%cur.imgs.length; const f=cur.imgs[idx];
+  const im=lb.querySelector('img'); im.onerror=function(){this.onerror=null;this.src=CDN+f+'/resize?v=w1920'}; im.src=local(cur,f); im.alt=`${L(cur.name)} ${idx+1}`;
+  lb.querySelector('.lb-count').textContent=`${idx+1} / ${cur.imgs.length}`;
+}
+bizGrid.addEventListener('click',e=>{const b=e.target.closest('.biz-card'); if(b) openDetail(+b.dataset.i)});
+dlg.querySelector('.close').addEventListener('click',closeDetail);
+dlg.querySelectorAll('[data-close-detail]').forEach(x=>x.addEventListener('click',e=>{e.preventDefault();closeDetail();document.getElementById('partners').scrollIntoView({behavior:'smooth'});}));
+dlg.addEventListener('cancel',e=>{e.preventDefault();closeDetail()});
+dlg.addEventListener('click',e=>{ if(e.target===dlg) closeDetail(); const b=e.target.closest('.photos button'); if(b){ showPhoto(+b.dataset.k); lb.showModal(); }});
+lb.querySelector('.lb-prev').addEventListener('click',()=>showPhoto(idx-1));
+lb.querySelector('.lb-next').addEventListener('click',()=>showPhoto(idx+1));
+lb.querySelector('.lb-close').addEventListener('click',()=>lb.close());
+lb.addEventListener('click',e=>{ if(e.target.classList.contains('lb-wrap')) lb.close(); });
+lb.addEventListener('keydown',e=>{ if(e.key==='ArrowLeft') showPhoto(idx-1); if(e.key==='ArrowRight') showPhoto(idx+1); });
+let tx=null; lb.addEventListener('touchstart',e=>{tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener('touchend',e=>{ if(tx===null) return; const dx=e.changedTouches[0].clientX-tx; if(Math.abs(dx)>40) showPhoto(idx+(dx<0?1:-1)); tx=null; });
+
+// ===== 히어로 세계지도 (Natural Earth 육지 데이터를 2도 간격 점으로 변환) =====
+const WorldMap=(function(){
+  const NS='http://www.w3.org/2000/svg', svg=document.getElementById('worldSvg');
+  const L0=-128, B1=72, STEP=2, CELL=8.5;
+  const P=(lon,lat)=>[(lon-L0)/STEP*CELL+CELL/2,(B1-lat)/STEP*CELL+CELL/2];
+  const el=(tg,a,parent)=>{const e=document.createElementNS(NS,tg); for(const k in a) e.setAttribute(k,a[k]); if(parent) parent.appendChild(e); return e;};
+  let html='';
+  RUNS.split('|').forEach((row,r)=>{ if(!row) return; row.split(',').forEach(run=>{ const [c,n]=run.split('.').map(Number); for(let i=0;i<n;i++) html+=`<circle cx="${((c+i)*CELL+CELL/2).toFixed(1)}" cy="${(r*CELL+CELL/2).toFixed(1)}" r="2.1"/>`; }); });
+  document.getElementById('wmDots').innerHTML=html;
+  const HUB={id:'hub', ll:[126.98,37.57], lab:'b'};
+  const CITIES=[
+    {id:'bei', ll:[116.40,39.90], lab:'tl'},{id:'tok', ll:[139.69,35.69], lab:'r'},
+    {id:'han', ll:[105.85,21.03], lab:'l'},{id:'ban', ll:[100.50,13.76], lab:'l'},
+    {id:'tas', ll:[69.24,41.30], lab:'b'},{id:'ast', ll:[71.45,51.17], lab:'t'},
+    {id:'mos', ll:[37.62,55.76], lab:'t'},{id:'riy', ll:[46.68,24.71], lab:'b'},
+    {id:'ber', ll:[13.40,52.52], lab:'tl'},{id:'mad', ll:[-3.70,40.42], lab:'b'},
+    {id:'was', ll:[-77.04,38.91], lab:'t', labSm:'r'}
+  ];
+  const arcs=document.getElementById('wmArcs'), cities=document.getElementById('wmCities');
+  const [hx,hy]=P(...HUB.ll);
+  el('circle',{cx:hx,cy:hy,r:34,fill:'url(#hubGlow)'},arcs);
+  function addCity(c,isHub){
+    const [x,y]=P(...c.ll); const g=el('g',{class:'wm-city'+(isHub?' wm-hub on':'')},cities);
+    el('circle',{class:'pulse',cx:x,cy:y,r:isHub?6:4},g);
+    el('circle',{class:'pt',cx:x,cy:y,r:isHub?5.5:3.6},g);
+    g._t=el('text',{},g); g._s=el('text',{class:'sub'},g);
+    g._pos=[x,y]; g._lab=c.lab; g._labSm=c.labSm; g._id=c.id;
+    return g;
+  }
+  let small=false;
+  function setNames(){ cities.querySelectorAll('.wm-city').forEach(g=>{ const nm=t('city')[g._id]; g._t.textContent=nm[0]; g._s.textContent=nm[1]; }); }
+  function placeLabels(fs){
+    cities.querySelectorAll('.wm-city').forEach(g=>{
+      const [x,y]=g._pos, d=fs*0.85, lh=fs*1.05; let tx=x, ty=y, anc='middle';
+      switch((small&&g._labSm)||g._lab){
+        case 't': ty=y-d-lh; break;
+        case 'b': ty=y+d+fs*0.6; break;
+        case 'l': tx=x-d; ty=y-fs*0.1; anc='end'; break;
+        case 'r': tx=x+d; ty=y-fs*0.1; anc='start'; break;
+        case 'tl': tx=x-d*0.6; ty=y-d-lh*0.7; anc='end'; break;
+      }
+      [[g._t,ty],[g._s,ty+lh*0.95]].forEach(([e,yy])=>{e.setAttribute('x',tx.toFixed(1)); e.setAttribute('y',yy.toFixed(1)); e.setAttribute('text-anchor',anc);});
+    });
+  }
+  addCity(HUB,true);
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items=CITIES.map(c=>{
+    const [x,y]=P(...c.ll), dist=Math.hypot(x-hx,y-hy), bend=Math.min(0.32,0.18+dist/4000);
+    const cx=(hx+x)/2, cy=(hy+y)/2-dist*bend-6;
+    const path=el('path',{class:'wm-arc',d:`M${hx.toFixed(1)},${hy.toFixed(1)} Q${cx.toFixed(1)},${cy.toFixed(1)} ${x.toFixed(1)},${y.toFixed(1)}`},arcs);
+    return {path,g:addCity(c,false),len:path.getTotalLength()};
+  });
+  function fit(){
+    const w=svg.getBoundingClientRect().width||1200; small=w<700;
+    const vb=small?[170,30,1090,320]:[0,0,1200,372];
+    svg.setAttribute('viewBox',vb.join(' '));
+    const sc=w/vb[2], fs=(small?10.5:13)/sc, fs2=10.5/sc;
+    svg.style.setProperty('--wm-fs',fs.toFixed(1)+'px'); svg.style.setProperty('--wm-fs2',fs2.toFixed(1)+'px');
+    svg.querySelectorAll('.wm-city text.sub').forEach(e=>e.style.display=small?'none':'');
+    placeLabels(fs);
+  }
+  setNames(); fit(); addEventListener('resize',fit);
+  function finish(it){
+    it.g.classList.add('on');
+    it.path.style.strokeDasharray=''; it.path.style.strokeDashoffset=''; it.path.classList.add('drawn');
+    if(reduce) return;
+    const dot=el('circle',{class:'wm-run',r:2.6},arcs);
+    const mo=el('animateMotion',{dur:(2.4+it.len/420).toFixed(2)+'s',repeatCount:'indefinite',begin:'indefinite',path:it.path.getAttribute('d')},dot);
+    try{mo.beginElement()}catch(e){}
+  }
+  if(reduce){ items.forEach(finish); }
+  else items.forEach((it,i)=>{
+    it.path.style.strokeDasharray=it.len; it.path.style.strokeDashoffset=it.len;
+    it.path.animate([{strokeDashoffset:it.len},{strokeDashoffset:0}],{duration:900+it.len*0.9,delay:300+i*260,easing:'cubic-bezier(.5,0,.2,1)',fill:'forwards'}).finished.then(()=>finish(it));
+  });
+  return {relabel(){ setNames(); fit(); }};
+})();
+
+// ===== 협력사 =====
+const SPRITE_LOCAL='images/partners.png', SPRITE_CDN='https://cdn.qshop.ai/46788/gallery/md_0fc125bdec8e9.png/resize?v=w1920';
+function logoHTML(p,W,H){
+  let inner;
+  if(p.text){ inner=`<span class="pword">${esc(p.text)}</span>`; }
+  else if(p.img){ inner=`<img src="${p.img}" alt="${esc(p.name)}"${p.imgAlt?` onerror="this.onerror=null;this.src='${p.imgAlt}'"`:''}>`; }
+  else{
+    const [x1,y1,x2,y2]=p.box, w=x2-x1, h=y2-y1, k=Math.min(W/w,H/h);
+    inner=`<span class="sp" role="img" aria-label="${esc(p.name)}" style="width:${(w*k).toFixed(1)}px;height:${(h*k).toFixed(1)}px;background-image:var(--sprite);background-size:${(1920*k).toFixed(1)}px ${(1080*k).toFixed(1)}px;background-position:-${(x1*k).toFixed(1)}px -${(y1*k).toFixed(1)}px"></span>`;
+  }
+  return p.url ? `<a class="plogo" href="${p.url}" target="_blank" rel="noopener${p.sponsored?' sponsored':''}" data-hp="${esc(t('pa.hp'))}" title="${esc(t('pa.open',p.name))}">${inner}</a>` : `<span class="plogo" title="${esc(p.name)}">${inner}</span>`;
+}
+const Partners=(function(){
+  const probe=new Image();
+  probe.onload=()=>document.documentElement.style.setProperty('--sprite',`url(${SPRITE_LOCAL})`);
+  probe.onerror=()=>document.documentElement.style.setProperty('--sprite',`url(${SPRITE_CDN})`);
+  probe.src=SPRITE_LOCAL;
+  const track=document.getElementById('pcTrack'), view=track.parentElement, root=document.getElementById('partnerCarousel');
+  const all=document.getElementById('partnerAll'), allBtn=root.querySelector('.pc-all');
+  let per=4, pos=0, timer=null, paused=false;
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const perFor=()=>innerWidth<560?3:innerWidth<1000?4:5;
+  function build(){
+    per=perFor(); root.style.setProperty('--per',per);
+    const sm=innerWidth<560, list=PARTNERS.concat(PARTNERS.slice(0,per));
+    track.innerHTML=list.map((p,i)=>`<li${i>=PARTNERS.length?' aria-hidden="true"':''}>${logoHTML(p,sm?92:150,sm?56:76)}</li>`).join('');
+    track.querySelectorAll('li[aria-hidden] a').forEach(a=>a.tabIndex=-1);
+    jump(pos=Math.min(pos,PARTNERS.length-1)-(Math.min(pos,PARTNERS.length-1)%per));
+  }
+  function buildAll(){ const sm=innerWidth<560; all.innerHTML=PARTNERS.map(p=>`<li>${logoHTML(p,sm?110:150,sm?60:76)}</li>`).join(''); }
+  function jump(i){ track.style.transition='none'; track.style.transform=`translateX(-${i*100/per}%)`; track.offsetHeight; track.style.transition=''; }
+  function go(dir){ const n=PARTNERS.length; if(dir<0&&pos===0){pos=n;jump(pos);} pos+=dir*per; if(pos<0) pos=0; track.style.transform=`translateX(-${pos*100/per}%)`; }
+  track.addEventListener('transitionend',()=>{ if(pos>=PARTNERS.length){ pos-=PARTNERS.length; jump(pos); } });
+  function start(){ clearInterval(timer); if(!reduce) timer=setInterval(()=>{ if(!paused&&!document.hidden) go(1); },2000); }
+  root.addEventListener('mouseenter',()=>paused=true); root.addEventListener('mouseleave',()=>paused=false);
+  root.addEventListener('focusin',()=>paused=true); root.addEventListener('focusout',()=>paused=false);
+  root.querySelectorAll('.pc-btn').forEach(b=>b.addEventListener('click',()=>{ go(+b.dataset.dir); start(); }));
+  let sx=null; view.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;paused=true},{passive:true});
+  view.addEventListener('touchend',e=>{ if(sx!==null){const dx=e.changedTouches[0].clientX-sx; if(Math.abs(dx)>40) go(dx<0?1:-1);} sx=null; paused=false; start(); });
+  const setAllLabel=()=>{ allBtn.textContent=all.hidden?t('pa.all'):t('pa.fold'); allBtn.setAttribute('aria-expanded',!all.hidden); };
+  allBtn.addEventListener('click',()=>{ if(all.hidden&&!all.childElementCount) buildAll(); all.hidden=!all.hidden; setAllLabel(); });
+  let rw=innerWidth; addEventListener('resize',()=>{ if(perFor()!==per||(innerWidth<560)!==(rw<560)){ rw=innerWidth; pos=0; build(); if(!all.hidden) buildAll(); else all.innerHTML=''; } });
+  pos=0; build(); setAllLabel(); start();
+  return {relabel(){ build(); if(!all.hidden) buildAll(); else all.innerHTML=''; setAllLabel(); }};
+})();
+
+// ===== TradeIt 첫 방문 안내 팝업 (하루 한 번) =====
+const promo=document.getElementById('promo');
+const today=()=>new Date().toISOString().slice(0,10);
+function closePromo(){ promo.close(); }
+promo.querySelector('.promo-close').addEventListener('click',closePromo);
+promo.querySelector('.promo-later').addEventListener('click',()=>{ store.set('gawoo-promo-hide',today()); closePromo(); });
+promo.addEventListener('click',e=>{ if(e.target===promo) closePromo(); });
+function maybePromo(){
+  if(store.get('gawoo-promo-hide')===today()) return;
+  if(/^#item-/.test(location.hash)||dlg.open) return;
+  promo.showModal();
+}
+
+// ===== 언어 전환 =====
+function setLang(l){
+  if(!LANGS.includes(l)||l===LANG) return;
+  LANG=l; store.set('gawoo-lang',l);
+  try{ const u=new URL(location.href); u.searchParams.set('lang',l); history.replaceState(null,'',u); }catch(e){}
+  applyStatic(); renderBiz(); fillDetail(); WorldMap.relabel(); Partners.relabel();
+  if(typeof renderTools==='function') renderTools();
+  if(typeof renderNews==='function') renderNews();
+  if(typeof renderVisits==='function') renderVisits();
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+
+// ===== 메뉴 =====
+const btn=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+btn.addEventListener('click',()=>{const o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}));
+
+// ===== 시작 =====
+applyStatic(); renderBiz();
+const m=location.hash.match(/^#item-(.+)$/);
+if(m){ const i=BIZ.findIndex(d=>d.slug===m[1]); if(i>=0){ document.getElementById('business').scrollIntoView(); openDetail(i);} }
+setTimeout(maybePromo,800);
+
+// ===== 무역·물류 도구 모음 =====
+const TICON={
+  cbm:'<path d="M24 6 40 15v18L24 42 8 33V15z"/><path d="M8 15l16 9 16-9M24 24v18"/>',
+  unit:'<path d="M6 30 30 6l12 12-24 24z"/><path d="M13 23l3 3M18 18l4 4M23 13l3 3M28 8l3 3"/>',
+  box:'<rect x="5" y="14" width="38" height="22" rx="2"/><path d="M12 14v22M19 14v22M26 14v22M33 14v22"/>',
+  clock:'<circle cx="24" cy="24" r="17"/><path d="M24 13v11l7 5"/>',
+  terms:'<path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8M18 22h14M18 28h14M18 34h9"/>',
+  customs:'<circle cx="21" cy="21" r="12"/><path d="M30 30l11 11"/><path d="M16 21h10M21 16v10"/>',
+  hs:'<path d="M8 12v24M13 12v24M18 12v24M24 12v24M28 12v24M34 12v24M40 12v24"/>',
+  track:'<path d="M5 30h30l7-8H12"/><path d="M5 30l4 8h26l4-8"/><path d="M16 22v-8h12v8"/>',
+  fx:'<circle cx="24" cy="24" r="17"/><path d="M29 17c-1-2-3-3-5-3-3 0-5 2-5 4 0 6 11 3 11 9 0 2-2 4-6 4-3 0-5-1-6-3M24 11v3M24 31v3"/>',
+  stats:'<path d="M7 41h34"/><rect x="10" y="26" width="6" height="15"/><rect x="21" y="17" width="6" height="24"/><rect x="32" y="9" width="6" height="32"/>',
+  buyer:'<circle cx="20" cy="17" r="8"/><path d="M6 40c1-8 7-12 14-12 3 0 5 .5 7 1.5"/><circle cx="35" cy="34" r="6"/><path d="M39.5 38.5 44 43"/>',
+  news:'<rect x="7" y="9" width="34" height="30" rx="2"/><path d="M13 16h22M13 22h10M13 28h10M13 34h22"/><rect x="27" y="21" width="8" height="8"/>',
+  freight:'<path d="M6 38h36"/><path d="M8 32l9-10 7 6 9-12 7 5"/><circle cx="17" cy="22" r="1.5"/><circle cx="24" cy="28" r="1.5"/><circle cx="33" cy="16" r="1.5"/>',
+  calendar:'<rect x="7" y="10" width="34" height="31" rx="3"/><path d="M7 19h34M16 6v8M32 6v8"/><path d="M15 27h4M22 27h4M29 27h4M15 33h4M22 33h4"/>',
+  globe:'<circle cx="24" cy="24" r="17"/><ellipse cx="24" cy="24" rx="7.5" ry="17"/><path d="M7 24h34M10 15h28M10 33h28"/>',
+  fta:'<path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8"/><path d="M18 28l4 4 8-9"/>',
+  ai:'<circle cx="20" cy="20" r="12"/><path d="M29 29l12 12"/><path d="M20 13l1.8 4.2L26 19l-4.2 1.8L20 25l-1.8-4.2L14 19l4.2-1.8z"/><path d="M37 6l.9 2.1L40 9l-2.1.9L37 12l-.9-2.1L34 9l2.1-.9z"/>',
+  credit:'<path d="M24 5 39 11v11c0 10-6.5 17-15 21C15.5 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/>',
+  ext:'<path d="M28 8h12v12M40 8 22 26M34 28v11H9V14h11"/>'
+};
+const ticon=(k)=>`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TICON[k]||''}</svg>`;
+
+const TOOL_GROUPS=[
+  {id:'calc', name:{ko:'바로 계산',en:'Calculators',ru:'Калькуляторы'}, note:{ko:'이 사이트에서 바로 사용',en:'Works right here',ru:'Работают прямо на сайте'}},
+  {id:'lookup', name:{ko:'조회·추적',en:'Look up & track',ru:'Поиск и отслеживание'}, note:{ko:'공식 사이트로 이동',en:'Opens the official site',ru:'Откроется официальный сайт'}},
+  {id:'market', name:{ko:'시장·바이어',en:'Markets & buyers',ru:'Рынки и покупатели'}, note:{ko:'시장 정보와 바이어 발굴',en:'Market news and buyer search',ru:'Новости рынков и поиск покупателей'}}
+];
+const TOOLS=[
+  {id:'cbm',short:{ko:'CBM 계산',en:'CBM',ru:'CBM'},g:'calc',icon:'cbm',type:'modal',name:{ko:'CBM 계산',en:'CBM calculator',ru:'Расчёт CBM'},desc:{ko:'부피·중량·컨테이너 적재율',en:'Volume, weight, container fill',ru:'Объём, вес, загрузка'}},
+  {id:'container',short:{ko:'컨테이너 제원',en:'Containers',ru:'Контейнеры'},g:'calc',icon:'box',type:'modal',name:{ko:'컨테이너 제원',en:'Container specs',ru:'Размеры контейнеров'},desc:{ko:'20ft · 40ft · 40ft HC',en:'20ft · 40ft · 40ft HC',ru:'20ft · 40ft · 40ft HC'}},
+  {id:'unit',short:{ko:'단위 환산',en:'Units',ru:'Единицы'},g:'calc',icon:'unit',type:'modal',name:{ko:'단위 환산',en:'Unit converter',ru:'Конвертер единиц'},desc:{ko:'길이·무게·부피',en:'Length, weight, volume',ru:'Длина, вес, объём'}},
+  {id:'clock',short:{ko:'세계 시간',en:'World clock',ru:'Время'},g:'calc',icon:'clock',type:'modal',name:{ko:'세계 시간',en:'World clock',ru:'Мировое время'},desc:{ko:'거래국 현지 시각·업무시간',en:'Local time & office hours',ru:'Местное и рабочее время'}},
+  {id:'incoterms',short:{ko:'인코텀즈',en:'Incoterms',ru:'Инкотермс'},g:'calc',icon:'terms',type:'modal',name:{ko:'인코텀즈 2020',en:'Incoterms 2020',ru:'Инкотермс 2020'},desc:{ko:'11개 조건 한눈에',en:'All 11 rules at a glance',ru:'Все 11 условий'}},
+  {id:'unipass',short:{ko:'UNI-PASS',en:'UNI-PASS',ru:'UNI-PASS'},g:'lookup',icon:'customs',type:'link',url:'https://unipass.customs.go.kr',name:{ko:'관세청 UNI-PASS',en:'Korea Customs UNI-PASS',ru:'Таможня Кореи UNI-PASS'},desc:{ko:'통관·화물 조회 · 환율 · HS코드',en:'Customs, cargo, rates, HS codes',ru:'Таможня, грузы, курсы, ТН ВЭД'}},
+  {id:'bldata',short:{ko:'무역 빅데이터',en:'Trade data',ru:'Торг. данные'},g:'lookup',icon:'ai',type:'link',url:'https://www.tradeit.global/en?code=6KH0LP46',sponsored:true,hot:true,name:{ko:'무역 빅데이터 조회',en:'Trade big data search',ru:'Поиск по торговым данным'},desc:{ko:'B/L 기준 AI 거래·바이어 분석',en:'AI analysis of B/L shipments',ru:'ИИ-анализ поставок по B/L'}},
+  {id:'credit',short:{ko:'기업 신용조회',en:'Credit check',ru:'Проверка'},g:'lookup',icon:'credit',type:'link',url:'https://www.creport.co.kr/',name:{ko:'기업 신용정보 조회',en:'Company credit check',ru:'Проверка компаний'},desc:{ko:'국내·해외 기업 신용 확인 (CREPORT)',en:'Korean & overseas firms (CREPORT)',ru:'Компании Кореи и мира (CREPORT)'}},
+  {id:'track',short:{ko:'컨테이너 추적',en:'Tracking',ru:'Трекинг'},g:'lookup',icon:'track',type:'link',url:'https://www.track-trace.com/container',name:{ko:'컨테이너 추적',en:'Container tracking',ru:'Отслеживание контейнера'},desc:{ko:'컨테이너 번호로 선사 조회',en:'By container number',ru:'По номеру контейнера'}},
+  {id:'kstat',short:{ko:'무역통계',en:'Statistics',ru:'Статистика'},g:'lookup',icon:'stats',type:'link',url:'https://stat.kita.net',name:{ko:'무역통계',en:'Trade statistics',ru:'Торговая статистика'},desc:{ko:'한국무역협회 K-stat',en:'KITA K-stat',ru:'KITA K-stat'}},
+  {id:'news',short:{ko:'무역 뉴스',en:'News',ru:'Новости'},g:'market',icon:'news',type:'anchor',url:'#news',hot:true,name:{ko:'오늘의 무역 뉴스',en:'Trade news today',ru:'Новости торговли'},desc:{ko:'매일 자동으로 고른 핵심 기사',en:'Key headlines picked daily',ru:'Главные заголовки дня'}},
+  {id:'scfi',short:{ko:'운임지수',en:'SCFI',ru:'SCFI'},g:'market',icon:'freight',type:'link',url:'https://en.sse.net.cn/indices/scfinew.jsp',name:{ko:'해상운임지수',en:'Freight index (SCFI)',ru:'Индекс фрахта (SCFI)'},desc:{ko:'상하이 컨테이너 운임지수',en:'Shanghai freight index',ru:'Шанхайский индекс фрахта'}},
+  {id:'holiday',short:{ko:'공휴일',en:'Holidays',ru:'Праздники'},g:'market',icon:'calendar',type:'link',url:'https://www.timeanddate.com/holidays/',name:{ko:'국가별 공휴일',en:'Public holidays',ru:'Праздники по странам'},desc:{ko:'선적·미팅 일정 확인',en:'Plan shipments & meetings',ru:'Планирование отгрузок'}},
+  {id:'buykorea',short:{ko:'buyKOREA',en:'buyKOREA',ru:'buyKOREA'},g:'market',icon:'globe',type:'link',url:'https://www.buykorea.org',name:{ko:'buyKOREA',en:'buyKOREA',ru:'buyKOREA'},desc:{ko:'KOTRA 온라인 수출 플랫폼',en:'KOTRA B2B export platform',ru:'B2B-платформа KOTRA'}}
+];
+
+const TT={
+ ko:{'tl.h2':'무역 도구','tl.sub':'Trade Tools','tl.intro':'수출입 실무에 자주 쓰는 계산기와 조회 사이트를 한곳에 모았습니다. 계산 도구는 이 사이트에서 바로 쓸 수 있고, 조회 도구는 공식 사이트로 연결됩니다.','tl.fab':'무역 도구','tl.ext':'새 창','tl.close':'닫기','tl.panel':'무역 도구 모음','tl.all':'전체 도구 보기',
+  'cbm.item':'품목','cbm.l':'가로(cm)','cbm.w':'세로(cm)','cbm.h':'높이(cm)','cbm.q':'수량','cbm.kg':'개당 무게(kg)','cbm.add':'+ 품목 추가','cbm.del':'삭제','cbm.total':'합계','cbm.vol':'총 부피','cbm.wt':'총 중량','cbm.rt':'해상 운임톤(R/T)','cbm.air':'항공 부피중량','cbm.fill':'컨테이너 적재율 (명목 용적 기준)','cbm.note':'실제 적재 가능 용적은 화물 형태에 따라 명목 용적의 약 80~90%입니다. 항공 부피중량은 1CBM=167kg 기준입니다.',
+  'ct.type':'종류','ct.inner':'내부 치수 (길이×폭×높이)','ct.door':'문 크기 (폭×높이)','ct.cap':'용적','ct.pay':'최대 적재중량','ct.note':'대표적인 드라이 컨테이너 기준 수치이며, 선사와 컨테이너에 따라 조금씩 다릅니다.',
+  'u.len':'길이','u.wt':'무게','u.vol':'부피','u.in':'값 입력',
+  'ck.note':'업무시간은 평일 09:00~18:00 기준으로 표시합니다.','ck.open':'업무 중','ck.closed':'업무 외','ck.weekend':'주말',
+  'ic.note':'ICC 인코텀즈 2020의 11개 조건을 실무용으로 간단히 정리했습니다. 계약 시에는 조건 뒤에 장소를 명시하세요(예: FOB Busan).','ic.term':'조건','ic.risk':'위험 이전 시점','ic.cost':'매도인 부담 운송·보험','ic.any':'모든 운송방식','ic.sea':'해상·내수로 운송'},
+ en:{'tl.h2':'Trade Tools','tl.sub':'무역 도구','tl.intro':'Handy calculators and official lookup sites for everyday export and import work, all in one place. Calculators work right on this page; lookup tools open the official site.','tl.fab':'Trade tools','tl.ext':'New tab','tl.close':'Close','tl.panel':'Trade tools','tl.all':'See all tools',
+  'cbm.item':'Item','cbm.l':'Length (cm)','cbm.w':'Width (cm)','cbm.h':'Height (cm)','cbm.q':'Qty','cbm.kg':'Weight each (kg)','cbm.add':'+ Add item','cbm.del':'Remove','cbm.total':'Total','cbm.vol':'Total volume','cbm.wt':'Total weight','cbm.rt':'Sea freight ton (R/T)','cbm.air':'Air volumetric weight','cbm.fill':'Container fill (of nominal capacity)','cbm.note':'Usable space is usually about 80–90% of nominal capacity, depending on the cargo. Air volumetric weight uses 1 CBM = 167 kg.',
+  'ct.type':'Type','ct.inner':'Inside (L×W×H)','ct.door':'Door (W×H)','ct.cap':'Capacity','ct.pay':'Max payload','ct.note':'Typical figures for standard dry containers; exact values vary by carrier and unit.',
+  'u.len':'Length','u.wt':'Weight','u.vol':'Volume','u.in':'Enter a value',
+  'ck.note':'Office hours shown as weekdays 09:00–18:00 local time.','ck.open':'Open','ck.closed':'Closed','ck.weekend':'Weekend',
+  'ic.note':'A practical summary of the 11 ICC Incoterms 2020 rules. Always name the place after the rule in contracts (e.g. FOB Busan).','ic.term':'Rule','ic.risk':'Risk passes','ic.cost':'Seller pays carriage / insurance','ic.any':'Any mode of transport','ic.sea':'Sea and inland waterway'},
+ ru:{'tl.h2':'Инструменты ВЭД','tl.sub':'Trade Tools','tl.intro':'Калькуляторы и официальные сервисы для ежедневной работы с экспортом и импортом в одном месте. Калькуляторы работают прямо на сайте, сервисы поиска открывают официальные сайты.','tl.fab':'Инструменты','tl.ext':'Новая вкладка','tl.close':'Закрыть','tl.panel':'Инструменты ВЭД','tl.all':'Все инструменты',
+  'cbm.item':'Товар','cbm.l':'Длина (см)','cbm.w':'Ширина (см)','cbm.h':'Высота (см)','cbm.q':'Кол-во','cbm.kg':'Вес ед. (кг)','cbm.add':'+ Добавить товар','cbm.del':'Удалить','cbm.total':'Итого','cbm.vol':'Общий объём','cbm.wt':'Общий вес','cbm.rt':'Фрахтовая тонна (R/T)','cbm.air':'Объёмный вес (авиа)','cbm.fill':'Загрузка контейнера (от номинального объёма)','cbm.note':'Полезный объём обычно составляет 80–90% номинального в зависимости от груза. Объёмный вес для авиа: 1 CBM = 167 кг.',
+  'ct.type':'Тип','ct.inner':'Внутр. размеры (Д×Ш×В)','ct.door':'Дверь (Ш×В)','ct.cap':'Объём','ct.pay':'Макс. загрузка','ct.note':'Типовые значения для стандартных сухогрузных контейнеров; точные данные зависят от линии и контейнера.',
+  'u.len':'Длина','u.wt':'Вес','u.vol':'Объём','u.in':'Введите значение',
+  'ck.note':'Рабочее время: будни 09:00–18:00 по местному времени.','ck.open':'Работают','ck.closed':'Не работают','ck.weekend':'Выходной',
+  'ic.note':'Краткая практическая сводка 11 правил Инкотермс 2020 (ICC). В контракте всегда указывайте место после термина (например, FOB Busan).','ic.term':'Термин','ic.risk':'Переход риска','ic.cost':'Продавец оплачивает перевозку / страховку','ic.any':'Любой вид транспорта','ic.sea':'Морской и речной транспорт'}
+};
+const tt=k=>(TT[LANG]&&TT[LANG][k])||TT.ko[k];
+
+// ----- 도구 화면 -----
+const fmt=(n,d=2)=>Number.isFinite(n)?n.toLocaleString(LANG==='ru'?'ru-RU':LANG==='en'?'en-US':'ko-KR',{minimumFractionDigits:d,maximumFractionDigits:d}):'–';
+const CONT=[
+  {t:'20ft GP',inner:'5.90 × 2.35 × 2.39 m',door:'2.34 × 2.28 m',cap:33.2,pay:'≈ 28,200 kg'},
+  {t:'40ft GP',inner:'12.03 × 2.35 × 2.39 m',door:'2.34 × 2.28 m',cap:67.7,pay:'≈ 26,700 kg'},
+  {t:'40ft HC',inner:'12.03 × 2.35 × 2.70 m',door:'2.34 × 2.58 m',cap:76.4,pay:'≈ 26,500 kg'}
+];
+const INCO=[
+  ['EXW','any',{ko:'매도인 공장·창고에서 물품을 내줄 때',en:'When goods are made available at the seller’s premises',ru:'При предоставлении товара на складе продавца'},{ko:'없음 (수출통관도 매수인)',en:'None (buyer even clears export)',ru:'Нет (экспорт оформляет покупатель)'}],
+  ['FCA','any',{ko:'지정 장소에서 매수인 지정 운송인에게 인도할 때',en:'On delivery to the buyer’s carrier at the named place',ru:'При передаче перевозчику покупателя в указанном месте'},{ko:'지정 장소까지 + 수출통관',en:'To named place + export clearance',ru:'До указанного места + экспортное оформление'}],
+  ['CPT','any',{ko:'첫 운송인에게 인도할 때',en:'On handing over to the first carrier',ru:'При передаче первому перевозчику'},{ko:'목적지까지 운송비',en:'Carriage to destination',ru:'Перевозка до места назначения'}],
+  ['CIP','any',{ko:'첫 운송인에게 인도할 때',en:'On handing over to the first carrier',ru:'При передаче первому перевозчику'},{ko:'목적지까지 운송비 + 보험(ICC A 수준)',en:'Carriage + insurance (ICC A level)',ru:'Перевозка + страховка (уровень ICC A)'}],
+  ['DAP','any',{ko:'목적지에서 양하 전 상태로 인도할 때',en:'At destination, ready for unloading',ru:'В месте назначения, до разгрузки'},{ko:'목적지까지 운송비 (수입통관 제외)',en:'Carriage to destination (no import clearance)',ru:'Перевозка до места (без импортного оформления)'}],
+  ['DPU','any',{ko:'목적지에서 양하한 후 인도할 때',en:'At destination, after unloading',ru:'В месте назначения, после разгрузки'},{ko:'목적지 운송 + 양하',en:'Carriage + unloading at destination',ru:'Перевозка + разгрузка'}],
+  ['DDP','any',{ko:'목적지에서 수입통관 후 인도할 때',en:'At destination, cleared for import',ru:'В месте назначения после импортного оформления'},{ko:'운송·수입통관·관세 모두',en:'Carriage, import clearance and duties',ru:'Перевозка, импортное оформление и пошлины'}],
+  ['FAS','sea',{ko:'선적항 본선 옆에 물품을 둘 때',en:'Alongside the ship at the port of shipment',ru:'Вдоль борта судна в порту отгрузки'},{ko:'선적항 본선 옆까지 + 수출통관',en:'To ship’s side + export clearance',ru:'До борта судна + экспортное оформление'}],
+  ['FOB','sea',{ko:'선적항에서 본선에 적재될 때',en:'Once loaded on board at the port of shipment',ru:'После погрузки на борт в порту отгрузки'},{ko:'본선 적재까지 + 수출통관',en:'Loading on board + export clearance',ru:'Погрузка на борт + экспортное оформление'}],
+  ['CFR','sea',{ko:'선적항에서 본선에 적재될 때',en:'Once loaded on board at the port of shipment',ru:'После погрузки на борт в порту отгрузки'},{ko:'도착항까지 해상운임',en:'Sea freight to destination port',ru:'Морской фрахт до порта назначения'}],
+  ['CIF','sea',{ko:'선적항에서 본선에 적재될 때',en:'Once loaded on board at the port of shipment',ru:'После погрузки на борт в порту отгрузки'},{ko:'도착항까지 해상운임 + 보험(ICC C 수준)',en:'Sea freight + insurance (ICC C level)',ru:'Фрахт + страховка (уровень ICC C)'}]
+];
+const ZONES=[
+  ['Asia/Seoul',{ko:'서울',en:'Seoul',ru:'Сеул'}],['Asia/Tashkent',{ko:'타슈켄트',en:'Tashkent',ru:'Ташкент'}],['Asia/Almaty',{ko:'알마티',en:'Almaty',ru:'Алматы'}],
+  ['Europe/Moscow',{ko:'모스크바',en:'Moscow',ru:'Москва'}],['Asia/Shanghai',{ko:'베이징',en:'Beijing',ru:'Пекин'}],['Asia/Tokyo',{ko:'도쿄',en:'Tokyo',ru:'Токио'}],
+  ['Asia/Ho_Chi_Minh',{ko:'하노이',en:'Hanoi',ru:'Ханой'}],['Asia/Riyadh',{ko:'리야드',en:'Riyadh',ru:'Эр-Рияд'}],['Europe/Berlin',{ko:'베를린',en:'Berlin',ru:'Берлин'}],
+  ['Europe/Madrid',{ko:'마드리드',en:'Madrid',ru:'Мадрид'}],['America/New_York',{ko:'워싱턴 D.C.',en:'Washington, D.C.',ru:'Вашингтон'}]
+];
+const UNITS={
+  len:[['cm',1],['m',100],['mm',.1],['inch',2.54],['ft',30.48]],
+  wt:[['kg',1],['ton',1000],['g',.001],['lb',.45359237],['oz',.028349523]],
+  vol:[['CBM (m³)',1],['L',.001],['ft³',.028316847],['in³',.000016387064],['gal (US)',.003785412]]
+};
+
+let cbmRows=[{l:'',w:'',h:'',q:'1',kg:''}];
+let clockTimer=null;
+function toolBody(id){
+  if(id==='cbm'){
+    return `<div class="cbm">
+      <div class="cbm-rows" id="cbmRows"></div>
+      <button type="button" class="btn-line sm" id="cbmAdd">${tt('cbm.add')}</button>
+      <div class="cbm-out" id="cbmOut"></div>
+      <p class="tool-note">${tt('cbm.note')}</p></div>`;
+  }
+  if(id==='container'){
+    return `<div class="tbl-wrap"><table class="tbl"><thead><tr><th>${tt('ct.type')}</th><th>${tt('ct.inner')}</th><th>${tt('ct.door')}</th><th>${tt('ct.cap')}</th><th>${tt('ct.pay')}</th></tr></thead><tbody>${CONT.map(c=>`<tr><th>${c.t}</th><td>${c.inner}</td><td>${c.door}</td><td>${fmt(c.cap,1)} m³</td><td>${c.pay}</td></tr>`).join('')}</tbody></table></div><p class="tool-note">${tt('ct.note')}</p>`;
+  }
+  if(id==='unit'){
+    return `<div class="unit">${['len','wt','vol'].map(k=>`<fieldset class="unit-box"><legend>${tt('u.'+k)}</legend>${UNITS[k].map(([u],i)=>`<label><input type="number" inputmode="decimal" step="any" data-cat="${k}" data-i="${i}" aria-label="${u}"><span>${u}</span></label>`).join('')}</fieldset>`).join('')}</div>`;
+  }
+  if(id==='clock'){
+    return `<div class="clocks" id="clocks"></div><p class="tool-note">${tt('ck.note')}</p>`;
+  }
+  if(id==='incoterms'){
+    const row=r=>`<tr><th><b>${r[0]}</b></th><td>${esc(L(r[2]))}</td><td>${esc(L(r[3]))}</td></tr>`;
+    const grp=(g,label)=>`<tr class="grp"><th colspan="3">${label}</th></tr>`+INCO.filter(r=>r[1]===g).map(row).join('');
+    return `<p class="tool-note top">${tt('ic.note')}</p><div class="tbl-wrap"><table class="tbl inco"><thead><tr><th>${tt('ic.term')}</th><th>${tt('ic.risk')}</th><th>${tt('ic.cost')}</th></tr></thead><tbody>${grp('any',tt('ic.any'))}${grp('sea',tt('ic.sea'))}</tbody></table></div>`;
+  }
+  return '';
+}
+function initTool(id,root){
+  if(id==='cbm'){
+    const rowsEl=root.querySelector('#cbmRows'), out=root.querySelector('#cbmOut');
+    const draw=()=>{
+      rowsEl.innerHTML=cbmRows.map((r,i)=>`<div class="cbm-row" data-i="${i}"><span class="cbm-n">${tt('cbm.item')} ${i+1}</span>
+        ${['l','w','h','q','kg'].map(k=>`<label><span>${tt('cbm.'+k)}</span><input type="number" min="0" step="any" inputmode="decimal" data-k="${k}" value="${esc(r[k])}"></label>`).join('')}
+        ${cbmRows.length>1?`<button type="button" class="cbm-del" aria-label="${tt('cbm.del')}">×</button>`:''}</div>`).join('');
+      calc();
+    };
+    const calc=()=>{
+      let v=0,w=0; cbmRows.forEach(r=>{const q=+r.q||0; v+=(+r.l||0)*(+r.w||0)*(+r.h||0)/1e6*q; w+=(+r.kg||0)*q;});
+      const rt=Math.max(v,w/1000), air=v*167;
+      out.innerHTML=`<div class="cbm-sum"><div><span>${tt('cbm.vol')}</span><b>${fmt(v,3)} CBM</b></div><div><span>${tt('cbm.wt')}</span><b>${fmt(w,1)} kg</b></div><div><span>${tt('cbm.rt')}</span><b>${fmt(rt,3)} R/T</b></div><div><span>${tt('cbm.air')}</span><b>${fmt(air,1)} kg</b></div></div>
+        <p class="cbm-fill-t">${tt('cbm.fill')}</p><div class="cbm-fill">${CONT.map(c=>{const p=v/c.cap*100; return `<div class="fill"><span>${c.t}</span><div class="bar"><i style="width:${Math.min(p,100).toFixed(1)}%" class="${p>100?'over':''}"></i></div><b>${fmt(p,1)}%</b></div>`;}).join('')}</div>`;
+    };
+    rowsEl.addEventListener('input',e=>{const inp=e.target.closest('input'); if(!inp) return; const i=+inp.closest('.cbm-row').dataset.i; cbmRows[i][inp.dataset.k]=inp.value; calc();});
+    rowsEl.addEventListener('click',e=>{const b=e.target.closest('.cbm-del'); if(!b) return; cbmRows.splice(+b.closest('.cbm-row').dataset.i,1); draw();});
+    root.querySelector('#cbmAdd').addEventListener('click',()=>{cbmRows.push({l:'',w:'',h:'',q:'1',kg:''}); draw(); const ins=rowsEl.querySelectorAll('.cbm-row:last-child input'); if(ins[0]) ins[0].focus();});
+    draw();
+  }
+  if(id==='unit'){
+    root.addEventListener('input',e=>{
+      const inp=e.target; if(!inp.dataset.cat) return; const cat=inp.dataset.cat, list=UNITS[cat];
+      const base=parseFloat(inp.value)*list[+inp.dataset.i][1];
+      root.querySelectorAll(`input[data-cat="${cat}"]`).forEach(o=>{ if(o===inp) return; o.value=Number.isFinite(base)?+(base/list[+o.dataset.i][1]).toPrecision(8):''; });
+    });
+  }
+  if(id==='clock'){
+    const el=root.querySelector('#clocks');
+    const tick=()=>{
+      const now=new Date();
+      el.innerHTML=ZONES.map(([tz,n])=>{
+        let parts; try{ parts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:tz,hour:'2-digit',minute:'2-digit',weekday:'short',hourCycle:'h23'}).formatToParts(now).map(p=>[p.type,p.value])); }catch(e){ return ''; }
+        const h=+parts.hour, wk=['Sat','Sun'].includes(parts.weekday), open=!wk&&h>=9&&h<18;
+        const date=new Intl.DateTimeFormat(LANG==='ru'?'ru-RU':LANG==='en'?'en-US':'ko-KR',{timeZone:tz,month:'short',day:'numeric',weekday:'short'}).format(now);
+        return `<div class="ck ${open?'on':''}"><span class="ck-city">${esc(L(n))}</span><b>${parts.hour}:${parts.minute}</b><span class="ck-date">${date}</span><span class="ck-st">${wk?tt('ck.weekend'):open?tt('ck.open'):tt('ck.closed')}</span></div>`;
+      }).join('');
+    };
+    tick(); clearInterval(clockTimer); clockTimer=setInterval(tick,20000);
+  }
+}
+
+const toolDlg=document.getElementById('toolDlg');
+function openTool(id){
+  const tl=TOOLS.find(x=>x.id===id); if(!tl) return;
+  toolDlg.dataset.tool=id;
+  toolDlg.querySelector('.tool-ic').innerHTML=ticon(tl.icon);
+  toolDlg.querySelector('h3').textContent=L(tl.name);
+  toolDlg.querySelector('.tool-sub').textContent=L(tl.desc);
+  const body=toolDlg.querySelector('.tool-body'); body.innerHTML=toolBody(id); initTool(id,body);
+  if(!toolDlg.open) toolDlg.showModal();
+}
+function closeTool(){ clearInterval(clockTimer); toolDlg.close(); }
+toolDlg.querySelector('.close').addEventListener('click',closeTool);
+toolDlg.addEventListener('click',e=>{ if(e.target===toolDlg) closeTool(); });
+toolDlg.addEventListener('close',()=>clearInterval(clockTimer));
+
+function toolTile(tl,compact){
+  const inner=`<span class="tt-ic">${ticon(tl.icon)}</span><span class="tt-tx"><b>${esc(compact&&tl.short?L(tl.short):L(tl.name))}</b>${compact?'':`<small>${esc(L(tl.desc))}</small>`}</span>${tl.type==='link'?`<span class="tt-ext" title="${tt('tl.ext')}">${ticon('ext')}</span>`:''}${tl.hot?'<i class="tt-dot" aria-hidden="true"></i>':''}`;
+  if(tl.type==='anchor') return `<a class="tool-tile" href="${tl.url}" data-tool="${tl.id}" data-anchor>${inner.replace(/<span class="tt-ext"[\s\S]*?<\/span>/,'')}</a>`;
+  return tl.type==='link'
+    ? `<a class="tool-tile" href="${tl.url}" target="_blank" rel="noopener${tl.sponsored?' sponsored':''}" data-tool="${tl.id}">${inner}</a>`
+    : `<button type="button" class="tool-tile" data-tool="${tl.id}" aria-haspopup="dialog">${inner}</button>`;
+}
+function renderTools(){
+  document.getElementById('toolGroups').innerHTML=TOOL_GROUPS.map(g=>`<div class="tool-group g-${g.id}"><div class="tg-head"><h3>${esc(L(g.name))}</h3><span>${esc(L(g.note))}</span></div><div class="tool-grid">${TOOLS.filter(x=>x.g===g.id).map(x=>toolTile(x,false)).join('')}</div></div>`).join('');
+  document.getElementById('fabGroups').innerHTML=TOOL_GROUPS.map(g=>`<div class="fab-group g-${g.id}"><p>${esc(L(g.name))}</p><div class="fab-grid">${TOOLS.filter(x=>x.g===g.id).map(x=>toolTile(x,true)).join('')}</div></div>`).join('');
+  document.querySelectorAll('[data-tt]').forEach(e=>e.textContent=tt(e.dataset.tt));
+  document.querySelectorAll('[data-tt-aria]').forEach(e=>e.setAttribute('aria-label',tt(e.dataset.ttAria)));
+  if(toolDlg.open) openTool(toolDlg.dataset.tool);
+}
+document.addEventListener('click',e=>{ const b=e.target.closest('button.tool-tile'); if(b){ closeFab(); openTool(b.dataset.tool); } if(e.target.closest('a[data-anchor]')) closeFab(); });
+
+// 플로팅 빠른 메뉴
+const fab=document.getElementById('fab'), fabBtn=document.getElementById('fabBtn'), fabPanel=document.getElementById('fabPanel');
+function closeFab(){ fabPanel.hidden=true; fabBtn.setAttribute('aria-expanded','false'); fab.classList.remove('open'); }
+fabBtn.addEventListener('click',()=>{ const o=fabPanel.hidden; fabPanel.hidden=!o; fabBtn.setAttribute('aria-expanded',o); fab.classList.toggle('open',o); });
+fabPanel.querySelector('.fab-x').addEventListener('click',closeFab);
+fabPanel.querySelector('.fab-all').addEventListener('click',()=>{ closeFab(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&!fabPanel.hidden) closeFab(); });
+document.addEventListener('click',e=>{ if(!fabPanel.hidden && !fab.contains(e.target)) closeFab(); });
+renderTools();
+
+// ===== 오늘의 무역 뉴스 (data/news.json, GitHub Actions가 매일 갱신) =====
+const NT={
+ ko:{'n.today':'오늘','n.yesterday':'어제','n.more':'이전 뉴스 더 보기','n.less':'접기','n.h2':'오늘의 무역 뉴스','n.sub':'Trade News Today','n.intro':'국제정세와 국제무역 소식 중 수출입에 영향을 주는 핵심 기사를 매일 아침 자동으로 골라 날짜별로 쌓아 둡니다. 제목을 누르면 원문 기사로 이동합니다.','n.all':'전체','n.policy':'무역정책·관세','n.world':'국제정세','n.cis':'CIS·중앙아시아','n.logistics':'물류·운임','n.updated':'업데이트','n.empty':'아직 수집된 뉴스가 없습니다. 홈페이지를 올리면 매일 아침 자동으로 채워집니다.','n.none':'이 분야의 오늘 기사가 없습니다.','n.min':m=>`${m}분 전`,'n.hour':h=>`${h}시간 전`,'n.day':d=>`${d}일 전`,'n.note':'기사 제목과 링크는 각 언론사에 저작권이 있으며, 내용은 원문에서 확인해 주세요.','n.tool':'오늘의 무역 뉴스','n.tooldesc':'매일 자동으로 고른 핵심 기사'},
+ en:{'n.today':'Today','n.yesterday':'Yesterday','n.more':'Show earlier news','n.less':'Show less','n.h2':'Trade News Today','n.sub':'오늘의 무역 뉴스','n.intro':'Key world affairs and trade headlines that matter for exporters and importers, picked automatically every morning and kept by date. Select a headline to read the original article.','n.all':'All','n.policy':'Trade policy','n.world':'World affairs','n.cis':'CIS & Central Asia','n.logistics':'Logistics','n.updated':'Updated','n.empty':'No news collected yet. Once the site is online, headlines are added automatically every morning.','n.none':'No headlines in this category today.','n.min':m=>`${m} min ago`,'n.hour':h=>`${h} h ago`,'n.day':d=>`${d} d ago`,'n.note':'Headlines and links belong to their publishers; please read the full story at the source.','n.tool':'Trade news today','n.tooldesc':'Key headlines picked daily'},
+ ru:{'n.today':'Сегодня','n.yesterday':'Вчера','n.more':'Показать более ранние','n.less':'Свернуть','n.h2':'Новости торговли','n.sub':'Trade News Today','n.intro':'Главные новости мировой политики и торговли, важные для экспортёров и импортёров, — подбираются автоматически каждое утро и сохраняются по датам. Нажмите на заголовок, чтобы открыть статью.','n.all':'Все','n.policy':'Торговая политика','n.world':'Мировая политика','n.cis':'СНГ и Центральная Азия','n.logistics':'Логистика','n.updated':'Обновлено','n.empty':'Новости ещё не собраны. После публикации сайта заголовки будут добавляться автоматически каждое утро.','n.none':'Сегодня в этой категории новостей нет.','n.min':m=>`${m} мин назад`,'n.hour':h=>`${h} ч назад`,'n.day':d=>`${d} дн назад`,'n.note':'Права на заголовки и ссылки принадлежат издателям; полный текст читайте в источнике.','n.tool':'Новости торговли','n.tooldesc':'Главные заголовки дня'}
+};
+const nt=(k,...a)=>{const v=(NT[LANG]&&NT[LANG][k]!==undefined)?NT[LANG][k]:NT.ko[k]; return typeof v==='function'?v(...a):v;};
+const NEWS_CATS=['all','policy','world','cis','logistics'];
+let NEWS=null, newsCat='all', newsDays=3;
+function ago(iso){
+  const m=Math.max(1,Math.round((Date.now()-new Date(iso))/60000));
+  if(m<60) return nt('n.min',m); const h=Math.round(m/60); if(h<48) return nt('n.hour',h); return nt('n.day',Math.round(h/24));
+}
+function renderNews(){
+  document.querySelectorAll('[data-nt]').forEach(e=>e.textContent=nt(e.dataset.nt));
+  const chips=document.getElementById('newsChips'), list=document.getElementById('newsList'), up=document.getElementById('newsUpdated');
+  const items=(NEWS&&NEWS.items&&NEWS.items[LANG])||[];
+  const count=c=>c==='all'?items.length:items.filter(i=>i.cat===c).length;
+  chips.innerHTML=NEWS_CATS.map(c=>`<button type="button" class="nchip c-${c}" data-cat="${c}" aria-pressed="${c===newsCat}">${nt('n.'+c)}<span>${count(c)}</span></button>`).join('');
+  if(NEWS&&NEWS.updated){
+    const d=new Date(NEWS.updated);
+    up.textContent=`${nt('n.updated')} ${new Intl.DateTimeFormat(LANG==='ru'?'ru-RU':LANG==='en'?'en-US':'ko-KR',{timeZone:'Asia/Seoul',month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}).format(d)} (KST)`;
+  } else up.textContent='';
+  const shown=newsCat==='all'?items:items.filter(i=>i.cat===newsCat);
+  const more=document.getElementById('newsMore');
+  if(!items.length){ list.innerHTML=`<div class="news-empty">${nt('n.empty')}</div>`; more.hidden=true; return; }
+  if(!shown.length){ list.innerHTML=`<div class="news-empty">${nt('n.none')}</div>`; more.hidden=true; return; }
+  const dayOf=i=>i.day||new Date(new Date(i.date).getTime()+9*3600e3).toISOString().slice(0,10);
+  const days=[...new Set(shown.map(dayOf))].sort().reverse();
+  const today=new Date(Date.now()+9*3600e3).toISOString().slice(0,10), yest=new Date(Date.now()-15*3600e3).toISOString().slice(0,10);
+  const loc=LANG==='ru'?'ru-RU':LANG==='en'?'en-US':'ko-KR';
+  const label=d=>d===today?nt('n.today'):d===yest?nt('n.yesterday'):new Intl.DateTimeFormat(loc,{month:'long',day:'numeric',weekday:'short',timeZone:'UTC'}).format(new Date(d+'T00:00:00Z'));
+  const visible=days.slice(0,newsDays);
+  list.innerHTML=visible.map(d=>{const its=shown.filter(i=>dayOf(i)===d).sort((x,y)=>(y.score||0)-(x.score||0)); return `<section class="news-day"><h3 class="nday"><b>${label(d)}</b><span>${d}</span><i>${its.length}</i></h3><ol class="news-list">${its.map((it,k)=>`<li class="news-item"><span class="nrank">${k+1}</span><div class="nbody"><a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a><span class="nmeta"><span class="ncat c-${it.cat}">${nt('n.'+it.cat)}</span>${it.source?`<span>${esc(it.source)}</span>`:''}<span>${ago(it.date)}</span></span></div></li>`).join('')}</ol></section>`;}).join('');
+  more.hidden=days.length<=3;
+  more.textContent=newsDays<days.length?`${nt('n.more')} (${days.length-newsDays})`:nt('n.less');
+  more.dataset.all=days.length;
+}
+document.getElementById('newsChips').addEventListener('click',e=>{const b=e.target.closest('.nchip'); if(!b) return; newsCat=b.dataset.cat; renderNews();});
+document.getElementById('newsMore').addEventListener('click',()=>{ const all=+document.getElementById('newsMore').dataset.all||0; newsDays=newsDays<all?Math.min(all,newsDays+4):3; renderNews(); if(newsDays===3) document.getElementById('news').scrollIntoView({behavior:'smooth'}); });
+(async function(){
+  try{ const r=await fetch('data/news.json?'+Date.now(),{cache:'no-store'}); if(r.ok) NEWS=await r.json(); }catch(e){}
+  renderNews();
+})();
+
+// ===== 방문자 카운터 + Cloudflare Web Analytics =====
+const VT={ko:{today:'오늘 방문',total:'전체 방문'},en:{today:'Today',total:'Total visits'},ru:{today:'Сегодня',total:'Всего посещений'}};
+let VISITS=null;
+function renderVisits(){
+  const el=document.getElementById('visitCount'); if(!el) return;
+  if(!VISITS){ el.hidden=true; return; }
+  const v=VT[LANG]||VT.ko, nf=new Intl.NumberFormat(LANG==='ru'?'ru-RU':LANG==='en'?'en-US':'ko-KR');
+  el.innerHTML=`<span>${v.today} <b>${nf.format(VISITS.today)}</b></span><span>${v.total} <b>${nf.format(VISITS.total)}</b></span>`;
+  el.hidden=false;
+}
+(async function(){
+  // Cloudflare Web Analytics (토큰을 넣으면 자동으로 켜집니다)
+  if(SITE_CONFIG.cfAnalyticsToken){
+    const s=document.createElement('script'); s.defer=true; s.src='https://static.cloudflareinsights.com/beacon.min.js';
+    s.setAttribute('data-cf-beacon',JSON.stringify({token:SITE_CONFIG.cfAnalyticsToken})); document.body.appendChild(s);
+  }
+  // 방문자 카운터 (Worker 주소를 넣으면 자동으로 켜집니다)
+  if(!SITE_CONFIG.counterUrl) return;
+  const day=new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+  let isNew=true; try{ isNew=localStorage.getItem('gawoo-visit')!==day; }catch(e){}
+  try{
+    const r=await fetch(SITE_CONFIG.counterUrl.replace(/\/$/,'')+'/hit'+(isNew?'?n=1':''),{cache:'no-store'});
+    if(r.ok){ VISITS=await r.json(); try{ localStorage.setItem('gawoo-visit',day); }catch(e){} }
+  }catch(e){}
+  renderVisits();
+})();
+
+</script>
+</body>
+</html>
