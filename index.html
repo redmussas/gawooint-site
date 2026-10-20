@@ -538,6 +538,149 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
 /* Visitor counter */
 .visits{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:#8F99BE}
 .visits b{color:#fff;font-weight:700;margin-left:4px}
+
+/* ===== Export control & certification ===== */
+.comp{background:#fff}
+.comp-tabs{display:inline-flex;gap:4px;margin:28px 0 22px;padding:4px;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+.comp-tabs button{border:0;background:none;font:inherit;font-size:15.5px;font-weight:700;color:var(--muted);padding:9px 18px;border-radius:7px;cursor:pointer}
+.comp-tabs button[aria-selected="true"]{background:var(--indigo);color:#fff}
+.comp-disc{margin-top:16px;font-size:13px;color:var(--muted)}
+.comp-disc a{color:var(--tile)}
+
+/* strategic goods */
+.sg-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:28px;align-items:start}
+.sg-main h3{font-size:22px;font-weight:800;margin-bottom:8px}
+.sg-main h4,.sg-side h4{font-size:17px;font-weight:800;margin:22px 0 10px}
+.sg-side h4:first-child{margin-top:0}
+.sg-main>p{font-size:16px}
+.sg-types{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0 8px}
+.sg-types li{border:1px solid var(--line);border-radius:8px;padding:12px;display:flex;flex-direction:column;gap:4px;background:var(--paper)}
+.sg-types b{font-size:15px}
+.sg-types span{font-size:13.5px;color:var(--muted);line-height:1.45}
+.sg-types em{font-style:normal;font-size:12px;font-weight:700;color:var(--tile);margin-top:auto}
+.sg-law{font-size:13px;color:var(--muted)}
+.sg-steps{list-style:none;display:grid;gap:8px}
+.sg-steps li{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start;border-left:3px solid var(--saffron);background:var(--paper);border-radius:0 8px 8px 0;padding:10px 12px}
+.sg-steps i{font-style:normal;width:30px;height:30px;border-radius:50%;background:var(--indigo);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+.sg-steps b{font-size:15.5px}
+.sg-steps p{font-size:14.5px;color:var(--ink);line-height:1.55}
+.sg-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.sg-card{border:1px solid var(--line);border-top:4px solid var(--tile);border-radius:8px;padding:12px}
+.sg-card.warn{border-top-color:var(--saffron);background:#FFFAEE}
+.sg-card.red{border-top-color:#E5484D;background:#FFF5F5}
+.sg-card b{font-size:15px}
+.sg-card p{font-size:13.5px;line-height:1.55;margin-top:4px}
+.sg-links{display:grid;gap:8px}
+.sg-link{display:block;border:1px solid var(--line);border-radius:8px;padding:11px 14px;text-decoration:none;color:var(--ink);transition:border-color .15s,background .15s}
+.sg-link:hover{border-color:var(--tile);background:#F2FAFA}
+.sg-link.main{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.sg-link.main:hover{background:var(--indigo-deep)}
+.sg-link b{display:block;font-size:15.5px}
+.sg-link span{display:block;font-size:13.5px;opacity:.85;line-height:1.4}
+.sg-link small{display:block;font-size:12px;margin-top:3px;color:var(--saffron)}
+.sg-link:not(.main) small{color:var(--tile)}
+.sg-check{margin-top:22px;border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--paper)}
+.sg-check>p{font-size:13.5px;color:var(--muted);margin:-4px 0 10px}
+.sg-qs{display:grid;gap:8px}
+.sg-q{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:8px;padding:10px 12px;cursor:pointer;font-size:14px;line-height:1.5}
+.sg-q input{width:18px;height:18px;margin-top:2px;accent-color:var(--indigo)}
+.sg-q:has(input:checked){border-color:var(--indigo);background:#EEF1FA}
+.sg-res{margin-top:12px;border-radius:8px;padding:12px 14px;font-size:14px;line-height:1.55}
+.sg-res.ok{background:#E2F4F4;color:#11605F}
+.sg-res.alert{background:#FFF4DC;border:1px solid #F0D28C}
+.sg-res ul{padding-left:18px;margin:6px 0 8px;display:grid;gap:4px}
+.sg-res-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sg-res-links a{font-weight:700;color:var(--indigo)}
+.sg-reset{margin-left:auto;border:1px solid var(--line);background:#fff;border-radius:6px;font:inherit;font-size:13px;padding:4px 10px;cursor:pointer}
+
+/* certification matrix */
+.ct-lead{font-size:15.5px;color:var(--muted);margin-bottom:12px}
+.ct-bar{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:center;margin-bottom:12px}
+.ct-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:13px}
+.ct-legend>span:first-child{font-weight:700;margin-right:4px}
+.ct-legend small{font-size:12.5px;color:var(--muted);margin-right:8px}
+.lg{display:inline-block;width:16px;height:16px;border-radius:4px}
+.lv1{--lv:#E6F5EC;--lvb:#2E9E5B}
+.lv2{--lv:#FFF4DC;--lvb:#D99A1E}
+.lv3{--lv:#FDE8E8;--lvb:#D64545}
+.lg{background:var(--lv);border:2px solid var(--lvb)}
+.cc{display:inline-block;font-size:12px;font-weight:700;line-height:1.3;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.cc.t-m{background:var(--indigo);color:#fff}
+.cc.t-c{background:#fff;color:var(--indigo);border:1px solid var(--indigo)}
+.cc.t-v{background:#fff;color:var(--muted);border:1px dashed var(--muted)}
+.cc.more{background:var(--paper);color:var(--muted)}
+.ct-filter{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:14px}
+.ct-filter>span{font-size:13px;font-weight:700;margin-right:4px}
+.mchip{border:1px solid var(--line);background:#fff;border-radius:999px;font:inherit;font-size:13px;padding:4px 11px;cursor:pointer;color:var(--muted);display:inline-flex;gap:5px;align-items:center}
+.mchip b{font-size:11px;color:var(--tile)}
+.mchip[aria-pressed="true"]{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.mchip[aria-pressed="true"] b{color:var(--saffron)}
+.ct-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;-webkit-overflow-scrolling:touch}
+.ct-table{border-collapse:separate;border-spacing:0;width:100%;min-width:900px;table-layout:fixed;font-size:13px}
+.ct-table col.c0{width:128px}
+.ct-table th,.ct-table td{border-bottom:1px solid var(--line);border-right:1px solid var(--line);padding:0;vertical-align:stretch}
+.ct-table tr>*:last-child{border-right:0}
+.ct-table tbody tr:last-child>*{border-bottom:0}
+.ct-table thead th{background:var(--indigo);position:sticky;top:0}
+.ct-table th.corner{position:sticky;left:0;z-index:3;background:var(--indigo);min-width:132px}
+.ct-table tbody th{position:sticky;left:0;z-index:2;background:#fff;min-width:132px}
+.mh,.ih,.cell{display:flex;width:100%;height:100%;border:0;font:inherit;cursor:pointer;text-align:left}
+.mh{flex-direction:column;align-items:flex-start;gap:1px;background:none;color:#fff;padding:9px 10px;line-height:1.25}
+.mh b{font-size:12px;color:var(--saffron)}
+.mh span{font-size:12.5px;font-weight:700;line-height:1.2}
+.mh:hover{background:var(--indigo-deep)}
+.ih{background:none;padding:10px 12px;font-weight:700;font-size:13.5px;color:var(--ink);align-items:center;line-height:1.35}
+.ih:hover{color:var(--tile)}
+.cell{flex-wrap:wrap;align-content:flex-start;gap:4px;padding:8px;min-height:74px;background:var(--lv);border-left:4px solid var(--lvb);transition:filter .12s,box-shadow .12s}
+.cell:hover{filter:brightness(.97);box-shadow:inset 0 0 0 2px var(--lvb)}
+.cell em{flex-basis:100%;font-style:normal;font-size:11.5px;color:var(--muted);margin-top:auto}
+.cell .cc{font-size:11px;max-width:100%;overflow:hidden;text-overflow:ellipsis;padding:2px 5px}
+.cell .cc.more{flex:none}
+
+/* detail dialog */
+.certdlg .cd-code{font-family:var(--display);font-weight:800;font-size:14px}
+.certdlg .tool-body h4{font-size:16px;font-weight:800;margin:18px 0 8px}
+.cd-meta{display:flex;flex-wrap:wrap;gap:8px}
+.lvbadge,.leadbadge{font-size:13.5px;padding:5px 10px;border-radius:6px}
+.lvbadge{background:var(--lv);border:1px solid var(--lvb);font-weight:700}
+.leadbadge{background:var(--paper);border:1px solid var(--line)}
+.cr-list{list-style:none;display:grid;gap:8px}
+.cr{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:start;border:1px solid var(--line);border-radius:8px;padding:11px 12px}
+.cr .cc{text-align:center;white-space:normal}
+.cr b{font-size:15px}
+.cr p{font-size:14px;line-height:1.55;margin-top:2px}
+.cr-link{display:inline-block;margin-top:4px;font-size:12.5px;color:var(--tile);word-break:break-all}
+.cd-note{margin-top:14px;background:#FFFAEE;border-left:4px solid var(--saffron);border-radius:0 8px 8px 0;padding:10px 14px;font-size:14.5px}
+.cd-note ul{padding-left:18px;margin-top:4px;display:grid;gap:3px}
+.cd-ov{font-size:15.5px}
+.cd-links{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;margin-top:12px;font-size:14px}
+.cd-links a{color:var(--tile);font-weight:600}
+.cd-actions,.cd-foot{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cd-foot a.btn-line,.cd-actions .btn-line{text-decoration:none;border-style:solid}
+.cd-ask{background:var(--indigo)!important;color:#fff!important;border-color:var(--indigo)!important}
+.cd-tbl{width:100%;border-collapse:collapse;margin-top:14px;font-size:13.5px}
+.cd-tbl th,.cd-tbl td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:middle}
+.cd-tbl td .cc{margin:1px 2px 1px 0}
+.cd-tbl .ld{white-space:nowrap;color:var(--muted);font-size:12.5px}
+.cd-row{border:0;background:none;font:inherit;font-weight:700;color:var(--indigo);cursor:pointer;text-align:left;padding:0}
+.cd-row b{color:var(--tile);font-size:12px}
+.cd-row:hover{text-decoration:underline}
+.lvdot{display:inline-block;width:14px;height:14px;border-radius:50%;background:var(--lv);border:3px solid var(--lvb)}
+
+@media (max-width:980px){.sg-grid{grid-template-columns:1fr}.sg-cards{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .sg-types{grid-template-columns:1fr}
+  .comp-tabs{display:flex}.comp-tabs button{flex:1;padding:9px 8px;font-size:14px}
+  .ct-table col.c0{width:100px}
+  .ct-table{min-width:880px}
+  .ih{font-size:12.5px;padding:8px}
+  .cr{grid-template-columns:1fr}.cr .cc{justify-self:start}
+  .cd-tbl td:nth-child(3){display:none}
+}
+.lgi{display:inline-flex;align-items:center;gap:5px}
+.lgi small{margin-right:6px}
+.ih{overflow-wrap:anywhere;hyphens:auto}
+@media (max-width:640px){.ct-legend{flex-direction:column;align-items:flex-start}.ct-legend.tl{flex-direction:row}}
 </style>
 </head>
 <body>
@@ -550,6 +693,7 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
         <li><a href="#business" data-i18n="nav.business"></a></li>
         <li><a href="#news" data-i18n="nav.news"></a></li>
         <li><a href="#tools" data-i18n="nav.tools"></a></li>
+        <li><a href="#compliance" data-ct="nav"></a></li>
         <li><a href="#partners" data-i18n="nav.partners"></a></li>
         <li><a href="#contact" data-i18n="nav.contact"></a></li>
       </ul>
@@ -640,6 +784,19 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
     <h2><span data-tt="tl.h2"></span><span class="kr" data-tt="tl.sub"></span></h2>
     <p class="partners-intro" data-tt="tl.intro"></p>
     <div id="toolGroups"></div>
+  </div>
+</section>
+
+<section class="block comp" id="compliance">
+  <div class="wrap">
+    <h2><span data-ct="h2"></span><span class="kr" data-ct="sub"></span></h2>
+    <p class="partners-intro" data-ct="intro"></p>
+    <div class="comp-tabs" role="tablist">
+      <button type="button" role="tab" data-tab="sg" data-ct="tab.sg"></button>
+      <button type="button" role="tab" data-tab="cert" data-ct="tab.cert"></button>
+    </div>
+    <div id="compSg" class="comp-panel"></div>
+    <div id="compCert" class="comp-panel" hidden></div>
   </div>
 </section>
 
@@ -765,6 +922,15 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
     </div>
   </div>
   <button type="button" class="promo-close" data-i18n-aria="det.close">×</button>
+</dialog>
+
+<dialog class="tooldlg certdlg" id="certDlg" aria-labelledby="certTitle">
+  <div class="tool-head">
+    <span class="tool-ic cd-code"></span>
+    <div><h3 id="certTitle"></h3><p class="tool-sub"></p></div>
+    <button type="button" class="close" aria-label="Close">&times;</button>
+  </div>
+  <div class="tool-body"></div>
 </dialog>
 
 <dialog class="tooldlg" id="toolDlg" aria-labelledby="toolTitle">
@@ -1204,6 +1370,7 @@ function setLang(l){
   applyStatic(); renderBiz(); fillDetail(); WorldMap.relabel(); Partners.relabel();
   if(typeof renderTools==='function') renderTools();
   if(typeof renderNews==='function') renderNews();
+  if(typeof renderComp==='function'){ renderComp(); relabelCert(); }
   if(typeof renderVisits==='function') renderVisits();
 }
 document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
@@ -1239,6 +1406,8 @@ const TICON={
   fta:'<path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8"/><path d="M18 28l4 4 8-9"/>',
   ai:'<circle cx="20" cy="20" r="12"/><path d="M29 29l12 12"/><path d="M20 13l1.8 4.2L26 19l-4.2 1.8L20 25l-1.8-4.2L14 19l4.2-1.8z"/><path d="M37 6l.9 2.1L40 9l-2.1.9L37 12l-.9-2.1L34 9l2.1-.9z"/>',
   credit:'<path d="M24 5 39 11v11c0 10-6.5 17-15 21C15.5 39 9 32 9 22V11z"/><path d="M17 24l5 5 9-10"/>',
+  sgi:'<path d="M24 5 43 39H5z"/><path d="M24 18v10M24 33v1"/>',
+  cert:'<circle cx="24" cy="19" r="11"/><path d="M19 19l4 4 6-7M17 28l-4 14 7-3 4 6 4-6 7 3-4-14"/>',
   ext:'<path d="M28 8h12v12M40 8 22 26M34 28v11H9V14h11"/>'
 };
 const ticon=(k)=>`<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${TICON[k]||''}</svg>`;
@@ -1258,7 +1427,9 @@ const TOOLS=[
   {id:'bldata',short:{ko:'무역 빅데이터',en:'Trade data',ru:'Торг. данные'},g:'lookup',icon:'ai',type:'link',url:'https://www.tradeit.global/en?code=6KH0LP46',sponsored:true,hot:true,name:{ko:'무역 빅데이터 조회',en:'Trade big data search',ru:'Поиск по торговым данным'},desc:{ko:'B/L 기준 AI 거래·바이어 분석',en:'AI analysis of B/L shipments',ru:'ИИ-анализ поставок по B/L'}},
   {id:'credit',short:{ko:'기업 신용조회',en:'Credit check',ru:'Проверка'},g:'lookup',icon:'credit',type:'link',url:'https://www.creport.co.kr/',name:{ko:'기업 신용정보 조회',en:'Company credit check',ru:'Проверка компаний'},desc:{ko:'국내·해외 기업 신용 확인 (CREPORT)',en:'Korean & overseas firms (CREPORT)',ru:'Компании Кореи и мира (CREPORT)'}},
   {id:'track',short:{ko:'컨테이너 추적',en:'Tracking',ru:'Трекинг'},g:'lookup',icon:'track',type:'link',url:'https://www.track-trace.com/container',name:{ko:'컨테이너 추적',en:'Container tracking',ru:'Отслеживание контейнера'},desc:{ko:'컨테이너 번호로 선사 조회',en:'By container number',ru:'По номеру контейнера'}},
+  {id:'sg',short:{ko:'전략물자',en:'Strategic goods',ru:'Страт. товары'},g:'lookup',icon:'sgi',type:'anchor',url:'#compliance',hot:true,name:{ko:'전략물자 확인',en:'Strategic goods check',ru:'Стратегические товары'},desc:{ko:'판정 기준·무역안보관리원 연결',en:'Criteria · KOSTI links',ru:'Критерии · ссылки KOSTI'}},
   {id:'kstat',short:{ko:'무역통계',en:'Statistics',ru:'Статистика'},g:'lookup',icon:'stats',type:'link',url:'https://stat.kita.net',name:{ko:'무역통계',en:'Trade statistics',ru:'Торговая статистика'},desc:{ko:'한국무역협회 K-stat',en:'KITA K-stat',ru:'KITA K-stat'}},
+  {id:'certs',short:{ko:'해외 인증',en:'Certifications',ru:'Сертификаты'},g:'market',icon:'cert',type:'anchor',url:'#certs',hot:true,name:{ko:'해외 인증 매트릭스',en:'Certification matrix',ru:'Матрица сертификации'},desc:{ko:'9개 시장 × 11개 산업 비교',en:'9 markets × 11 industries',ru:'9 рынков × 11 отраслей'}},
   {id:'news',short:{ko:'무역 뉴스',en:'News',ru:'Новости'},g:'market',icon:'news',type:'anchor',url:'#news',hot:true,name:{ko:'오늘의 무역 뉴스',en:'Trade news today',ru:'Новости торговли'},desc:{ko:'매일 자동으로 고른 핵심 기사',en:'Key headlines picked daily',ru:'Главные заголовки дня'}},
   {id:'scfi',short:{ko:'운임지수',en:'SCFI',ru:'SCFI'},g:'market',icon:'freight',type:'link',url:'https://en.sse.net.cn/indices/scfinew.jsp',name:{ko:'해상운임지수',en:'Freight index (SCFI)',ru:'Индекс фрахта (SCFI)'},desc:{ko:'상하이 컨테이너 운임지수',en:'Shanghai freight index',ru:'Шанхайский индекс фрахта'}},
   {id:'holiday',short:{ko:'공휴일',en:'Holidays',ru:'Праздники'},g:'market',icon:'calendar',type:'link',url:'https://www.timeanddate.com/holidays/',name:{ko:'국가별 공휴일',en:'Public holidays',ru:'Праздники по странам'},desc:{ko:'선적·미팅 일정 확인',en:'Plan shipments & meetings',ru:'Планирование отгрузок'}},
@@ -1472,6 +1643,625 @@ document.getElementById('newsMore').addEventListener('click',()=>{ const all=+do
   try{ const r=await fetch('data/news.json?'+Date.now(),{cache:'no-store'}); if(r.ok) NEWS=await r.json(); }catch(e){}
   renderNews();
 })();
+
+// ===== 수출 규제·인증 데이터 (2026년 10월 기준 참고 정보) =====
+const T3=(ko,en,ru)=>({ko,en,ru});
+
+// ---- 시장(국가) ----
+const CMKT=[
+ {id:'us',short:T3('미국','USA','США'),code:'US',name:T3('미국','United States','США'),
+  ov:T3('연방기관별로 규제가 나뉩니다. 전자파는 FCC, 식품·화장품·의료기기는 FDA, 어린이제품은 CPSC, 화학물질은 EPA가 담당하며, 상당수 제품은 사전 승인 없이 "자기 책임 + 사후 단속" 구조입니다.',
+    'Rules are split by federal agency: FCC for EMC/radio, FDA for food, cosmetics and devices, CPSC for children\'s products, EPA for chemicals. Many products need no pre-approval but are strictly enforced after entry.',
+    'Регулирование разделено по федеральным ведомствам: FCC (ЭМС, радио), FDA (продукты, косметика, медизделия), CPSC (детские товары), EPA (химия). Для многих товаров нет предварительного одобрения, но строгий контроль после ввоза.'),
+  key:T3(['수입자(Importer of Record)의 책임이 크므로 미국 바이어와 역할 분담을 계약서에 명시','FDA 대상 품목은 미국 대리인(US Agent) 지정 필요','어린이제품은 2026.7.8부터 CPSC 인증 데이터 전자 제출(eFiling)'],
+    ['The importer of record carries heavy liability — define roles with your US buyer in the contract','FDA-regulated firms must appoint a US Agent','Children\'s products: CPSC certificate eFiling at import from 8 July 2026'],
+    ['Импортёр несёт основную ответственность — распределите роли с покупателем в контракте','Для товаров FDA нужен агент в США (US Agent)','Детские товары: электронная подача сертификатов CPSC с 08.07.2026']),
+  links:[['FDA','https://www.fda.gov'],['FCC','https://www.fcc.gov'],['CPSC','https://www.cpsc.gov']]},
+ {id:'eu',short:T3('EU','EU','ЕС'),code:'EU',name:T3('EU (독일·스페인 등)','EU (Germany, Spain…)','ЕС (Германия, Испания…)'),
+  ov:T3('27개 회원국이 같은 규정을 씁니다. 대부분 공산품은 제조자가 기술문서를 갖추고 CE 마크를 붙이는 자기적합선언 방식이며, 의료기기·일부 기계·고위험 제품만 인증기관(NB) 심사를 받습니다.',
+    'All 27 member states share the same rules. Most manufactured goods use self-declaration: the manufacturer keeps a technical file and affixes the CE mark. Only devices, some machinery and high-risk products need a Notified Body.',
+    'Единые правила для 27 стран. Большинство промышленных товаров — самодекларация: технический файл и знак CE. Нотифицированный орган нужен только для медизделий, части машин и товаров высокого риска.'),
+  key:T3(['일반제품안전규정(GPSR, 2024.12~): EU 내 책임 경제운영자 지정·표시 필수','신규 기계규정 2027.1.20 적용, 신규 완구규정 2030.8 적용(디지털제품여권)','수산물 어획증명은 2026.1부터 CATCH 전자시스템'],
+    ['GPSR (from Dec 2024): an EU-based responsible economic operator is mandatory','New Machinery Regulation applies 20 Jan 2027; new Toy Regulation from Aug 2030 (digital product passport)','Seafood catch certificates through the CATCH IT system from Jan 2026'],
+    ['GPSR (с 12.2024): обязательно ответственное лицо в ЕС','Новый регламент о машинах — с 20.01.2027; о игрушках — с 08.2030 (цифровой паспорт)','Сертификаты улова — через систему CATCH с 01.2026']),
+  links:[['Access2Markets','https://trade.ec.europa.eu/access-to-markets/en/home'],['ECHA (REACH)','https://echa.europa.eu']]},
+ {id:'cn',short:T3('중국','China','Китай'),code:'CN',name:T3('중국','China','Китай'),
+  ov:T3('목록에 오른 제품은 CCC 강제인증(시험 + 공장심사)을 받아야 하고, 식품·화장품·의료기기는 해관총서(GACC)·약감국(NMPA) 등록이 선행됩니다. 중국어 표시와 GB 국가표준 준수가 기본입니다.',
+    'Listed products need CCC (testing + factory audit). Food, cosmetics and medical devices require prior registration with GACC or NMPA. Chinese labels and GB national standards are the baseline.',
+    'Товары из перечня требуют CCC (испытания + аудит завода). Продукты, косметика и медизделия — предварительная регистрация в GACC или NMPA. Обязательны маркировка на китайском и стандарты GB.'),
+  key:T3(['식품 해외제조업체는 CIFER 시스템에 사전 등록(미등록 시 통관 불가)','화장품·의료기기는 중국 내 책임자/대리인 지정','CCC 목록 해당 여부를 먼저 확인'],
+    ['Overseas food manufacturers must pre-register in CIFER — no registration, no clearance','Cosmetics and devices need a China-based responsible person/agent','Check the CCC catalogue first'],
+    ['Зарубежные производители продуктов регистрируются в CIFER заранее','Для косметики и медизделий нужен представитель в Китае','Сначала проверьте каталог CCC']),
+  links:[['CNCA (CCC)','https://www.cnca.gov.cn'],['NMPA','https://www.nmpa.gov.cn'],['GACC CIFER','https://cifer.singlewindow.cn']]},
+ {id:'jp',short:T3('일본','Japan','Япония'),code:'JP',name:T3('일본','Japan','Япония'),
+  ov:T3('법률별로 표시 마크가 정해져 있습니다(PSE·技適·PSC 등). 의약품·화장품·의료기기는 일본 내 제조판매업 허가를 가진 수입자가 있어야 하며, 식품은 검역소 수입신고가 기본입니다.',
+    'Each law has its own mark (PSE, Giteki, PSC…). Cosmetics, drugs and devices must be placed on the market by a Japanese licensed marketing authorization holder; food goes through quarantine import notification.',
+    'Для каждого закона — свой знак (PSE, Гитеки, PSC). Косметику и медизделия выпускает на рынок японский держатель лицензии (MAH); продукты — через уведомление в карантинной станции.'),
+  key:T3(['수입사업자가 법적 책임 주체 — 일본 파트너의 허가·신고 범위 확인','소비생활용제품안전법 개정(2025.12.25~): 36개월 미만 완구 PSC 표시','기능성표시식품은 2026.9부터 GMP 의무화'],
+    ['The Japanese importer is the legal party — check what your partner is licensed for','Revised CPSA (from 25 Dec 2025): PSC mark for toys under 36 months','Foods with Function Claims: GMP mandatory from Sept 2026'],
+    ['Юридически отвечает японский импортёр — проверьте его лицензии','Новый закон CPSA (с 25.12.2025): PSC для игрушек до 36 мес.','Функциональные продукты: GMP обязателен с 09.2026']),
+  links:[['METI','https://www.meti.go.jp'],['MHLW','https://www.mhlw.go.jp'],['PMDA','https://www.pmda.go.jp']]},
+ {id:'eaeu',short:T3('러시아·카자흐','Russia·KZ','Россия·КЗ'),code:'EAEU',name:T3('러시아·카자흐스탄 (EAEU)','Russia & Kazakhstan (EAEU)','Россия и Казахстан (ЕАЭС)'),
+  ov:T3('러시아·카자흐스탄·벨라루스·키르기스스탄·아르메니아는 관세동맹 기술규정(TR CU/TR EAEU)을 공통으로 씁니다. EAC 인증서 또는 적합성 선언으로 5개국 모두 유통할 수 있고, 신청인은 EAEU 내 등록 법인이어야 합니다.',
+    'Russia, Kazakhstan, Belarus, Kyrgyzstan and Armenia share Customs Union technical regulations (TR CU / TR EAEU). One EAC certificate or declaration covers all five; the applicant must be a legal entity registered in the EAEU.',
+    'Россия, Казахстан, Беларусь, Кыргызстан и Армения применяют общие техрегламенты ТР ТС/ТР ЕАЭС. Один сертификат или декларация ЕАЭС действует во всех пяти странах; заявитель — юрлицо, зарегистрированное в ЕАЭС.'),
+  key:T3(['러시아 "정직한 표시(Честный ЗНАК)" 디지털 마킹 대상 확대 — 화장품·건강기능식품·타이어·의류 등','동물성 식품·수산물은 수출작업장 등록(로셀호즈나드조르) 선행','러시아·벨라루스向은 한국 전략물자·상황허가 규제를 먼저 확인'],
+    ['Russia\'s "Chestny ZNAK" DataMatrix marking keeps expanding — cosmetics, supplements, tyres, apparel…','Animal-origin food and seafood need establishment listing (Rosselkhoznadzor) first','For Russia/Belarus, check Korean export controls before anything else'],
+    ['Маркировка «Честный ЗНАК» расширяется: косметика, БАД, шины, одежда…','Для продукции животного происхождения — включение предприятия в реестр Россельхознадзора','Для России и Беларуси сначала проверьте корейский экспортный контроль']),
+  links:[['ЕЭК (EEC)','https://eec.eaeunion.org'],['Росаккредитация (FSA)','https://fsa.gov.ru'],['Честный ЗНАК','https://xn--80ajghhoc2aj1c8b.xn--p1ai']]},
+ {id:'uz',short:T3('우즈베키스탄','Uzbekistan','Узбекистан'),code:'UZ',name:T3('우즈베키스탄','Uzbekistan','Узбекистан'),
+  ov:T3('EAEU 회원국이 아니어서 별도의 국가 인증을 받습니다. 기술규제청(Agency for Technical Regulation)이 의무인증 품목을 관리하며, 2024.10부터 고위험 제품은 국가등록 후 통관 단일창구에 제출해야 합니다.',
+    'Not an EAEU member, so national certification applies. The Agency for Technical Regulation manages the mandatory list; since Oct 2024 high-risk products must be state-registered and filed via the customs single window.',
+    'Узбекистан не входит в ЕАЭС — действует национальная сертификация. Агентство по техническому регулированию ведёт перечень; с 10.2024 продукция высокого риска проходит госрегистрацию и подаётся через единое окно.'),
+  key:T3(['적합성 인증서 유효기간 최대 3년','우즈베크어 표시 및 Asl Belgisi 디지털 마킹 대상 품목 확인','EAC 인증서가 있어도 자동 인정되지 않으므로 별도 확인'],
+    ['Certificates of conformity are valid up to 3 years','Check Uzbek-language labelling and the Asl Belgisi digital marking list','An EAC certificate is not automatically accepted'],
+    ['Сертификат соответствия действует до 3 лет','Проверьте маркировку на узбекском и перечень Asl Belgisi','Сертификат ЕАЭС автоматически не признаётся']),
+  links:[['Agency for Technical Regulation','https://gov.uz/en/standart']]},
+ {id:'vn',short:T3('베트남','Vietnam','Вьетнам'),code:'VN',name:T3('베트남','Vietnam','Вьетнам'),
+  ov:T3('국가기술규정(QCVN) 대상 제품은 CR 마크(적합성 시험·인증 또는 선언)가 필요합니다. 개정 제품품질법이 2026년부터 시행되어 적합성평가와 디지털 추적·표시 규정이 정비되었습니다.',
+    'Products under national technical regulations (QCVN) need the CR mark (testing/certification or declaration). The amended Law on Product and Goods Quality took effect in 2026, updating conformity and traceability rules.',
+    'Товары по техрегламентам QCVN требуют знак CR (испытания/сертификация или декларация). Новая редакция закона о качестве продукции действует с 2026 г.'),
+  key:T3(['식품은 대부분 자가 공표(정령 15/2018), 건강보조식품·영유아식은 등록','필수 표시 사항은 베트남어','의료기기는 위험등급(A~D)별 절차 상이'],
+    ['Most foods use self-declaration (Decree 15/2018); supplements and infant food need registration','Mandatory label items in Vietnamese','Medical devices: procedure depends on class A–D'],
+    ['Большинство продуктов — самодекларация (Декрет 15/2018); БАД и детское питание — регистрация','Обязательная маркировка на вьетнамском','Медизделия: процедура зависит от класса A–D']),
+  links:[]},
+ {id:'th',short:T3('태국','Thailand','Таиланд'),code:'TH',name:T3('태국','Thailand','Таиланд'),
+  ov:T3('산업표준원(TISI) 강제표준 품목이 계속 늘고 있으며 공장심사를 동반합니다. 식품·화장품·의료기기는 태국 FDA, 무선기기는 NBTC 소관이고, 대부분 현지 수입자 명의로 허가를 받습니다.',
+    'TISI\'s mandatory standards list keeps growing and involves factory audits. Food, cosmetics and devices fall under Thai FDA, radio equipment under NBTC; licences are mostly held by the local importer.',
+    'Перечень обязательных стандартов TISI растёт, требуется аудит завода. Продукты, косметика и медизделия — Thai FDA, радио — NBTC; лицензии обычно на местного импортёра.'),
+  key:T3(['TISI 라이선스는 수입자 명의 — 바이어 교체 시 재취득 필요할 수 있음','태국어 표시 필수(식품·화장품)','ASEAN 기준(화장품 지침·의료기기 지침) 기반'],
+    ['TISI licences are in the importer\'s name — changing buyers may mean re-licensing','Thai-language labels (food, cosmetics)','Based on ASEAN harmonised rules (cosmetics, devices)'],
+    ['Лицензия TISI оформляется на импортёра — при смене покупателя может потребоваться новая','Маркировка на тайском','Основа — гармонизированные правила АСЕАН']),
+  links:[['TISI','https://www.tisi.go.th'],['Thai FDA','https://www.fda.moph.go.th'],['NBTC','https://www.nbtc.go.th']]},
+ {id:'sa',short:T3('사우디','Saudi Arabia','Сауд. Аравия'),code:'SA',name:T3('사우디아라비아','Saudi Arabia','Саудовская Аравия'),
+  ov:T3('공산품은 SASO 기술규정에 따라 SABER 플랫폼에서 제품 적합성 인증서(PCoC)와 선적별 인증서(SCoC)를 받아야 통관됩니다. 식품·화장품·의료기기는 식약청(SFDA) 소관입니다.',
+    'Manufactured goods clear customs only with a Product Certificate of Conformity and a Shipment Certificate issued on the SABER platform under SASO technical regulations. Food, cosmetics and devices fall under SFDA.',
+    'Промышленные товары проходят таможню только с сертификатом продукции (PCoC) и партии (SCoC) в системе SABER по техрегламентам SASO. Продукты, косметика и медизделия — SFDA.'),
+  key:T3(['SABER 미등록 제품은 통관 불가','육류·가금류 성분 함유 식품은 할랄 인증','아랍어 표시 필수'],
+    ['No SABER registration, no customs clearance','Halal certificate for products containing meat/poultry','Arabic labelling mandatory'],
+    ['Без регистрации в SABER таможня не пропустит','Халяль-сертификат для продуктов с мясом/птицей','Обязательна маркировка на арабском']),
+  links:[['SABER','https://saber.sa'],['SFDA','https://www.sfda.gov.sa'],['SASO','https://www.saso.gov.sa']]}
+];
+
+// ---- 산업 ----
+const CIND=[
+ {id:'elec',name:T3('가전·전기전자','Electrical & electronics','Электротехника и электроника')},
+ {id:'radio',name:T3('무선·통신기기','Wireless & telecom','Радио- и телеком-оборудование')},
+ {id:'mach',name:T3('기계·산업설비','Machinery & equipment','Машины и оборудование')},
+ {id:'med',name:T3('의료기기','Medical devices','Медицинские изделия')},
+ {id:'cos',name:T3('화장품','Cosmetics','Косметика')},
+ {id:'food',name:T3('가공식품','Processed food','Пищевые продукты')},
+ {id:'sea',name:T3('수산물·김','Seafood & laver','Морепродукты и нори')},
+ {id:'hfood',name:T3('건강기능식품','Health supplements','БАД')},
+ {id:'chem',name:T3('화학물질·세정제','Chemicals & detergents','Химия и моющие средства')},
+ {id:'toy',name:T3('완구·어린이제품','Toys & children\'s products','Игрушки и детские товары')},
+ {id:'auto',name:T3('자동차 부품','Auto parts','Автокомпоненты')}
+];
+
+// ---- 인증·규제 항목 사전 ----
+const CERT={};
+function C(id,n,ko,en,ru,url){ CERT[id]={n,d:T3(ko,en,ru),url:url||''}; }
+// 미국
+C('FCC_SDOC','FCC SDoC','FCC 공급자 적합성 선언 — 전자파(EMC) 시험 후 자기선언','FCC Supplier\'s Declaration of Conformity — EMC testing, self-declared','Декларация поставщика FCC — испытания ЭМС','https://www.fcc.gov/oet/ea');
+C('FCC_ID','FCC ID','FCC 무선기기 인증 — 인증기관(TCB) 심사, FCC ID 표시','FCC equipment authorization by a TCB, FCC ID on label','Сертификация радиоустройств FCC через TCB, маркировка FCC ID','https://www.fcc.gov/oet/ea');
+C('NRTL','UL / ETL (NRTL)','OSHA 공인시험기관(NRTL) 안전인증 — 법적 일괄 의무는 아니나 유통·보험·지자체 규정상 사실상 필요','NRTL safety listing (UL, ETL…) — not a single federal mandate but required in practice by retailers, insurers and codes','Сертификация безопасности NRTL (UL, ETL) — де-факто обязательна для торговых сетей и норм','https://www.osha.gov/nationally-recognized-testing-laboratory-program');
+C('DOE','DOE / ENERGY STAR','에너지부(DOE) 효율 기준(대상 가전 의무), ENERGY STAR는 임의','DOE efficiency standards (mandatory for covered products); ENERGY STAR is voluntary','Нормы энергоэффективности DOE (для отдельных товаров); ENERGY STAR — добровольно','https://www.energystar.gov');
+C('ASME','ASME','압력용기·보일러 ASME 코드 — 주(州) 법령으로 요구','ASME code for pressure vessels and boilers, required by state law','Код ASME для сосудов под давлением и котлов (требуется законами штатов)','https://www.asme.org');
+C('FDA_DEV','FDA 510(k) / PMA','시판 전 신고(2등급 대부분) 또는 시판 전 허가(3등급); 1등급 대부분 면제','Premarket notification (most Class II) or approval (Class III); most Class I exempt','Уведомление 510(k) (кл. II) или одобрение PMA (кл. III); кл. I в основном освобождён','https://www.fda.gov/medical-devices');
+C('FDA_EST','FDA Registration & Listing','시설 등록·제품 리스팅, 품질시스템(QMSR, ISO 13485 연계), 미국 대리인','Establishment registration, device listing, QMSR (aligned with ISO 13485), US Agent','Регистрация предприятия, листинг, QMSR (на основе ISO 13485), агент в США','https://www.fda.gov/medical-devices');
+C('MOCRA','MoCRA','화장품 시설 등록·제품 리스팅, 안전성 입증, 중대 이상사례 보고(사전 승인 없음)','Facility registration, product listing, safety substantiation, adverse event reporting (no pre-approval)','Регистрация предприятия и листинг продукции, обоснование безопасности, отчёты о побочных эффектах','https://www.fda.gov/cosmetics');
+C('FFR','FDA Food Facility','식품시설 등록(2년마다 갱신) 및 수입 사전통보(Prior Notice)','Food facility registration (renewed every 2 years) and Prior Notice of imports','Регистрация пищевого предприятия (каждые 2 года) и предварительное уведомление','https://www.fda.gov/food');
+C('FSVP','FSMA / FSVP','식품안전현대화법 — 수입자 해외공급자검증(FSVP), 예방관리, 영어 표시','FSMA — importer Foreign Supplier Verification, preventive controls, English labels','FSMA — проверка зарубежных поставщиков (FSVP), превентивный контроль','https://www.fda.gov/food');
+C('LACF','FCE / SID','저산성·산성화 통조림식품 공정 등록','Process filing for low-acid and acidified canned foods','Регистрация процессов для низкокислотных консервов','https://www.fda.gov/food');
+C('SEA_HACCP','Seafood HACCP','수산물 HACCP(21 CFR 123) 계획·기록','Seafood HACCP plan and records (21 CFR 123)','План и записи HACCP для морепродуктов (21 CFR 123)','https://www.fda.gov/food');
+C('SIMP','NOAA SIMP / MMPA','특정 어종 수입감시(SIMP), 해양포유류보호법(MMPA) 비교가능성 판정 — 일부 어업 수입 제한','Seafood Import Monitoring (certain species) and MMPA comparability findings — some fisheries barred','Мониторинг импорта (SIMP) и решения по MMPA — для части промыслов запрет','https://www.fisheries.noaa.gov/international/seafood-import-monitoring-program');
+C('DS','Dietary Supplement','건강보조식품 규정 — cGMP(21 CFR 111), 신규원료(NDI) 신고, 질병 치료 표현 금지','Dietary supplement rules — cGMP (21 CFR 111), NDI notification, no disease claims','Правила для БАД — cGMP (21 CFR 111), уведомление NDI, запрет лечебных заявлений','https://www.fda.gov/food/dietary-supplements');
+C('TSCA','TSCA','화학물질 수입 인증(TSCA 목록 등재 확인), 신규물질 사전 신고(EPA)','TSCA import certification (inventory check) and new chemical notice (EPA)','Сертификация импорта по TSCA и уведомление о новых веществах (EPA)','https://www.epa.gov/tsca-import-export-requirements');
+C('HAZCOM','OSHA HazCom (GHS)','GHS 기반 영문 SDS·경고표시','GHS-based SDS and labels in English','SDS и маркировка по GHS на английском','https://www.osha.gov/hazcom');
+C('CPC','CPC (CPSIA)','어린이제품 인증서 — CPSC 인정 시험소 제3자 시험(ASTM F963 등), 추적라벨, 2026.7.8부터 수입 시 전자 제출','Children\'s Product Certificate — third-party testing at a CPSC-accepted lab (ASTM F963…), tracking labels, eFiling at import from 8 Jul 2026','Сертификат детских товаров — испытания в лаборатории, признанной CPSC (ASTM F963), с 08.07.2026 электронная подача','https://www.cpsc.gov/Business--Manufacturing/Testing-Certification');
+C('FMVSS','FMVSS / DOT','연방자동차안전기준 자기인증(타이어·등화·안전유리·브레이크호스 등), DOT 표시, NHTSA 제조사 등록','FMVSS self-certification (tyres, lighting, glazing, brake hoses…), DOT marking, NHTSA manufacturer ID','Самосертификация FMVSS (шины, светотехника, стёкла, тормозные шланги), маркировка DOT','https://www.nhtsa.gov');
+C('EPA_CARB','EPA / CARB','배출 관련 부품 — 캘리포니아는 CARB 면제명령(EO) 필요','Emission-related parts — California requires a CARB Executive Order','Детали, влияющие на выбросы — в Калифорнии нужен CARB EO','https://ww2.arb.ca.gov');
+// EU
+C('CE_LVD','CE · LVD','저전압지침 2014/35/EU — 50~1000V AC 전기제품 안전','Low Voltage Directive 2014/35/EU — electrical safety 50–1000 V AC','Директива LVD 2014/35/EU — электробезопасность');
+C('CE_EMC','CE · EMC','전자파적합 지침 2014/30/EU','EMC Directive 2014/30/EU','Директива ЭМС 2014/30/EU');
+C('ROHS','RoHS / WEEE','유해물질 제한(RoHS) 및 판매 회원국별 폐전자제품(WEEE) 생산자 등록','RoHS restriction and WEEE producer registration per member state','Ограничение RoHS и регистрация производителя WEEE в каждой стране');
+C('ECO','Ecodesign / EPREL','에코디자인 요건, 에너지라벨 대상은 EPREL 데이터베이스 등록','Ecodesign requirements; energy-labelled products registered in EPREL','Требования экодизайна; энергомаркировка с регистрацией в EPREL');
+C('GPSR','GPSR','일반제품안전규정 (EU) 2023/988 — EU 내 책임 경제운영자 지정, 제품·연락처 표시','General Product Safety Regulation (EU) 2023/988 — EU responsible economic operator, traceability info','Регламент GPSR 2023/988 — ответственное лицо в ЕС, данные для прослеживаемости');
+C('RED','CE · RED','무선기기지침 2014/53/EU — 2025.8부터 인터넷 연결 기기 사이버보안 요건(EN 18031)','Radio Equipment Directive 2014/53/EU — cybersecurity requirements (EN 18031) for connected devices from Aug 2025','Директива RED 2014/53/EU — с 08.2025 требования кибербезопасности (EN 18031)');
+C('MACH','CE · Machinery','기계지침 2006/42/EC → 기계규정 (EU) 2023/1230 (2027.1.20 적용). 위험성평가·기술파일 필수','Machinery Directive 2006/42/EC → Machinery Regulation (EU) 2023/1230 from 20 Jan 2027. Risk assessment and technical file','Директива 2006/42/EC → Регламент (ЕС) 2023/1230 с 20.01.2027. Оценка рисков и технический файл');
+C('PED','CE · PED','압력기기지침 2014/68/EU — 등급별 인증기관 개입','Pressure Equipment Directive 2014/68/EU — Notified Body by category','Директива PED 2014/68/EU — участие нотифицированного органа по категориям');
+C('MDR','CE · MDR','의료기기규정 (EU) 2017/745 — IIa 등급 이상 인증기관(NB) 심사, EU 대리인, EUDAMED 등록','Medical Device Regulation (EU) 2017/745 — Notified Body for Class IIa+, EU Authorised Representative, EUDAMED','Регламент MDR 2017/745 — нотифицированный орган для кл. IIa+, уполномоченный представитель, EUDAMED','https://health.ec.europa.eu/medical-devices-sector_en');
+C('CPNP','CPNP','화장품규정 1223/2009 — EU 책임자 지정, CPNP 등록, 제품정보파일(PIF)·안전성평가(CPSR)','Cosmetics Regulation 1223/2009 — EU Responsible Person, CPNP notification, PIF and safety report (CPSR)','Регламент 1223/2009 — ответственное лицо, нотификация CPNP, PIF и отчёт о безопасности');
+C('EUFOOD','EU Food Law','일반식품법 178/2002, 표시규정 1169/2011, 첨가물·잔류허용기준','General Food Law 178/2002, labelling Reg. 1169/2011, additives and MRLs','Общее пищевое право 178/2002, маркировка 1169/2011, добавки и МДУ');
+C('EU_HC','EU Health Certificate','동물성 원료 제품 — EU 승인 작업장 등재, 공식 위생증명서(TRACES), 국경검사소 검사','Animal-origin products — EU-listed establishment, official health certificate (TRACES), border control post','Продукция животного происхождения — предприятие в списке ЕС, ветсертификат (TRACES), погранконтроль');
+C('CATCH','IUU Catch Certificate','불법어업 방지 어획증명서 — 2026.1부터 CATCH 전자시스템','IUU catch certificate — via the CATCH IT system from Jan 2026','Сертификат улова (ННН) — через систему CATCH с 01.2026');
+C('FSUPP','Food Supplements','식품보충제 지침 2002/46/EC — 회원국별 신고, 허용되지 않은 원료는 신규식품(Novel Food) 승인','Food Supplements Directive 2002/46/EC — national notification; Novel Food authorisation for new ingredients','Директива 2002/46/EC — национальное уведомление; Novel Food для новых ингредиентов');
+C('REACH','REACH','연 1톤 이상 물질 등록 — EU 밖 제조사는 유일대리인(OR) 통해 등록','Registration of substances ≥1 t/year — non-EU makers register via an Only Representative','Регистрация веществ ≥1 т/год — через единственного представителя (OR)','https://echa.europa.eu');
+C('CLP','CLP','분류·표시·포장 규정, 현지어 SDS','Classification, labelling and packaging; SDS in local languages','Классификация, маркировка, упаковка; SDS на языках ЕС','https://echa.europa.eu');
+C('TOY_EU','CE · Toys','완구안전지침 2009/48/EC — 신규 완구규정 (EU) 2025/2509는 2030.8 적용(디지털제품여권)','Toy Safety Directive 2009/48/EC — new Regulation (EU) 2025/2509 applies from Aug 2030 (digital product passport)','Директива 2009/48/EC — новый регламент (ЕС) 2025/2509 с 08.2030 (цифровой паспорт)');
+C('EMARK','E-mark (UN-R)','UN 규정 형식승인 — 등화·타이어·유리·거울·안전벨트 등','UN Regulation type approval — lighting, tyres, glazing, mirrors, seat belts…','Одобрение типа по Правилам ООН — светотехника, шины, стёкла, зеркала, ремни');
+// 중국
+C('CCC','CCC','중국 강제인증 — 목록 품목 대상, 형식시험 + 공장심사, 연간 사후감독','China Compulsory Certification — listed products, type testing + factory audit, annual surveillance','Обязательная сертификация CCC — испытания, аудит завода, ежегодный надзор','https://www.cnca.gov.cn');
+C('CN_ROHS','China RoHS','전자제품 유해물질 표시(SJ/T 11364), 일부 품목 적합성 평가','Hazardous substance marking (SJ/T 11364), conformity for some products','Маркировка опасных веществ (SJ/T 11364)');
+C('CEL','China Energy Label','중국 에너지효율 라벨(대상 가전)','China Energy Label for covered appliances','Энергетическая маркировка Китая');
+C('SRRC','SRRC','무선 형식승인(공업정보화부)','Radio type approval (MIIT)','Утверждение типа радиооборудования (MIIT)');
+C('NAL','CTA / NAL','통신단말 네트워크 접속 허가','Network access licence for telecom terminals','Лицензия на подключение телеком-оборудования к сети');
+C('TS','Special Equipment Licence','압력용기·보일러·승강기 등 특종설비 제조허가','Manufacturing licence for special equipment (pressure vessels, boilers, lifts)','Лицензия на производство спецоборудования (сосуды, котлы, лифты)');
+C('NMPA_DEV','NMPA Registration','의료기기 등록(2·3등급)/비안(1등급), 중국 내 대리인, 형식시험·임상평가','Device registration (Class II/III) or filing (Class I), China agent, type testing and clinical evaluation','Регистрация (кл. II/III) или уведомление (кл. I), агент, испытания и клиническая оценка','https://www.nmpa.gov.cn');
+C('NMPA_COS','NMPA Cosmetics','화장품감독관리조례 — 특수 화장품 등록/일반 화장품 비안, 국내 책임자, 안전성평가','CSAR — registration (special-use) or filing (general), domestic responsible person, safety assessment','CSAR — регистрация (специальная) или уведомление (общая), ответственное лицо, оценка безопасности','https://www.nmpa.gov.cn');
+C('GACC_REG','GACC Registration','해관총서령 248호 — 해외 식품제조업체 등록(CIFER). 고위험 품목은 한국 정부 추천','Decree 248 — overseas food manufacturer registration (CIFER); high-risk categories via Korean authority recommendation','Декрет 248 — регистрация зарубежных производителей (CIFER); для категорий высокого риска — по рекомендации властей Кореи','https://cifer.singlewindow.cn');
+C('GB_FOOD','GB Standards','식품안전 국가표준(GB), 중문 표시','GB food safety standards and Chinese labels','Стандарты безопасности GB и маркировка на китайском');
+C('CN_HC','Official Certificate','수출국 정부 발급 위생·검역증명서','Official health/quarantine certificate from the exporting country','Официальный санитарный/карантинный сертификат страны-экспортёра');
+C('CN_HF','Health Food (SAMR)','보건식품 등록 또는 비안(시장감독총국, "블루햇")','Health food registration or filing (SAMR, "blue hat")','Регистрация или уведомление функциональных продуктов (SAMR, «синяя шляпа»)','https://www.samr.gov.cn');
+C('MEE12','MEE Order 12','신규 화학물질 환경관리 등록(중국 현존목록 IECSC 미등재 물질)','New chemical substance registration (substances not in IECSC)','Регистрация новых химических веществ (вне IECSC)');
+C('CN_HAZ','Hazardous Chemicals','위험화학품 등록, 중문 SDS·라벨','Hazardous chemicals registration, Chinese SDS and labels','Регистрация опасных химикатов, SDS и маркировка на китайском');
+// 일본
+C('PSE','PSE','전기용품안전법 — 특정전기용품(◇PSE, 등록검사기관 적합성검사) / 그 외(○PSE, 자기확인), 수입사업자 신고','DENAN — specified products (diamond PSE, third-party) / others (circle PSE, self-check), importer notification','Закон DENAN — ромбовидный PSE (третья сторона) / круглый PSE (самопроверка), уведомление импортёра','https://www.meti.go.jp/policy/consumer/seian/denan/');
+C('VCCI','VCCI','정보기기 전자파 자율규제(임의)','Voluntary EMC scheme for IT equipment','Добровольная схема ЭМС для ИТ-оборудования');
+C('GITEKI','技適 (Giteki)','전파법 기술기준 적합증명 — 표시 없는 무선기기는 일본 내 사용 불가','Radio Law technical conformity — radios without the mark cannot be used in Japan','Соответствие закону о радио — без знака использовать в Японии нельзя','https://www.tele.soumu.go.jp');
+C('JATE','JATE','통신단말 기술기준 적합인정(전기통신사업법)','Telecom terminal conformity (Telecommunications Business Act)','Соответствие терминального оборудования (закон о связи)');
+C('ISHA','ISHA','노동안전위생법 — 보일러·압력용기·프레스 등 특정 기계 검정·구조규격','Industrial Safety and Health Act — type inspection for boilers, pressure vessels, presses…','Закон о промбезопасности — испытания котлов, сосудов, прессов');
+C('PMD_DEV','PMD Act (devices)','등급별 신고/인증/승인, 일본 내 제조판매업자(MAH), 외국제조업자 등록','Notification/certification/approval by class, Japanese MAH, foreign manufacturer registration','Уведомление/сертификация/одобрение по классам, держатель MAH, регистрация производителя','https://www.pmda.go.jp');
+C('PMD_COS','PMD Act (cosmetics)','화장품 제조판매업 허가를 가진 수입자가 제품 신고, 의약부외품은 승인','Importer with a cosmetics MAH licence files the product; quasi-drugs need approval','Импортёр с лицензией MAH подаёт уведомление; квази-лекарства требуют одобрения','https://www.mhlw.go.jp');
+C('JP_FOOD','Food Sanitation Act','검역소 수입신고, 규격기준 검사, 용기·포장 포지티브리스트','Import notification at quarantine stations, standards, positive list for food-contact materials','Уведомление в карантинной станции, стандарты, позитивный список для упаковки','https://www.mhlw.go.jp');
+C('JP_LABEL','Food Labeling Act','일본어 표시 — 알레르기·원재료 원산지 등','Japanese labelling — allergens, ingredient origin…','Маркировка на японском — аллергены, происхождение сырья','https://www.caa.go.jp');
+C('JP_IQ','Import Quota (IQ)','김·다시마 등 일부 수산물 수입할당','Import quotas for laver (nori), kombu and some other seafood','Импортные квоты на нори, комбу и др.');
+C('FFC','Function Claims','기능성표시식품 — 소비자청 사전 신고, 2026.9부터 GMP 의무','Foods with Function Claims — prior notification to CAA; GMP mandatory from Sept 2026','Продукты с функциональными заявлениями — уведомление CAA; GMP с 09.2026','https://www.caa.go.jp');
+C('FOSHU','FOSHU','특정보건용식품 — 개별 심사·허가','Foods for Specified Health Uses — individual approval','FOSHU — индивидуальное одобрение');
+C('CSCL','CSCL','화학물질심사규제법 — 신규 화학물질 신고·소량 확인','Chemical Substances Control Law — new substance notification','Закон CSCL — уведомление о новых веществах');
+C('JP_GHS','ISHA / PRTR (GHS)','대상 물질 일본어 SDS·라벨','Japanese SDS and labels for listed substances','SDS и маркировка на японском');
+C('JP_PSC','PSC (children)','소비생활용제품안전법 — 36개월 미만 완구 PSC 표시·대상 연령 표시(2025.12.25~)','Consumer Product Safety Act — PSC mark and age range on toys under 36 months (from 25 Dec 2025)','Закон CPSA — знак PSC и возраст на игрушках до 36 мес. (с 25.12.2025)','https://www.meti.go.jp');
+C('JP_TOYFOOD','Food Sanitation (toys)','영유아 입에 닿는 지정완구 재질·용출 규격','Material/migration specs for designated infant toys','Требования к материалам игрушек для младенцев');
+C('ST','ST Mark','일본완구협회 안전기준(임의)','Japan Toy Association ST mark (voluntary)','Знак ST Японской ассоциации игрушек (добровольно)');
+C('JP_TRVA','Road Transport Vehicle Act','장치 형식지정 — UN 규정 상호인정(E-mark) 활용 가능','Device type designation — UN-R mutual recognition (E-mark) accepted','Типовое обозначение устройств — признаётся E-mark');
+// EAEU
+C('EAC_CERT','EAC Certificate','관세동맹 기술규정 적합성 인증서(인증기관 발급, 시험·생산 분석)','EAC certificate of conformity (certification body, testing, production analysis)','Сертификат соответствия ТР ТС/ЕАЭС (орган по сертификации)','https://fsa.gov.ru');
+C('EAC_DEC','EAC Declaration','적합성 선언 등록(현지 신청인, 시험성적서 첨부)','EAC declaration of conformity (local applicant, test reports)','Декларация о соответствии ЕАЭС (местный заявитель, протоколы)','https://fsa.gov.ru');
+C('SGR','СГР (State Registration)','국가위생등록증명서 — 건강기능식품·특수식품·일부 화학제품','State Registration Certificate — supplements, special foods, some chemicals','Свидетельство о госрегистрации — БАД, спецпитание, часть химии');
+C('EAEU_MED','EAEU Device Registration','EAEU 통합 의료기기 등록 — 국가별 등록에서 통합체계로 전환 중','EAEU unified device registration — moving from national to unified system','Регистрация медизделий по правилам ЕАЭС — переход от национальной системы');
+C('FSB','FSB Notification','암호 기능이 있는 무선·IT기기 통지','Notification for radio/IT equipment with encryption','Нотификация ФСБ для оборудования с шифрованием');
+C('VET','Vet Certificate & Registry','수의(위생)증명서, 동물성 제품 수출작업장 등록(로셀호즈나드조르)','Veterinary certificate; exporting establishment listed by Rosselkhoznadzor','Ветеринарный сертификат; предприятие в реестре Россельхознадзора','https://fsvps.gov.ru');
+C('CHZ','Честный ЗНАК','러시아 의무 디지털 표시(DataMatrix) — 화장품·가정용화학·건강기능식품·타이어·의류 등 대상','Russia\'s mandatory DataMatrix marking — cosmetics, household chemicals, supplements, tyres, apparel…','Обязательная маркировка DataMatrix — косметика, бытовая химия, БАД, шины, одежда…','https://xn--80ajghhoc2aj1c8b.xn--p1ai');
+C('TR041','TR EAEU 041/2017','화학제품 안전 기술규정(단계적 시행) — 시행 전까지 GOST 기준 SDS·라벨','Chemical safety TR (phased in) — meanwhile GOST-based SDS and labels','ТР ЕАЭС 041/2017 (поэтапно) — до вступления SDS и маркировка по ГОСТ');
+// 우즈베키스탄
+C('UZ_CERT','O\'zbekiston Certificate','의무인증 품목 적합성 인증서(인정 인증기관 발급, 최대 3년)','Certificate of conformity for mandatory items (accredited body, up to 3 years)','Сертификат соответствия на обязательные товары (до 3 лет)','https://gov.uz/en/standart');
+C('UZ_REG','High-risk Registration','고위험 제품 국가등록(2024.10~) — 통관 전 단일창구 제출','State registration of high-risk products (since Oct 2024), filed via single window before customs','Госрегистрация продукции высокого риска (с 10.2024) через единое окно');
+C('UZ_MED','MoH Registration','의약품·의료기기 국가등록(보건부 산하 기관)','State registration of medicines and devices (Ministry of Health)','Госрегистрация лекарств и медизделий (Минздрав)');
+C('UZ_RADIO','Radio/Telecom Conformity','통신·무선기기 적합성 인증 및 주파수 사용 허가','Telecom/radio conformity and frequency authorisation','Сертификация радио- и телеком-оборудования, разрешение на частоты');
+C('UZ_VET','Vet / Phyto Certificate','수의·식물검역 증명서','Veterinary or phytosanitary certificate','Ветеринарный или фитосанитарный сертификат');
+C('UZ_LABEL','Label · Asl Belgisi','우즈베크어 표시 및 Asl Belgisi 디지털 마킹(대상 품목 확대 중)','Uzbek-language label and Asl Belgisi digital marking (list expanding)','Маркировка на узбекском и цифровая маркировка Asl Belgisi');
+// 베트남
+C('VN_CR','CR Mark (QCVN)','국가기술규정 적합 표시 — 시험·인증 또는 적합성 선언 후 등록','Conformity mark under QCVN — testing/certification or declaration, then registration','Знак CR по QCVN — испытания/сертификация или декларация');
+C('VN_MEPS','Energy Label','대상 가전 에너지효율 시험·라벨','Energy efficiency testing and label for covered appliances','Энергомаркировка бытовой техники');
+C('VN_TA','ICT Type Approval','무선·통신기기 형식인증 또는 적합성 선언(QCVN)','Type approval or declaration for radio/ICT equipment (QCVN)','Сертификация или декларация радио- и ИКТ-оборудования');
+C('VN_MED','MOH Device','A·B등급 적용표준 신고, C·D등급 유통등록(보건부)','Class A/B declaration, Class C/D registration (Ministry of Health)','Декларация (кл. A/B), регистрация (кл. C/D) в Минздраве');
+C('VN_COS','DAV Notification','의약품관리국 화장품 신고 + 제품정보파일(아세안 화장품 지침)','Cosmetic notification to DAV + PIF (ASEAN Cosmetic Directive)','Нотификация косметики в DAV + PIF (ASEAN)');
+C('VN_FOOD','Decree 15/2018','식품 자가 공표, 건강보조식품·영유아식은 등록(GMP 요건)','Self-declaration of food; registration for supplements and infant food (GMP)','Самодекларация продуктов; регистрация БАД и детского питания (GMP)');
+C('VN_IMPORT','Import Food Inspection','통관 시 수입식품 안전검사(일반·엄격·간소), 수출국·작업장 목록 등재','Import food safety inspection at the border; exporting country/establishment listing','Проверка импортных продуктов на границе; включение страны/предприятия в список');
+C('VN_CHEM','Chemicals Law','개정 화학물질법(2026 시행) — 수입 신고, 국가 화학물질 목록, GHS','Amended Chemicals Law (2026) — import declaration, national inventory, GHS','Новый закон о химикатах (2026) — декларация импорта, перечень, GHS');
+C('VN_VR','Vietnam Register','자동차 부품(타이어·유리·등화·거울 등) 품질 검사·인증','Quality inspection/certification of auto parts (tyres, glass, lamps, mirrors…)','Проверка и сертификация автокомпонентов (шины, стёкла, фары, зеркала)');
+// 태국
+C('TISI','TISI (TIS)','산업표준원 강제표준 라이선스 — 공장심사, 수입자 명의','TISI mandatory standard licence — factory audit, held by importer','Обязательная лицензия TISI — аудит завода, на имя импортёра','https://www.tisi.go.th');
+C('NBTC','NBTC','무선·통신기기 Class A(인증)/Class B(신고)','Radio/telecom Class A (certification) / Class B (declaration)','Радио/телеком: класс A (сертификация) / класс B (декларация)','https://www.nbtc.go.th');
+C('TH_MED','Thai FDA (devices)','위험등급별 허가/신고/목록 등록, 수입 허가','Licence / notification / listing by risk class, import licence','Лицензия/уведомление/листинг по классу риска, лицензия на импорт','https://www.fda.moph.go.th');
+C('TH_COS','Thai FDA (cosmetics)','화장품 신고(아세안 화장품 지침), 태국어 표시','Cosmetics notification (ASEAN Cosmetic Directive), Thai labels','Нотификация косметики (ASEAN), маркировка на тайском','https://www.fda.moph.go.th');
+C('TH_FOOD','Thai FDA (food)','식품 수입 허가, 제품 등록 또는 상세 신고, 태국어 표시','Food import licence, product registration or notification, Thai labels','Лицензия на импорт продуктов, регистрация, маркировка на тайском','https://www.fda.moph.go.th');
+C('TH_FISH','Dept. of Fisheries','수산물 수입 허가·위생증명서','Fishery import permit and health certificate','Разрешение на импорт рыбной продукции и сертификат');
+C('TH_HAZ','Hazardous Substance Act','유해물질 등록·수입 허가, GHS SDS','Hazardous substance registration/permits, GHS SDS','Регистрация опасных веществ, разрешения, SDS по GHS');
+// 사우디
+C('SABER','SABER (PCoC · SCoC)','SASO 기술규정 — 제품 적합성 인증서 + 선적별 인증서, 통관 필수','SASO technical regulations — Product Certificate + Shipment Certificate, required for clearance','Техрегламенты SASO — сертификаты продукции и партии, обязательны для таможни','https://saber.sa');
+C('GMARK','G-Mark (GSO)','걸프 저전압 전기제품 기술규정 — G 마크','GCC technical regulation for low-voltage appliances — G mark','Техрегламент ССАГПЗ для низковольтных приборов — знак G');
+C('SA_EE','Energy Efficiency','SASO 에너지효율 등록·라벨(가전·타이어 등)','SASO energy efficiency registration and label (appliances, tyres…)','Регистрация энергоэффективности SASO (техника, шины)');
+C('CST','CST Type Approval','통신우주기술위원회 무선기기 형식승인','CST type approval for radio equipment','Утверждение типа радиооборудования CST','https://www.cst.gov.sa');
+C('SFDA_MD','SFDA MDMA','의료기기 판매허가, 현지 대리인','Medical device marketing authorization, local authorized representative','Разрешение SFDA на медизделия, местный представитель','https://www.sfda.gov.sa');
+C('SFDA_COS','SFDA Cosmetics','화장품 제품 등록, 아랍어 표시','Cosmetics product registration, Arabic labels','Регистрация косметики, маркировка на арабском','https://www.sfda.gov.sa');
+C('SFDA_FOOD','SFDA Food','식품 업체·제품 등록, 아랍어 표시','Food establishment and product registration, Arabic labels','Регистрация предприятия и продуктов, маркировка на арабском','https://www.sfda.gov.sa');
+C('HALAL','Halal','육류·가금류 및 그 성분 함유 제품은 SFDA 인정기관 할랄 인증','Halal certificate from SFDA-recognised bodies for meat/poultry and derived products','Халяль-сертификат признанного SFDA органа для мяса, птицы и производных');
+C('SA_HF','SFDA Health Products','건강·보조제품 등록(SFDA)','Health and supplement product registration (SFDA)','Регистрация БАД (SFDA)','https://www.sfda.gov.sa');
+
+// ---- 매트릭스: [부담도 1~3, [[인증ID, m=필수|c=조건부|v=임의], ...], 소요기간 'a-b' + w(주)/m(개월), 메모] ----
+const N=T3;
+const CMAT={
+ elec:{
+  us:[2,[['FCC_SDOC','m'],['NRTL','c'],['DOE','c']],'1-2m',N('연방 의무는 전자파(FCC) 중심이며, 안전인증(UL 등)은 대형 유통·보험 요구로 사실상 필요합니다.','Federally the must-have is FCC EMC; UL-type safety listing is effectively required by retailers and insurers.','Федерально обязательна ЭМС (FCC); сертификация UL фактически требуется торговыми сетями.')],
+  eu:[2,[['CE_LVD','m'],['CE_EMC','m'],['ROHS','m'],['ECO','c'],['GPSR','m']],'1-3m',N('시험성적서·기술문서로 자기적합선언(DoC) 후 CE 표시. EU 내 책임자를 지정해야 합니다.','Self-declare (DoC) with test reports and technical file, then CE-mark; appoint an EU responsible person.','Самодекларация (DoC) с протоколами и тех. файлом, знак CE; нужно ответственное лицо в ЕС.')],
+  cn:[3,[['CCC','c'],['CN_ROHS','m'],['CEL','c']],'3-6m',N('가전·IT·조명 등 CCC 목록 해당 여부부터 확인하세요. 해당 시 공장심사가 포함됩니다.','Check the CCC catalogue (appliances, IT, lighting…) first; listed items need a factory audit.','Сначала проверьте каталог CCC; для включённых товаров — аудит завода.')],
+  jp:[2,[['PSE','m'],['VCCI','v']],'1-3m',N('◇PSE(특정전기용품) 해당 시 일본 등록검사기관 적합성검사가 필요하며, 수입사업자 신고가 필수입니다.','Diamond-PSE items need third-party conformity inspection; the importer must notify METI.','Для ромбовидного PSE — проверка третьей стороной; импортёр подаёт уведомление.')],
+  eaeu:[2,[['EAC_CERT','c'],['EAC_DEC','c']],'1-3m',N('TR CU 004(저전압)·020(EMC)·TR EAEU 037(RoHS) 적용. 품목에 따라 인증서 또는 선언입니다.','TR CU 004 (LV), 020 (EMC), TR EAEU 037 (RoHS); certificate or declaration depending on product.','ТР ТС 004, 020 и ТР ЕАЭС 037; сертификат или декларация в зависимости от товара.')],
+  uz:[2,[['UZ_CERT','m'],['UZ_REG','c'],['UZ_LABEL','m']],'1-2m',N('가전제품은 Asl Belgisi 디지털 마킹 대상 여부도 확인하세요.','Also check whether the appliance falls under Asl Belgisi digital marking.','Проверьте, подпадает ли техника под маркировку Asl Belgisi.')],
+  vn:[2,[['VN_CR','c'],['VN_MEPS','c']],'1-3m',N('가전 안전·EMC QCVN 대상 품목은 CR 마크, 에너지라벨 대상은 별도 시험이 필요합니다.','Appliances under safety/EMC QCVNs need the CR mark; energy-label products need separate tests.','Для техники по QCVN (безопасность, ЭМС) — знак CR; энергомаркировка — отдельно.')],
+  th:[3,[['TISI','c']],'2-6m',N('전기제품 상당수가 TISI 강제표준입니다. 공장심사와 수입자 명의 라이선스가 필요합니다.','Many electrical products are TISI-mandatory, with factory audit and an importer-held licence.','Многие электротовары под обязательным TISI: аудит завода и лицензия импортёра.')],
+  sa:[2,[['SABER','m'],['GMARK','c'],['SA_EE','c']],'1-2m',N('IECEE CB 성적서를 활용하면 기간을 줄일 수 있습니다.','IECEE CB test reports can shorten the process.','Протоколы IECEE CB сокращают сроки.')]
+ },
+ radio:{
+  us:[3,[['FCC_ID','m'],['FCC_SDOC','c']],'1-3m',N('Wi-Fi·블루투스 내장 제품은 FCC ID 필수(인증 모듈 사용 시 간소화).','Wi-Fi/Bluetooth products need an FCC ID (simpler with a pre-certified module).','Wi-Fi/Bluetooth требует FCC ID (проще с сертифицированным модулем).')],
+  eu:[2,[['RED','m'],['ROHS','m'],['GPSR','m']],'1-3m',N('2025.8부터 인터넷 연결 무선기기에 사이버보안 요건이 추가되었습니다.','Since Aug 2025, connected radio devices must meet cybersecurity requirements.','С 08.2025 для подключаемых устройств — требования кибербезопасности.')],
+  cn:[3,[['SRRC','m'],['NAL','c'],['CCC','c']],'3-6m',null],
+  jp:[2,[['GITEKI','m'],['JATE','c']],'1-2m',N('技適 표시가 없으면 일본 내에서 사용할 수 없습니다.','Without the Giteki mark the device cannot be used in Japan.','Без знака Гитеки устройство нельзя использовать в Японии.')],
+  eaeu:[3,[['EAC_DEC','m'],['FSB','c']],'1-3m',N('TR CU 020(EMC) 등 적용, 암호 기능(Wi-Fi·블루투스 등)이 있으면 FSB 통지가 추가됩니다.','TR CU 020 (EMC) etc.; devices with encryption (Wi-Fi, Bluetooth) also need FSB notification.','ТР ТС 020 и др.; при наличии шифрования — нотификация ФСБ.')],
+  uz:[3,[['UZ_RADIO','m'],['UZ_CERT','c']],'1-3m',null],
+  vn:[2,[['VN_TA','m'],['VN_CR','c']],'1-2m',null],
+  th:[2,[['NBTC','m']],'1-2m',null],
+  sa:[2,[['CST','m'],['SABER','m']],'1-2m',null]
+ },
+ mach:{
+  us:[1,[['NRTL','c'],['ASME','c']],'1-3m',N('연방 차원의 일괄 인증 제도는 없습니다. 전기 구성품은 NRTL, 압력용기는 ASME·주 규정, 작업장은 OSHA 기준을 따릅니다.','No single federal scheme: NRTL for electrical parts, ASME/state rules for pressure vessels, OSHA for workplaces.','Единой федеральной схемы нет: NRTL для электрики, ASME для сосудов, OSHA для рабочих мест.')],
+  eu:[2,[['MACH','m'],['CE_EMC','c'],['CE_LVD','c'],['PED','c']],'2-4m',N('부속서 IV 고위험 기계는 인증기관이 개입합니다. 2027.1.20부터 신규 기계규정 적용.','Annex IV high-risk machines involve a Notified Body; new Machinery Regulation from 20 Jan 2027.','Для машин из Приложения IV — нотифицированный орган; новый регламент с 20.01.2027.')],
+  cn:[2,[['CCC','c'],['TS','c']],'2-6m',N('대부분 기계는 CCC 대상이 아니지만, 전동공구·용접기 등 일부와 특종설비는 허가가 필요합니다.','Most machinery is outside CCC, but power tools, welders and special equipment need approval.','Большинство машин вне CCC, но электроинструмент, сварка и спецоборудование — требуют.')],
+  jp:[1,[['ISHA','c'],['PSE','c']],'1-3m',N('일반 기계는 사전인증이 없고, 보일러·압력용기·프레스 등 특정 기계만 검정 대상입니다.','No pre-approval for general machinery; only boilers, pressure vessels, presses etc. are inspected.','Для обычных машин одобрения нет; испытания — для котлов, сосудов, прессов.')],
+  eaeu:[2,[['EAC_CERT','c'],['EAC_DEC','c']],'1-3m',N('TR CU 010/2011(기계)·032/2013(압력설비). 안전성 근거서(Обоснование безопасности)가 필요합니다.','TR CU 010/2011 (machinery), 032/2013 (pressure); a safety justification document is required.','ТР ТС 010/2011 и 032/2013; требуется обоснование безопасности.')],
+  uz:[2,[['UZ_CERT','c']],'1-2m',null],
+  vn:[1,[['VN_CR','c']],'1-2m',N('압력용기·승강기 등 고위험 설비 위주로 검사 대상입니다.','Mainly high-risk equipment (pressure vessels, lifts) is inspected.','Проверяется в основном оборудование высокого риска (сосуды, лифты).')],
+  th:[1,[['TISI','c']],'1-3m',null],
+  sa:[2,[['SABER','m']],'1-2m',N('SASO 기계 안전 기술규정에 따라 PCoC를 발급받습니다.','PCoC under the SASO machinery safety technical regulation.','PCoC по техрегламенту SASO о безопасности машин.')]
+ },
+ med:{
+  us:[3,[['FDA_EST','m'],['FDA_DEV','c']],'3-12m',N('1등급 대부분 510(k) 면제, 2등급 510(k), 3등급 PMA. 미국 대리인 지정이 필요합니다.','Most Class I exempt, Class II via 510(k), Class III via PMA; a US Agent is required.','Кл. I в основном освобождён, кл. II — 510(k), кл. III — PMA; нужен агент в США.')],
+  eu:[3,[['MDR','m']],'6-18m',N('인증기관 심사 적체로 장기화되는 경우가 많습니다.','Notified Body backlogs often stretch timelines.','Очереди в нотифицированных органах удлиняют сроки.')],
+  cn:[3,[['NMPA_DEV','m']],'12-24m',null],
+  jp:[3,[['PMD_DEV','m']],'6-18m',null],
+  eaeu:[3,[['EAEU_MED','m']],'6-18m',null],
+  uz:[3,[['UZ_MED','m']],'3-9m',null],
+  vn:[2,[['VN_MED','m']],'1-12m',N('A·B등급은 수주, C·D등급은 수개월~1년 소요됩니다.','Class A/B takes weeks; Class C/D months up to a year.','Кл. A/B — недели; кл. C/D — до года.')],
+  th:[3,[['TH_MED','m']],'3-12m',null],
+  sa:[3,[['SFDA_MD','m']],'3-9m',null]
+ },
+ cos:{
+  us:[2,[['MOCRA','m']],'2-6w',N('사전 승인은 없지만 등록·리스팅·안전성 입증 의무가 있습니다. 자외선차단제 등은 일반의약품(OTC)으로 별도 규제.','No pre-approval, but registration, listing and safety substantiation apply; sunscreens are OTC drugs.','Одобрения нет, но обязательны регистрация и листинг; солнцезащитные — OTC-лекарства.')],
+  eu:[2,[['CPNP','m']],'1-3m',N('동물실험을 거친 원료·제품은 판매할 수 없습니다.','Products/ingredients tested on animals cannot be sold.','Нельзя продавать продукцию, тестированную на животных.')],
+  cn:[3,[['NMPA_COS','m']],'3-12m',N('일반 화장품 비안은 수개월, 특수 화장품(미백·자외선차단 등) 등록은 1년 이상 걸릴 수 있습니다.','General filing takes months; special-use (whitening, sunscreen) registration can exceed a year.','Уведомление — месяцы; регистрация специальной косметики — более года.')],
+  jp:[2,[['PMD_COS','m']],'1-2m',N('전성분 표시, 사용금지·제한 성분 리스트를 준수해야 합니다.','Full ingredient labelling; comply with prohibited/restricted lists.','Полный состав; соблюдение запрещённых и ограниченных списков.')],
+  eaeu:[2,[['EAC_DEC','m'],['SGR','c'],['CHZ','m']],'1-3m',N('TR CU 009/2011 적용. 러시아 유통 시 "정직한 표시" 마킹이 필요합니다.','TR CU 009/2011; Chestny ZNAK marking for the Russian market.','ТР ТС 009/2011; для России — маркировка «Честный ЗНАК».')],
+  uz:[2,[['UZ_CERT','m'],['UZ_LABEL','m']],'1-2m',null],
+  vn:[2,[['VN_COS','m']],'1-2m',null],
+  th:[2,[['TH_COS','m']],'1-2m',null],
+  sa:[2,[['SFDA_COS','m']],'1-3m',null]
+ },
+ food:{
+  us:[2,[['FFR','m'],['FSVP','m'],['LACF','c']],'2-8w',N('영양성분표·알레르기 등 미국식 표시가 필요하며, 통조림·레토르트는 FCE/SID 등록 대상입니다.','US-style nutrition and allergen labels; canned/retort foods require FCE/SID filing.','Маркировка по нормам США; для консервов — регистрация FCE/SID.')],
+  eu:[2,[['EUFOOD','m'],['EU_HC','c']],'1-3m',N('육·유·난 등 동물성 원료가 든 복합식품은 승인 작업장과 위생증명서가 필요합니다.','Composite foods with meat, dairy or egg need approved establishments and health certificates.','Продукты с мясом, молоком, яйцом — одобренное предприятие и сертификат.')],
+  cn:[3,[['GACC_REG','m'],['GB_FOOD','m'],['CN_HC','c']],'2-6m',null],
+  jp:[2,[['JP_FOOD','m'],['JP_LABEL','m']],'2-6w',null],
+  eaeu:[2,[['EAC_DEC','m'],['VET','c']],'1-3m',N('TR CU 021(식품안전)·022(표시) 적용, 동물성 원료가 있으면 수의 통제를 받습니다.','TR CU 021 (safety) and 022 (labelling); animal-origin content means veterinary control.','ТР ТС 021 и 022; при наличии животного сырья — ветконтроль.')],
+  uz:[2,[['UZ_CERT','m'],['UZ_VET','c'],['UZ_LABEL','m']],'1-2m',null],
+  vn:[2,[['VN_FOOD','m'],['VN_IMPORT','m']],'1-2m',null],
+  th:[2,[['TH_FOOD','m']],'1-3m',null],
+  sa:[2,[['SFDA_FOOD','m'],['HALAL','c']],'1-3m',null]
+ },
+ sea:{
+  us:[2,[['FFR','m'],['SEA_HACCP','m'],['SIMP','c']],'1-2m',N('2026년부터 해양포유류보호법(MMPA) 판정으로 일부 어업 수산물 수입이 제한되므로 어종별 확인이 필요합니다.','From 2026 MMPA findings bar some fisheries — check by species.','С 2026 г. по решениям MMPA часть промыслов запрещена — проверяйте вид.')],
+  eu:[3,[['EU_HC','m'],['CATCH','m']],'1-3m',N('EU 승인 목록에 등재된 한국 작업장만 수출할 수 있습니다.','Only Korean establishments on the EU approved list can export.','Экспорт только с корейских предприятий из списка ЕС.')],
+  cn:[3,[['GACC_REG','m'],['CN_HC','m']],'2-6m',N('수산물은 한국 정부 추천을 거쳐 등록하는 품목입니다.','Seafood plants register via Korean government recommendation.','Предприятия регистрируются по рекомендации властей Кореи.')],
+  jp:[2,[['JP_FOOD','m'],['JP_IQ','c']],'2-6w',N('김·조미김 등은 수입할당(IQ) 대상인지 확인하세요. 복어·이매패류는 위생증명서가 필요합니다.','Check if laver products fall under IQ; puffer fish and bivalves need health certificates.','Проверьте квоты для нори; для фугу и моллюсков — сертификат.')],
+  eaeu:[3,[['VET','m'],['EAC_DEC','m']],'3-9m',N('수출작업장의 EAEU(로셀호즈나드조르) 등록이 선행돼야 하며 TR EAEU 040/2016이 적용됩니다.','The plant must first be listed (Rosselkhoznadzor); TR EAEU 040/2016 applies.','Сначала включение предприятия в реестр; ТР ЕАЭС 040/2016.')],
+  uz:[2,[['UZ_VET','m'],['UZ_CERT','c']],'1-2m',null],
+  vn:[2,[['VN_IMPORT','m']],'1-2m',null],
+  th:[2,[['TH_FISH','m'],['TH_FOOD','m']],'1-2m',null],
+  sa:[2,[['SFDA_FOOD','m']],'1-3m',null]
+ },
+ hfood:{
+  us:[2,[['DS','m'],['FFR','m']],'1-3m',N('한국 건강기능식품은 미국에서 Dietary Supplement로 판매되며, 질병 치료·예방 표현은 금지됩니다.','Korean health functional foods are sold as dietary supplements; disease claims are prohibited.','Корейские БАД продаются как dietary supplements; лечебные заявления запрещены.')],
+  eu:[2,[['FSUPP','m'],['EUFOOD','m']],'2-4m',N('허용되지 않은 원료(예: 일부 한방 원료)는 신규식품 승인이 필요할 수 있습니다.','Non-authorised ingredients (e.g. some herbal ones) may need Novel Food approval.','Неразрешённые ингредиенты (часть трав) могут требовать Novel Food.')],
+  cn:[3,[['CN_HF','m'],['GACC_REG','m']],'6-24m',null],
+  jp:[2,[['JP_FOOD','m'],['FFC','c'],['FOSHU','c']],'1-12m',N('기능성 표시 없이 일반식품으로 수입할 수도 있습니다.','You can also import as ordinary food without function claims.','Можно ввозить как обычный продукт без функциональных заявлений.')],
+  eaeu:[3,[['SGR','m'],['CHZ','m']],'2-4m',N('БАД(건강기능식품)는 국가위생등록이 필수이고 러시아 "정직한 표시" 대상입니다.','Supplements (БАД) require state registration and Chestny ZNAK marking in Russia.','БАД — обязательная госрегистрация и «Честный ЗНАК».')],
+  uz:[3,[['UZ_CERT','m'],['UZ_REG','c']],'2-4m',null],
+  vn:[3,[['VN_FOOD','m']],'2-6m',null],
+  th:[3,[['TH_FOOD','m']],'2-6m',null],
+  sa:[3,[['SA_HF','m']],'3-6m',null]
+ },
+ chem:{
+  us:[2,[['TSCA','m'],['HAZCOM','m']],'1-2m',N('TSCA 목록에 없는 신규 물질은 사전 신고에 수개월이 걸립니다.','New substances not on the TSCA inventory need months of premanufacture review.','Новые вещества вне перечня TSCA требуют месяцев рассмотрения.')],
+  eu:[3,[['REACH','m'],['CLP','m']],'3-12m',null],
+  cn:[3,[['MEE12','c'],['CN_HAZ','c']],'3-12m',null],
+  jp:[2,[['CSCL','c'],['JP_GHS','m']],'1-6m',null],
+  eaeu:[2,[['TR041','c'],['EAC_DEC','c'],['CHZ','c']],'1-3m',N('가정용 화학제품은 러시아 "정직한 표시" 대상입니다.','Household chemicals fall under Chestny ZNAK in Russia.','Бытовая химия подпадает под «Честный ЗНАК».')],
+  uz:[2,[['UZ_CERT','c'],['UZ_REG','c']],'1-3m',null],
+  vn:[2,[['VN_CHEM','m']],'1-3m',null],
+  th:[2,[['TH_HAZ','m']],'1-3m',null],
+  sa:[2,[['SABER','c']],'1-2m',N('GHS 기반 SDS·아랍어 경고표시를 준비하세요.','Prepare GHS SDS and Arabic hazard labels.','Подготовьте SDS по GHS и маркировку на арабском.')]
+ },
+ toy:{
+  us:[3,[['CPC','m']],'1-2m',N('2026.7.8부터 수입 시 CPSC 인증 데이터를 전자 제출(eFiling)해야 합니다.','From 8 Jul 2026 certificate data must be eFiled at import.','С 08.07.2026 — электронная подача данных сертификата при импорте.')],
+  eu:[2,[['TOY_EU','m'],['GPSR','m']],'1-3m',null],
+  cn:[3,[['CCC','c']],'2-4m',N('14세 미만용 전동·플라스틱·봉제 완구 등 상당수가 CCC 대상입니다.','Many toys for under-14s (electric, plastic, plush) require CCC.','Многие игрушки до 14 лет (электрические, пластиковые, мягкие) требуют CCC.')],
+  jp:[2,[['JP_PSC','c'],['JP_TOYFOOD','c'],['ST','v']],'1-2m',null],
+  eaeu:[3,[['EAC_CERT','m']],'1-3m',N('TR CU 008/2011(완구 안전) 인증서 대상입니다.','TR CU 008/2011 (toy safety) certificate.','Сертификат по ТР ТС 008/2011.')],
+  uz:[2,[['UZ_CERT','m']],'1-2m',null],
+  vn:[2,[['VN_CR','m']],'1-2m',N('QCVN 3:2019/BKHCN(완구 안전) 적용.','QCVN 3:2019/BKHCN (toy safety).','QCVN 3:2019/BKHCN (безопасность игрушек).')],
+  th:[3,[['TISI','m']],'2-4m',null],
+  sa:[2,[['SABER','m']],'1-2m',null]
+ },
+ auto:{
+  us:[2,[['FMVSS','c'],['EPA_CARB','c']],'1-3m',N('FMVSS 대상 부품(타이어·등화·유리·브레이크호스 등)만 자기인증하며, 제조사는 NHTSA에 등록합니다.','Only FMVSS-covered parts (tyres, lighting, glass, brake hoses…) are self-certified; makers register with NHTSA.','Самосертификация только для деталей по FMVSS; производитель регистрируется в NHTSA.')],
+  eu:[2,[['EMARK','c'],['GPSR','c']],'2-4m',null],
+  cn:[3,[['CCC','c']],'3-6m',N('등화·타이어·안전유리·안전벨트 등은 CCC 대상입니다.','Lamps, tyres, safety glass, seat belts etc. need CCC.','Фары, шины, стёкла, ремни и др. требуют CCC.')],
+  jp:[2,[['JP_TRVA','c']],'2-4m',null],
+  eaeu:[3,[['EAC_CERT','c'],['EAC_DEC','c'],['CHZ','c']],'2-4m',N('TR CU 018/2011 부품 인증, 타이어는 러시아 "정직한 표시" 대상입니다.','TR CU 018/2011 component certification; tyres need Chestny ZNAK in Russia.','ТР ТС 018/2011; шины — «Честный ЗНАК».')],
+  uz:[2,[['UZ_CERT','m']],'1-2m',null],
+  vn:[2,[['VN_VR','c']],'1-3m',null],
+  th:[2,[['TISI','c']],'2-4m',N('타이어·안전유리·배터리 등이 강제표준 대상입니다.','Tyres, safety glass, batteries etc. are mandatory TISI items.','Шины, стёкла, аккумуляторы — обязательный TISI.')],
+  sa:[2,[['SABER','m'],['SA_EE','c']],'1-2m',null]
+ }
+};
+
+// ===== 수출 규제·인증 (전략물자 + 국가별 인증 매트릭스) =====
+const CC={
+ ko:{
+  'nav':'규제·인증','h2':'수출 규제·인증 가이드','sub':'Export Control & Certification',
+  'intro':'수출 전에 꼭 확인해야 할 두 가지 — 내 제품이 전략물자인지, 그리고 수출국에서 어떤 인증이 필요한지 — 를 한곳에 정리했습니다.',
+  'tab.sg':'전략물자 확인','tab.cert':'국가별 인증 매트릭스',
+  'sg.h3':'전략물자란?',
+  'sg.def':'대량살상무기(핵·생화학·미사일)나 재래식 무기의 개발·제조·사용에 쓰일 수 있는 물품·소프트웨어·기술입니다. 군용품만이 아니라 공작기계, 센서, 반도체 장비, 화학물질, 드론 부품, 암호 소프트웨어처럼 일반 산업용 제품(이중용도)도 성능 수치에 따라 해당될 수 있습니다.',
+  'sg.law':'근거: 대외무역법 제19조 · 전략물자 수출입고시 (국제 수출통제체제 바세나르·NSG·AG·MTCR 및 화학무기금지협약 통제목록 반영)',
+  'sg.types':[['이중용도 품목','산업통상부','일반 산업용이지만 군사 전용 가능성이 있는 물품·기술'],['군용물자','방위사업청','무기·탄약 및 군용으로 설계된 물품'],['원자력 전용품목','원자력안전위원회','원자로·핵연료 관련 물품·기술']],
+  'sg.steps.h':'확인 절차 4단계',
+  'sg.steps':[['품목 정리','HS코드와 기술사양서(성능 수치·재질·용도)를 준비합니다.'],['판정','Yes-Trade에서 자가판정하거나 무역안보관리원에 전문판정을 신청합니다. 전문판정은 법정 처리기한 15일, 최근 평균 7~8일입니다.'],['허가','전략물자로 판정되면 수출 전에 수출허가를 받습니다(처리기한 15일). 비해당이라도 상황허가 요건을 확인합니다.'],['기록 보관','판정서·허가서·최종사용자 확인 자료를 보관해 사후점검에 대비합니다.']],
+  'sg.catch.h':'상황허가 (Catch-all)',
+  'sg.catch':'전략물자가 아니어도, 수입자나 최종사용자가 대량살상무기 등에 쓸 의도가 있거나 그렇게 의심될 만한 정황이 있으면 수출 전에 허가를 받아야 합니다.',
+  'sg.ru.h':'러시아·벨라루스向 주의',
+  'sg.ru':'공작기계·센서·광학부품 등 상황허가 대상 품목이 1,402개(2024.9.9 기준)로 확대되었고, 원칙적으로 수출이 허용되지 않습니다. 중앙아시아·튀르키예 등을 거친 우회 수출도 집중 단속 대상이므로 최종 목적지를 반드시 확인하세요.',
+  'sg.pen.h':'위반 시',
+  'sg.pen':'허가 없이 전략물자를 수출하면 7년 이하 징역 또는 물품가격 5배 이하 벌금, 최대 3년 수출입 제한 등 행정제재를 받을 수 있습니다.',
+  'sg.links.h':'바로 확인하기',
+  'sg.l.kosti':['무역안보관리원','전략물자 전문판정 · 교육 · 상담','https://www.kosti.or.kr'],
+  'sg.l.yes':['Yes-Trade','HS코드 조회 · 자가판정 · 전문판정·수출허가 신청','https://www.yestrade.go.kr'],
+  'sg.l.motir':['산업통상부','전략물자 수출입고시 · 보도자료','https://www.motir.go.kr'],
+  'sg.l.bis':['미국 BIS (EAR)','미국산 부품·기술 포함 시 재수출 규제 확인','https://www.bis.gov'],
+  'sg.q.h':'1분 자가점검','sg.q.lead':'해당되는 항목을 체크하면 필요한 조치를 알려 드립니다.',
+  'sg.q':[
+   ['군용·원자력·항공우주·화학 분야에 쓰이거나, 고성능 사양(정밀가공, 레이저, 고성능 센서·카메라, 암호 기능, 고속 연산 등)을 가진 제품인가요?','전문판정 신청을 권장합니다. 사양 수치가 통제 기준에 걸리는지 확인이 필요합니다.'],
+   ['최종 목적지가 러시아·벨라루스·이란·북한 등 제재·우려 국가이거나, 중앙아시아·튀르키예·UAE 등을 거쳐 재수출될 가능성이 있나요?','상황허가 대상 품목 여부를 확인하고, 최종사용자·최종용도 확인서를 받으세요.'],
+   ['바이어가 최종 용도·사용자를 밝히기 꺼리거나, 시세보다 높은 가격·현금 선결제·사양과 맞지 않는 용도 등 비정상적 조건이 있나요?','상황허가 요건에 해당할 수 있습니다. 거래 전 무역안보관리원 상담을 받으세요.'],
+   ['기술자료·소프트웨어·설계도면을 이메일·클라우드로 해외에 보내나요?','기술 이전도 수출에 해당합니다. 기술 판정 여부를 확인하세요.'],
+   ['미국산 부품·소프트웨어·기술이 들어 있나요?','미국 EAR 재수출 규제(BIS)와 거래 금지 명단(Entity List 등)을 확인하세요.']],
+  'sg.q.none':'체크한 항목이 없습니다. 그래도 수출 전 Yes-Trade에서 HS코드로 전략물자 해당 가능성을 한 번 확인해 두세요.',
+  'sg.q.res':'권장 조치','sg.q.reset':'다시 하기',
+  'sg.disc':'이 내용은 이해를 돕기 위한 요약이며, 최종 판단은 무역안보관리원 판정과 관계 법령에 따릅니다.',
+  'ct.lead':'표의 칸을 누르면 필요한 인증, 담당 기관, 예상 소요기간을 자세히 볼 수 있습니다. 국가 이름을 누르면 국가 전체, 산업 이름을 누르면 국가별 비교가 나옵니다.',
+  'ct.lv':'인증 부담','ct.lv1':'낮음 · 일반 규정 준수','ct.lv2':'보통 · 시험·자기선언·신고','ct.lv3':'높음 · 제3자 인증·등록',
+  'ct.filter':'표시할 국가','ct.all':'전체',
+  'ct.m':'필수','ct.c':'해당 시','ct.v':'임의',
+  'ct.lead.t':'예상 소요','ct.w':'주','ct.mo':'개월','ct.certs':'필요한 인증·규제','ct.note':'참고',
+  'ct.country':'국가 전체 보기','ct.industry':'국가별 비교','ct.key':'핵심 유의사항','ct.links':'관련 기관',
+  'ct.more':'더 자세히 (국가기술표준원 KnowTBT)','ct.ask':'가우인터네셔널에 인증 상담하기',
+  'ct.disc':'2026년 10월 기준 참고용 요약입니다. 품목·HS코드·규정 개정에 따라 달라지므로 진행 전 담당 기관이나 KnowTBT에서 최신 내용을 확인하세요.',
+  'ct.back':'뒤로','ct.open':'자세히',
+  'tool.sg':'전략물자 확인','tool.sgs':'전략물자','tool.sgd':'판정 기준·무역안보관리원 연결',
+  'tool.ct':'해외 인증 매트릭스','tool.cts':'해외 인증','tool.ctd':'9개 시장 × 11개 산업 인증 비교'
+ },
+ en:{
+  'nav':'Compliance','h2':'Export Control & Certification','sub':'수출 규제·인증 가이드',
+  'intro':'Two things to check before you ship: is your product a strategic (dual-use) item, and which certifications does the destination market require?',
+  'tab.sg':'Strategic goods','tab.cert':'Certification matrix',
+  'sg.h3':'What are strategic goods?',
+  'sg.def':'Goods, software and technology that could be used to develop, make or use weapons of mass destruction or conventional arms. Not only military items: machine tools, sensors, chip equipment, chemicals, drone parts and encryption software can qualify depending on their specifications (dual-use).',
+  'sg.law':'Basis: Korean Foreign Trade Act Art. 19 and the Strategic Items Notice (reflecting the Wassenaar, NSG, AG, MTCR and CWC control lists).',
+  'sg.types':[['Dual-use items','Ministry of Trade and Industry','Industrial goods/technology with possible military use'],['Military items','DAPA','Arms, ammunition and items designed for military use'],['Nuclear items','NSSC','Reactor and nuclear fuel related items/technology']],
+  'sg.steps.h':'4 steps to check',
+  'sg.steps':[['Collect data','Prepare the HS code and technical specifications (performance figures, materials, end use).'],['Classification','Self-classify on Yes-Trade or request an expert classification from KOSTI — 15-day legal limit, recently 7–8 days on average.'],['Licence','If classified as strategic, obtain an export licence before shipping (15-day limit). Even if not, check catch-all conditions.'],['Keep records','Keep classification, licence and end-user documents for later audits.']],
+  'sg.catch.h':'Catch-all control',
+  'sg.catch':'Even non-listed goods need a licence if the importer or end user intends — or is suspected — to use them for WMD or related purposes.',
+  'sg.ru.h':'Russia & Belarus',
+  'sg.ru':'1,402 items (as of 9 Sep 2024) such as machine tools, sensors and optical parts are under catch-all licensing and are generally denied. Diversion via Central Asia, Türkiye etc. is a priority enforcement target — always verify the final destination.',
+  'sg.pen.h':'Penalties',
+  'sg.pen':'Exporting strategic goods without a licence can lead to up to 7 years in prison or a fine of up to 5 times the goods\' value, plus trade bans of up to 3 years.',
+  'sg.links.h':'Check now',
+  'sg.l.kosti':['KOSTI (Korea Security Agency of Trade and Industry)','Expert classification · training · advice','https://www.kosti.or.kr'],
+  'sg.l.yes':['Yes-Trade','HS code lookup · self-classification · licence applications','https://www.yestrade.go.kr'],
+  'sg.l.motir':['Ministry of Trade and Industry','Strategic Items Notice · press releases','https://www.motir.go.kr'],
+  'sg.l.bis':['US BIS (EAR)','Re-export rules for US-origin parts and technology','https://www.bis.gov'],
+  'sg.q.h':'1-minute self-check','sg.q.lead':'Tick what applies and we\'ll show the recommended actions.',
+  'sg.q':[
+   ['Is the product used in military, nuclear, aerospace or chemical fields, or does it have high specs (precision machining, lasers, high-end sensors/cameras, encryption, high-speed computing)?','Request an expert classification — the specs may exceed control thresholds.'],
+   ['Is the final destination Russia, Belarus, Iran, North Korea or another sanctioned country, or could it be re-exported via Central Asia, Türkiye, the UAE etc.?','Check the catch-all item list and obtain end-user / end-use statements.'],
+   ['Is the buyer reluctant to disclose end use/user, or are the terms unusual (above-market price, cash in advance, use that doesn\'t fit the specs)?','This may trigger catch-all licensing — consult KOSTI before the deal.'],
+   ['Will you send technical data, software or drawings abroad by e-mail or cloud?','Technology transfer counts as export — check whether it needs classification.'],
+   ['Does it contain US-origin parts, software or technology?','Check US EAR re-export rules (BIS) and restricted party lists (Entity List etc.).']],
+  'sg.q.none':'Nothing ticked. Still, check your HS code on Yes-Trade once before exporting.',
+  'sg.q.res':'Recommended actions','sg.q.reset':'Reset',
+  'sg.disc':'This is a simplified summary; final decisions follow KOSTI classification and the applicable laws.',
+  'ct.lead':'Select a cell for required certifications, authorities and typical lead times. Select a country for the full country view, or an industry to compare countries.',
+  'ct.lv':'Certification burden','ct.lv1':'Low · general rules','ct.lv2':'Medium · testing / self-declaration / notification','ct.lv3':'High · third-party certification / registration',
+  'ct.filter':'Markets shown','ct.all':'All',
+  'ct.m':'Mandatory','ct.c':'If applicable','ct.v':'Voluntary',
+  'ct.lead.t':'Typical lead time','ct.w':'weeks','ct.mo':'months','ct.certs':'Required certifications & rules','ct.note':'Note',
+  'ct.country':'Full country view','ct.industry':'Compare markets','ct.key':'Key points','ct.links':'Authorities',
+  'ct.more':'More detail (KATS KnowTBT)','ct.ask':'Ask GAWOO about certification',
+  'ct.disc':'Reference summary as of October 2026. Requirements vary by product, HS code and rule changes — confirm with the authority or KnowTBT before proceeding.',
+  'ct.back':'Back','ct.open':'Details',
+  'tool.sg':'Strategic goods check','tool.sgs':'Strategic goods','tool.sgd':'Criteria · KOSTI links',
+  'tool.ct':'Certification matrix','tool.cts':'Certifications','tool.ctd':'9 markets × 11 industries'
+ },
+ ru:{
+  'nav':'Сертификация','h2':'Экспортный контроль и сертификация','sub':'Export Control & Certification',
+  'intro':'Две вещи, которые нужно проверить до отгрузки: относится ли товар к стратегическим (двойного назначения) и какие сертификаты нужны в стране назначения.',
+  'tab.sg':'Стратегические товары','tab.cert':'Матрица сертификации',
+  'sg.h3':'Что такое стратегические товары?',
+  'sg.def':'Товары, программы и технологии, которые могут использоваться для создания или применения оружия массового поражения или обычных вооружений. Это не только военная продукция: станки, датчики, оборудование для чипов, химикаты, детали дронов и шифровальное ПО тоже могут подпадать в зависимости от характеристик.',
+  'sg.law':'Основание: ст. 19 Закона Кореи о внешней торговле и Уведомление о стратегических товарах (списки Вассенаара, ГЯП, АГ, РКРТ и КЗХО).',
+  'sg.types':[['Товары двойного назначения','Министерство торговли и промышленности','Промышленные товары и технологии с возможным военным применением'],['Военная продукция','DAPA','Оружие, боеприпасы и товары военного назначения'],['Ядерные товары','NSSC','Товары и технологии для реакторов и ядерного топлива']],
+  'sg.steps.h':'Проверка в 4 шага',
+  'sg.steps':[['Данные','Подготовьте код ТН ВЭД и технические характеристики (параметры, материалы, назначение).'],['Классификация','Самоклассификация в Yes-Trade или экспертное заключение KOSTI — срок по закону 15 дней, в среднем 7–8 дней.'],['Лицензия','Если товар стратегический — экспортная лицензия до отгрузки (до 15 дней). Даже если нет — проверьте условия catch-all.'],['Документы','Храните заключения, лицензии и подтверждения конечного пользователя для проверок.']],
+  'sg.catch.h':'Контроль catch-all',
+  'sg.catch':'Даже товары вне списков требуют разрешения, если импортёр или конечный пользователь намерен (или подозревается) использовать их для ОМП и т. п.',
+  'sg.ru.h':'Россия и Беларусь',
+  'sg.ru':'1 402 позиции (на 09.09.2024) — станки, датчики, оптика и др. — подпадают под catch-all и, как правило, не разрешаются. Реэкспорт через Центральную Азию, Турцию и др. — приоритет контроля; всегда проверяйте конечный пункт назначения.',
+  'sg.pen.h':'Ответственность',
+  'sg.pen':'Экспорт стратегических товаров без лицензии — до 7 лет лишения свободы или штраф до 5-кратной стоимости товара, а также запрет внешней торговли до 3 лет.',
+  'sg.links.h':'Проверить',
+  'sg.l.kosti':['KOSTI (Агентство торговой безопасности Кореи)','Экспертная классификация · обучение · консультации','https://www.kosti.or.kr'],
+  'sg.l.yes':['Yes-Trade','Поиск по ТН ВЭД · самоклассификация · заявки на лицензии','https://www.yestrade.go.kr'],
+  'sg.l.motir':['Министерство торговли и промышленности','Уведомление о стратегических товарах','https://www.motir.go.kr'],
+  'sg.l.bis':['BIS США (EAR)','Реэкспорт американских компонентов и технологий','https://www.bis.gov'],
+  'sg.q.h':'Самопроверка за минуту','sg.q.lead':'Отметьте подходящее — покажем рекомендуемые действия.',
+  'sg.q':[
+   ['Применяется ли товар в военной, ядерной, аэрокосмической или химической сфере, или имеет высокие характеристики (точная обработка, лазеры, датчики/камеры, шифрование, высокопроизводительные вычисления)?','Запросите экспертную классификацию — параметры могут превышать контрольные пороги.'],
+   ['Конечный пункт — Россия, Беларусь, Иран, КНДР и др., или возможен реэкспорт через Центральную Азию, Турцию, ОАЭ?','Проверьте перечень catch-all и получите подтверждение конечного пользователя и назначения.'],
+   ['Покупатель не раскрывает назначение или условия необычны (завышенная цена, предоплата наличными, назначение не соответствует характеристикам)?','Возможно требование catch-all — проконсультируйтесь с KOSTI до сделки.'],
+   ['Передаёте ли вы техническую документацию, ПО или чертежи за рубеж по e-mail или через облако?','Передача технологий — тоже экспорт. Проверьте классификацию.'],
+   ['Есть ли в товаре американские компоненты, ПО или технологии?','Проверьте правила реэкспорта EAR (BIS) и санкционные списки (Entity List и др.).']],
+  'sg.q.none':'Ничего не отмечено. Всё равно проверьте код ТН ВЭД в Yes-Trade перед экспортом.',
+  'sg.q.res':'Рекомендуемые действия','sg.q.reset':'Сбросить',
+  'sg.disc':'Это упрощённое изложение; окончательное решение — по заключению KOSTI и законодательству.',
+  'ct.lead':'Нажмите на ячейку — увидите нужные сертификаты, органы и сроки. Нажмите на страну — полный обзор страны; на отрасль — сравнение стран.',
+  'ct.lv':'Сложность сертификации','ct.lv1':'Низкая · общие правила','ct.lv2':'Средняя · испытания / декларация / уведомление','ct.lv3':'Высокая · сертификация третьей стороной / регистрация',
+  'ct.filter':'Показать рынки','ct.all':'Все',
+  'ct.m':'Обязательно','ct.c':'При необходимости','ct.v':'Добровольно',
+  'ct.lead.t':'Обычный срок','ct.w':'нед.','ct.mo':'мес.','ct.certs':'Необходимые сертификаты и требования','ct.note':'Примечание',
+  'ct.country':'Обзор страны','ct.industry':'Сравнить рынки','ct.key':'Главное','ct.links':'Органы',
+  'ct.more':'Подробнее (KnowTBT, Корея)','ct.ask':'Консультация GAWOO по сертификации',
+  'ct.disc':'Справочная сводка на октябрь 2026 г. Требования зависят от товара, кода ТН ВЭД и изменений правил — уточняйте у регулятора или в KnowTBT.',
+  'ct.back':'Назад','ct.open':'Подробнее',
+  'tool.sg':'Проверка стратегических товаров','tool.sgs':'Страт. товары','tool.sgd':'Критерии · ссылки KOSTI',
+  'tool.ct':'Матрица сертификации','tool.cts':'Сертификаты','tool.ctd':'9 рынков × 11 отраслей'
+ }
+};
+const ct=k=>(CC[LANG]&&CC[LANG][k]!==undefined)?CC[LANG][k]:CC.ko[k];
+const KNOWTBT='http://www.knowtbt.kr';
+let compTab='sg', compShown=null, sgChecked=new Set();
+const CVIS_KEY='gawoo-cert-mkts';
+try{ const s=JSON.parse(localStorage.getItem(CVIS_KEY)||'null'); if(Array.isArray(s)) compShown=new Set(s.filter(x=>CMKT.some(m=>m.id===x))); }catch(e){}
+if(!compShown||!compShown.size) compShown=new Set(CMKT.map(m=>m.id));
+
+function leadTxt(s){ const m=s.match(/^(\d+)-(\d+)([wm])$/); if(!m) return s; const u=m[3]==='w'?ct('ct.w'):ct('ct.mo'); return LANG==='ko'?`${m[1]}~${m[2]}${u}`:`${m[1]}–${m[2]} ${u}`; }
+const lvTxt=l=>ct('ct.lv'+l);
+const extA=(href,txt,cls)=>`<a href="${href}" target="_blank" rel="noopener"${cls?` class="${cls}"`:''}>${esc(txt)}</a>`;
+
+function renderComp(){
+  const root=document.getElementById('compliance'); if(!root) return;
+  document.querySelectorAll('[data-ct]').forEach(e=>e.textContent=ct(e.dataset.ct));
+  root.querySelectorAll('.comp-tabs button').forEach(b=>{ b.setAttribute('aria-selected',b.dataset.tab===compTab); });
+  document.getElementById('compSg').hidden=compTab!=='sg';
+  document.getElementById('compCert').hidden=compTab!=='cert';
+  renderSg(); renderMatrix();
+}
+
+function renderSg(){
+  const el=document.getElementById('compSg');
+  const types=ct('sg.types').map(([a,b,c])=>`<li><b>${esc(a)}</b><span>${esc(c)}</span><em>${esc(b)}</em></li>`).join('');
+  const steps=ct('sg.steps').map(([a,b],i)=>`<li><i>${i+1}</i><div><b>${esc(a)}</b><p>${esc(b)}</p></div></li>`).join('');
+  const links=['sg.l.yes','sg.l.kosti','sg.l.motir','sg.l.bis'].map((k,i)=>{const [a,b,u]=ct(k); return `<a class="sg-link${i<2?' main':''}" href="${u}" target="_blank" rel="noopener"><b>${esc(a)}</b><span>${esc(b)}</span><small>${esc(u.replace(/^https?:\/\//,''))} ↗</small></a>`;}).join('');
+  const qs=ct('sg.q').map(([q],i)=>`<label class="sg-q"><input type="checkbox" data-q="${i}"${sgChecked.has(i)?' checked':''}><span>${esc(q)}</span></label>`).join('');
+  el.innerHTML=`
+   <div class="sg-grid">
+    <div class="sg-main">
+     <h3>${esc(ct('sg.h3'))}</h3>
+     <p>${esc(ct('sg.def'))}</p>
+     <ul class="sg-types">${types}</ul>
+     <p class="sg-law">${esc(ct('sg.law'))}</p>
+     <h4>${esc(ct('sg.steps.h'))}</h4>
+     <ol class="sg-steps">${steps}</ol>
+     <div class="sg-cards">
+      <div class="sg-card"><b>${esc(ct('sg.catch.h'))}</b><p>${esc(ct('sg.catch'))}</p></div>
+      <div class="sg-card warn"><b>${esc(ct('sg.ru.h'))}</b><p>${esc(ct('sg.ru'))}</p></div>
+      <div class="sg-card red"><b>${esc(ct('sg.pen.h'))}</b><p>${esc(ct('sg.pen'))}</p></div>
+     </div>
+    </div>
+    <aside class="sg-side">
+     <h4>${esc(ct('sg.links.h'))}</h4>
+     <div class="sg-links">${links}</div>
+     <div class="sg-check">
+      <h4>${esc(ct('sg.q.h'))}</h4>
+      <p>${esc(ct('sg.q.lead'))}</p>
+      <div class="sg-qs">${qs}</div>
+      <div class="sg-res" id="sgRes" aria-live="polite"></div>
+     </div>
+    </aside>
+   </div>
+   <p class="comp-disc">${esc(ct('sg.disc'))}</p>`;
+  el.querySelectorAll('.sg-q input').forEach(c=>c.addEventListener('change',()=>{ const i=+c.dataset.q; c.checked?sgChecked.add(i):sgChecked.delete(i); renderSgRes(); }));
+  renderSgRes();
+}
+function renderSgRes(){
+  const r=document.getElementById('sgRes'); if(!r) return;
+  const q=ct('sg.q');
+  if(!sgChecked.size){ r.className='sg-res ok'; r.innerHTML=`<p>${esc(ct('sg.q.none'))}</p>`; return; }
+  r.className='sg-res alert';
+  r.innerHTML=`<b>${esc(ct('sg.q.res'))}</b><ul>${[...sgChecked].sort().map(i=>`<li>${esc(q[i][1])}</li>`).join('')}</ul><div class="sg-res-links">${extA('https://www.yestrade.go.kr','Yes-Trade ↗')}${extA('https://www.kosti.or.kr',ct('sg.l.kosti')[0]+' ↗')}<button type="button" class="sg-reset">${esc(ct('sg.q.reset'))}</button></div>`;
+  r.querySelector('.sg-reset').addEventListener('click',()=>{ sgChecked.clear(); renderSg(); });
+}
+
+const CSHORT={NRTL:'UL/NRTL',FDA_DEV:'510(k)/PMA',FDA_EST:'FDA Reg.',FFR:'FDA Food',FSVP:'FSVP',SEA_HACCP:'HACCP',SIMP:'SIMP/MMPA',DS:'Supplement',HAZCOM:'GHS SDS',FMVSS:'FMVSS',EPA_CARB:'EPA/CARB',ROHS:'RoHS/WEEE',ECO:'Ecodesign',MACH:'CE · Mach.',EUFOOD:'Food Law',EU_HC:'Health Cert.',CATCH:'IUU Catch',FSUPP:'Food Suppl.',TOY_EU:'CE · Toys',EMARK:'E-mark',CN_ROHS:'China RoHS',CEL:'Energy Label',TS:'TS Licence',NMPA_DEV:'NMPA',NMPA_COS:'NMPA',GACC_REG:'GACC Reg.',GB_FOOD:'GB Std.',CN_HC:'Official Cert.',CN_HF:'Blue Hat',MEE12:'MEE 12',CN_HAZ:'Haz. Chem.',GITEKI:'技適',PMD_DEV:'PMD Act',PMD_COS:'PMD Act',JP_FOOD:'Food San.',JP_LABEL:'Labeling',JP_IQ:'Import Quota',FFC:'機能性表示',JP_GHS:'GHS SDS',JP_PSC:'PSC',JP_TOYFOOD:'Food San.',JP_TRVA:'UN-R',EAC_CERT:'EAC Cert.',EAC_DEC:'EAC Decl.',SGR:'СГР',EAEU_MED:'EAEU Reg.',FSB:'FSB',VET:'Vet Cert.',CHZ:'Честный ЗНАК',TR041:'TR 041',UZ_CERT:'UZ Cert.',UZ_REG:'High-risk Reg.',UZ_MED:'MoH Reg.',UZ_RADIO:'Radio Cert.',UZ_VET:'Vet/Phyto',UZ_LABEL:'Asl Belgisi',VN_CR:'CR Mark',VN_MEPS:'Energy Label',VN_TA:'Type Approval',VN_MED:'MOH',VN_COS:'DAV',VN_FOOD:'Decree 15',VN_IMPORT:'Import Insp.',VN_CHEM:'Chem. Law',VN_VR:'VR',TISI:'TISI',TH_MED:'Thai FDA',TH_COS:'Thai FDA',TH_FOOD:'Thai FDA',TH_FISH:'DOF Permit',TH_HAZ:'Haz. Subst.',SABER:'SABER',GMARK:'G-Mark',SA_EE:'Energy Eff.',CST:'CST',SFDA_MD:'SFDA',SFDA_COS:'SFDA',SFDA_FOOD:'SFDA',SA_HF:'SFDA'};
+const cshort=id=>CSHORT[id]||CERT[id].n;
+function cellCerts(cell,max){
+  const list=cell[1]; const shown=list.slice(0,max).map(([id,t])=>`<span class="cc t-${t}" title="${esc(CERT[id].n)}">${esc(cshort(id))}</span>`).join('');
+  return shown+(list.length>max?`<span class="cc more">+${list.length-max}</span>`:'');
+}
+function renderMatrix(){
+  const el=document.getElementById('compCert');
+  const mk=CMKT.filter(m=>compShown.has(m.id));
+  const chips=`<button type="button" class="mchip all" data-m="*" aria-pressed="${compShown.size===CMKT.length}">${esc(ct('ct.all'))}</button>`+CMKT.map(m=>`<button type="button" class="mchip" data-m="${m.id}" aria-pressed="${compShown.has(m.id)}"><b>${m.code}</b>${esc(L(m.name))}</button>`).join('');
+  const head=mk.map(m=>`<th scope="col"><button type="button" class="mh" data-country="${m.id}"><b>${m.code}</b><span>${esc(L(m.short))}</span></button></th>`).join('');
+  const rows=CIND.map(ind=>`<tr><th scope="row"><button type="button" class="ih" data-ind="${ind.id}">${esc(L(ind.name))}</button></th>${mk.map(m=>{const c=CMAT[ind.id][m.id]; return `<td><button type="button" class="cell lv${c[0]}" data-ind="${ind.id}" data-country="${m.id}" aria-label="${esc(L(ind.name))} · ${esc(L(m.name))} · ${esc(lvTxt(c[0]))}">${cellCerts(c,2)}<em>${esc(leadTxt(c[2]))}</em></button></td>`;}).join('')}</tr>`).join('');
+  el.innerHTML=`
+   <p class="ct-lead">${esc(ct('ct.lead'))}</p>
+   <div class="ct-bar">
+    <div class="ct-legend"><span>${esc(ct('ct.lv'))}</span>${[1,2,3].map(l=>`<span class="lgi"><i class="lg lv${l}"></i><small>${esc(lvTxt(l))}</small></span>`).join('')}</div>
+    <div class="ct-legend tl"><span class="cc t-m">${esc(ct('ct.m'))}</span><span class="cc t-c">${esc(ct('ct.c'))}</span><span class="cc t-v">${esc(ct('ct.v'))}</span></div>
+   </div>
+   <div class="ct-filter" role="group" aria-label="${esc(ct('ct.filter'))}"><span>${esc(ct('ct.filter'))}</span>${chips}</div>
+   <div class="ct-wrap"><table class="ct-table"><colgroup><col class="c0">${mk.map(()=>'<col>').join('')}</colgroup><thead><tr><th scope="col" class="corner"></th>${head}</tr></thead><tbody>${rows}</tbody></table></div>
+   <p class="comp-disc">${esc(ct('ct.disc'))} ${extA(KNOWTBT,'KnowTBT ↗')}</p>`;
+  el.querySelectorAll('.mchip').forEach(b=>b.addEventListener('click',()=>{
+    const id=b.dataset.m;
+    if(id==='*') compShown=new Set(CMKT.map(m=>m.id));
+    else if(compShown.size===CMKT.length) compShown=new Set([id]);
+    else { compShown.has(id)?compShown.delete(id):compShown.add(id); if(!compShown.size) compShown=new Set(CMKT.map(m=>m.id)); }
+    try{ localStorage.setItem(CVIS_KEY,JSON.stringify([...compShown])); }catch(e){}
+    renderMatrix();
+  }));
+  el.querySelectorAll('.cell').forEach(b=>b.addEventListener('click',()=>openCert('cell',b.dataset.ind,b.dataset.country)));
+  el.querySelectorAll('.mh').forEach(b=>b.addEventListener('click',()=>openCert('country',null,b.dataset.country)));
+  el.querySelectorAll('.ih').forEach(b=>b.addEventListener('click',()=>openCert('ind',b.dataset.ind,null)));
+}
+
+// ---- 상세 대화상자 ----
+const certDlg=document.getElementById('certDlg');
+let certState=null, certHist=[];
+function certRow(id,t){ const c=CERT[id]; return `<li class="cr t-${t}"><span class="cc t-${t}">${esc(ct('ct.'+t))}</span><div><b>${esc(c.n)}</b><p>${esc(L(c.d))}</p>${c.url?extA(c.url,c.url.replace(/^https?:\/\//,'').replace(/\/$/,'').replace('xn--80ajghhoc2aj1c8b.xn--p1ai','честныйзнак.рф')+' ↗','cr-link'):''}</div></li>`; }
+function openCert(kind,ind,country,push){
+  if(push!==false&&certState&&certDlg.open) certHist.push(certState);
+  if(push===false) {} else if(!certDlg.open) certHist=[];
+  certState=[kind,ind,country];
+  const h=certDlg.querySelector('h3'), sub=certDlg.querySelector('.tool-sub'), body=certDlg.querySelector('.tool-body'), ic=certDlg.querySelector('.tool-ic');
+  const m=country&&CMKT.find(x=>x.id===country), I=ind&&CIND.find(x=>x.id===ind);
+  let html='';
+  if(kind==='cell'){
+    const c=CMAT[ind][country];
+    ic.textContent=m.code; h.textContent=`${L(m.name)} · ${L(I.name)}`; sub.textContent=lvTxt(c[0]);
+    html=`<div class="cd-meta"><span class="lvbadge lv${c[0]}">${esc(ct('ct.lv'))}: ${esc(lvTxt(c[0]))}</span><span class="leadbadge">${esc(ct('ct.lead.t'))}: <b>${esc(leadTxt(c[2]))}</b></span></div>
+      <h4>${esc(ct('ct.certs'))}</h4><ul class="cr-list">${c[1].map(([id,t])=>certRow(id,t)).join('')}</ul>
+      ${c[3]?`<div class="cd-note"><b>${esc(ct('ct.note'))}</b><p>${esc(L(c[3]))}</p></div>`:''}
+      <div class="cd-actions"><button type="button" class="btn-line sm" data-go="country">${esc(ct('ct.country'))} →</button><button type="button" class="btn-line sm" data-go="ind">${esc(ct('ct.industry'))} →</button></div>`;
+  } else if(kind==='country'){
+    ic.textContent=m.code; h.textContent=L(m.name); sub.textContent=ct('ct.country');
+    html=`<p class="cd-ov">${esc(L(m.ov))}</p>
+      <div class="cd-note"><b>${esc(ct('ct.key'))}</b><ul>${L(m.key).map(k=>`<li>${esc(k)}</li>`).join('')}</ul></div>
+      ${m.links.length?`<div class="cd-links"><b>${esc(ct('ct.links'))}</b>${m.links.map(([a,u])=>extA(u,a+' ↗')).join('')}</div>`:''}
+      <table class="cd-tbl"><tbody>${CIND.map(x=>{const c=CMAT[x.id][country]; return `<tr><th><button type="button" class="cd-row" data-ind="${x.id}" data-country="${country}">${esc(L(x.name))}</button></th><td><span class="lvdot lv${c[0]}" title="${esc(lvTxt(c[0]))}"></span></td><td>${cellCerts(c,4)}</td><td class="ld">${esc(leadTxt(c[2]))}</td></tr>`;}).join('')}</tbody></table>`;
+  } else {
+    ic.textContent='≡'; h.textContent=L(I.name); sub.textContent=ct('ct.industry');
+    html=`<table class="cd-tbl"><tbody>${CMKT.map(x=>{const c=CMAT[ind][x.id]; return `<tr><th><button type="button" class="cd-row" data-ind="${ind}" data-country="${x.id}"><b>${x.code}</b> ${esc(L(x.name))}</button></th><td><span class="lvdot lv${c[0]}" title="${esc(lvTxt(c[0]))}"></span></td><td>${cellCerts(c,4)}</td><td class="ld">${esc(leadTxt(c[2]))}</td></tr>`;}).join('')}</tbody></table>`;
+  }
+  html+=`<div class="cd-foot">${certHist.length?`<button type="button" class="btn-line sm cd-back">← ${esc(ct('ct.back'))}</button>`:''}${extA(KNOWTBT,ct('ct.more')+' ↗','btn-line sm')}<a class="btn-line sm cd-ask" href="#contact">${esc(ct('ct.ask'))}</a></div><p class="comp-disc">${esc(ct('ct.disc'))}</p>`;
+  body.innerHTML=html; body.scrollTop=0; certDlg.scrollTop=0;
+  body.querySelectorAll('.cd-row').forEach(b=>b.addEventListener('click',()=>openCert('cell',b.dataset.ind,b.dataset.country)));
+  body.querySelectorAll('[data-go]').forEach(b=>b.addEventListener('click',()=>openCert(b.dataset.go,b.dataset.go==='ind'?ind:null,b.dataset.go==='country'?country:null)));
+  const back=body.querySelector('.cd-back'); if(back) back.addEventListener('click',()=>{ const s=certHist.pop(); openCert(s[0],s[1],s[2],false); });
+  body.querySelector('.cd-ask').addEventListener('click',()=>certDlg.close());
+  if(!certDlg.open) certDlg.showModal();
+}
+certDlg.querySelector('.close').addEventListener('click',()=>certDlg.close());
+certDlg.addEventListener('click',e=>{ if(e.target===certDlg) certDlg.close(); });
+certDlg.addEventListener('close',()=>{ certHist=[]; certState=null; });
+function relabelCert(){ if(certDlg.open&&certState){ const s=certState; openCert(s[0],s[1],s[2],false); } }
+
+document.querySelectorAll('#compliance .comp-tabs button').forEach(b=>b.addEventListener('click',()=>{ compTab=b.dataset.tab; renderComp(); }));
+function goComp(tab){ compTab=tab; renderComp(); document.getElementById('compliance').scrollIntoView({behavior:'smooth'}); }
+document.addEventListener('click',e=>{ const a=e.target.closest('a[href="#certs"],a[data-tool="sg"]'); if(!a) return; e.preventDefault(); if(typeof closeFab==='function') closeFab(); goComp(a.getAttribute('href')==='#certs'?'cert':'sg'); });
+if(location.hash==='#certs') compTab='cert';
+renderComp();
 
 // ===== 방문자 카운터 + Cloudflare Web Analytics =====
 const VT={ko:{today:'오늘 방문',total:'전체 방문'},en:{today:'Today',total:'Total visits'},ru:{today:'Сегодня',total:'Всего посещений'}};
