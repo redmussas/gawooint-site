@@ -71,7 +71,7 @@ a{color:inherit}
 .wm-city.on circle.pulse{animation:wmPulse 2.6s ease-out infinite}
 @keyframes wmPulse{0%{opacity:.8;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
 .wm-city text{fill:#fff;font-family:var(--display);font-weight:700;font-size:var(--wm-fs,14px);paint-order:stroke;stroke:var(--indigo);stroke-width:4px;stroke-linejoin:round;opacity:0;transition:opacity .5s}
-.wm-city text.sub{fill:#9AA4C8;font-family:var(--body);font-weight:500;font-size:var(--wm-fs2,11px)}
+.wm-city text.sub{fill:#C3CAE4;font-family:var(--body);font-weight:500;font-size:var(--wm-fs2,11px);font-variant-numeric:tabular-nums}
 .wm-city.on text{opacity:1}
 .wm-hub circle.pt{fill:var(--saffron)}
 .wm-hub text{fill:var(--saffron);opacity:1}
@@ -263,6 +263,15 @@ footer .bank{margin-top:12px}
   .gallery{grid-template-columns:1fr 1fr}
   .gallery figure:last-child{grid-column:1/-1}
   section.block{padding:80px 0}
+}
+
+.wm-clocks{display:none}
+@media (max-width:700px){
+  .wm-clocks{display:flex;gap:8px;overflow-x:auto;padding:10px 16px 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .wm-clocks::-webkit-scrollbar{display:none}
+  .wm-clocks span{flex:none;display:flex;flex-direction:column;align-items:flex-start;gap:1px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:8px;padding:6px 10px;font-size:11.5px;color:#C3CAE4;line-height:1.3}
+  .wm-clocks b{color:#fff;font-size:12.5px}
+  .wm-clocks i{font-style:normal;font-weight:700;color:var(--saffron);font-size:14px;font-variant-numeric:tabular-nums}
 }
 
 /* Language switch */
@@ -500,6 +509,30 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
 .fab-grid .tool-tile{height:44px}
 .fab-grid .tt-tx b{font-size:13px}
 
+/* TradeIt popup */
+.bd-lead{font-size:15.5px;line-height:1.65}
+.bd-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 4px}
+.bd-stats div{background:var(--indigo);color:#fff;border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:1px}
+.bd-stats b{font-family:var(--display);font-size:22px;font-weight:800;color:var(--saffron);line-height:1.2}
+.bd-stats span{font-size:12.5px;color:#C9D0E6}
+.bd-h{font-size:15px;font-weight:800;margin:16px 0 8px}
+.bd-feat{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.bd-feat li{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:8px;padding:10px}
+.bd-ic{flex:none;width:34px;height:34px;border-radius:8px;background:#E2F4F4;color:#11605F;display:flex;align-items:center;justify-content:center}
+.bd-ic svg{width:20px;height:20px}
+.bd-feat b{display:block;font-size:14px;line-height:1.3}
+.bd-feat small{display:block;font-size:12.5px;color:var(--muted);line-height:1.4;margin-top:2px}
+.bd-how{margin-top:12px;font-size:13.5px;color:var(--ink);background:var(--paper);border-radius:8px;padding:9px 12px}
+.bd-cta{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin-top:16px}
+.bd-go{background:var(--tile);color:#fff;text-decoration:none;font-weight:800;font-size:16px;padding:12px 26px;border-radius:999px;display:inline-flex;gap:8px;align-items:center}
+.bd-go:hover{background:#167676}
+.bd-cta small{font-size:12px;color:var(--muted)}
+.bd-note{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;font-size:13.5px}
+.bd-note b{font-size:13.5px}
+.bd-note p{color:var(--muted);line-height:1.6;margin-top:2px}
+@media (max-width:760px){.bd-feat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.bd-lead{font-size:14px;line-height:1.55}.bd-stats{gap:6px;margin-top:10px}.bd-stats div{padding:8px}.bd-stats b{font-size:17px}.bd-stats span{font-size:11.5px;line-height:1.3}.bd-h{margin:12px 0 6px}.bd-feat{gap:6px}.bd-feat li{padding:8px;gap:8px;align-items:center}.bd-ic{width:28px;height:28px}.bd-ic svg{width:17px;height:17px}.bd-feat b{font-size:13px}.bd-feat small,.bd-how{display:none}.bd-cta{margin-top:12px}.bd-go{width:100%;justify-content:center}.bd-cta small{width:100%;text-align:center}.bd-note{margin-top:10px;padding-top:10px;font-size:12.5px}}
+
 /* ===== Trade news ===== */
 .news{background:#fff;border-bottom:1px solid var(--line)}
 .news-top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
@@ -599,11 +632,11 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
 .ct-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-size:13px}
 .ct-legend>span:first-child{font-weight:700;margin-right:4px}
 .ct-legend small{font-size:12.5px;color:var(--muted);margin-right:8px}
-.lg{display:inline-block;width:16px;height:16px;border-radius:4px}
+.ct-legend .lg{display:inline-block;width:16px;height:16px;border-radius:4px}
 .lv1{--lv:#E6F5EC;--lvb:#2E9E5B}
 .lv2{--lv:#FFF4DC;--lvb:#D99A1E}
 .lv3{--lv:#FDE8E8;--lvb:#D64545}
-.lg{background:var(--lv);border:2px solid var(--lvb)}
+.ct-legend .lg{background:var(--lv);border:2px solid var(--lvb)}
 .cc{display:inline-block;font-size:12px;font-weight:700;line-height:1.3;padding:2px 7px;border-radius:5px;white-space:nowrap}
 .cc.t-m{background:var(--indigo);color:#fff}
 .cc.t-c{background:#fff;color:var(--indigo);border:1px solid var(--indigo)}
@@ -726,6 +759,7 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
       <g id="wmDots"></g><g id="wmArcs"></g><g id="wmCities"></g>
     </svg>
   </div>
+  <div class="wm-clocks" id="wmClocks" aria-label="Local time"></div>
 
   <div class="hero-foot">
     <div class="wrap">
@@ -1004,7 +1038,7 @@ ko:{
   'ct.mail':'이메일 보내기','ct.talk':'네이버 톡톡 상담','ct.map':'네이버 지도에서 보기',
   'f.company':'가우인터네셔널','f.ceo':'대표 김전우','f.bizno':'사업자등록번호 350-34-00405','f.ecom':'통신판매업 신고번호 2021-전남나주-0192호',
   'f.tel':'전화 061-930-0663','f.email':'이메일 info@gawooint.com','f.bank':'계좌 국민은행 777101-01-369-641 (예금주 김전우(가우인터네셔널))',
-  'city':{hub:['한국','GAWOO INT.'],was:['워싱턴 D.C.','미국'],mad:['마드리드','스페인'],ber:['베를린','독일'],mos:['모스크바','러시아'],tas:['타슈켄트','우즈베키스탄'],ast:['아스타나','카자흐스탄'],bei:['베이징','중국'],tok:['도쿄','일본'],han:['하노이','베트남'],ban:['방콕','태국'],riy:['리야드','사우디아라비아']}
+  'city':{hub:['서울','대한민국'],was:['워싱턴 D.C.','미국'],mad:['마드리드','스페인'],ber:['베를린','독일'],mos:['모스크바','러시아'],tas:['타슈켄트','우즈베키스탄'],ast:['아스타나','카자흐스탄'],bei:['베이징','중국'],tok:['도쿄','일본'],han:['하노이','베트남'],ban:['방콕','태국'],riy:['리야드','사우디아라비아']}
 },
 en:{
   'pr.ai':'Big data search and analysis powered by AI',
@@ -1049,7 +1083,7 @@ en:{
   'ct.mail':'Send an email','ct.talk':'Chat on Naver TalkTalk','ct.map':'View on Google Maps',
   'f.company':'GAWOO INTERNATIONAL','f.ceo':'CEO Kim Jeonwoo','f.bizno':'Business Reg. No. 350-34-00405','f.ecom':'E-commerce Reg. No. 2021-Jeonnam Naju-0192',
   'f.tel':'Tel +82-61-930-0663','f.email':'Email info@gawooint.com','f.bank':'Bank: KB Kookmin Bank 777101-01-369-641 (Account holder: GAWOO INTERNATIONAL, Kim Jeonwoo)',
-  'city':{hub:['Korea','GAWOO INT.'],was:['Washington, D.C.','USA'],mad:['Madrid','Spain'],ber:['Berlin','Germany'],mos:['Moscow','Russia'],tas:['Tashkent','Uzbekistan'],ast:['Astana','Kazakhstan'],bei:['Beijing','China'],tok:['Tokyo','Japan'],han:['Hanoi','Vietnam'],ban:['Bangkok','Thailand'],riy:['Riyadh','Saudi Arabia']}
+  'city':{hub:['Seoul','South Korea'],was:['Washington, D.C.','USA'],mad:['Madrid','Spain'],ber:['Berlin','Germany'],mos:['Moscow','Russia'],tas:['Tashkent','Uzbekistan'],ast:['Astana','Kazakhstan'],bei:['Beijing','China'],tok:['Tokyo','Japan'],han:['Hanoi','Vietnam'],ban:['Bangkok','Thailand'],riy:['Riyadh','Saudi Arabia']}
 },
 ru:{
   'pr.ai':'Поиск и анализ больших данных с помощью ИИ',
@@ -1094,7 +1128,7 @@ ru:{
   'ct.mail':'Написать письмо','ct.talk':'Чат в Naver TalkTalk','ct.map':'Открыть в Google Картах',
   'f.company':'GAWOO INTERNATIONAL','f.ceo':'Генеральный директор Ким Чжон У','f.bizno':'Рег. номер предприятия 350-34-00405','f.ecom':'Рег. номер интернет-торговли 2021-Jeonnam Naju-0192',
   'f.tel':'Тел. +82-61-930-0663','f.email':'E-mail info@gawooint.com','f.bank':'Банк: KB Kookmin Bank 777101-01-369-641 (получатель: GAWOO INTERNATIONAL, Ким Чжон У)',
-  'city':{hub:['Корея','GAWOO INT.'],was:['Вашингтон','США'],mad:['Мадрид','Испания'],ber:['Берлин','Германия'],mos:['Москва','Россия'],tas:['Ташкент','Узбекистан'],ast:['Астана','Казахстан'],bei:['Пекин','Китай'],tok:['Токио','Япония'],han:['Ханой','Вьетнам'],ban:['Бангкок','Таиланд'],riy:['Эр-Рияд','Саудовская Аравия']}
+  'city':{hub:['Сеул','Южная Корея'],was:['Вашингтон','США'],mad:['Мадрид','Испания'],ber:['Берлин','Германия'],mos:['Москва','Россия'],tas:['Ташкент','Узбекистан'],ast:['Астана','Казахстан'],bei:['Пекин','Китай'],tok:['Токио','Япония'],han:['Ханой','Вьетнам'],ban:['Бангкок','Таиланд'],riy:['Эр-Рияд','Саудовская Аравия']}
 }};
 const LANGS=['ko','en','ru'];
 let LANG=(function(){
@@ -1234,14 +1268,14 @@ const WorldMap=(function(){
   let html='';
   RUNS.split('|').forEach((row,r)=>{ if(!row) return; row.split(',').forEach(run=>{ const [c,n]=run.split('.').map(Number); for(let i=0;i<n;i++) html+=`<circle cx="${((c+i)*CELL+CELL/2).toFixed(1)}" cy="${(r*CELL+CELL/2).toFixed(1)}" r="2.1"/>`; }); });
   document.getElementById('wmDots').innerHTML=html;
-  const HUB={id:'hub', ll:[126.98,37.57], lab:'b'};
+  const HUB={id:'hub', tz:'Asia/Seoul', ll:[126.98,37.57], lab:'b'};
   const CITIES=[
-    {id:'bei', ll:[116.40,39.90], lab:'tl'},{id:'tok', ll:[139.69,35.69], lab:'r'},
-    {id:'han', ll:[105.85,21.03], lab:'l'},{id:'ban', ll:[100.50,13.76], lab:'l'},
-    {id:'tas', ll:[69.24,41.30], lab:'b'},{id:'ast', ll:[71.45,51.17], lab:'t'},
-    {id:'mos', ll:[37.62,55.76], lab:'t'},{id:'riy', ll:[46.68,24.71], lab:'b'},
-    {id:'ber', ll:[13.40,52.52], lab:'tl'},{id:'mad', ll:[-3.70,40.42], lab:'b'},
-    {id:'was', ll:[-77.04,38.91], lab:'t', labSm:'r'}
+    {id:'bei', tz:'Asia/Shanghai', ll:[116.40,39.90], lab:'tl'},{id:'tok', tz:'Asia/Tokyo', ll:[139.69,35.69], lab:'t'},
+    {id:'han', tz:'Asia/Ho_Chi_Minh', ll:[105.85,21.03], lab:'l'},{id:'ban', tz:'Asia/Bangkok', ll:[100.50,13.76], lab:'l'},
+    {id:'tas', tz:'Asia/Tashkent', ll:[69.24,41.30], lab:'b'},{id:'ast', tz:'Asia/Almaty', ll:[71.45,51.17], lab:'t'},
+    {id:'mos', tz:'Europe/Moscow', ll:[37.62,55.76], lab:'t'},{id:'riy', tz:'Asia/Riyadh', ll:[46.68,24.71], lab:'b'},
+    {id:'ber', tz:'Europe/Berlin', ll:[13.40,52.52], lab:'tl'},{id:'mad', tz:'Europe/Madrid', ll:[-3.70,40.42], lab:'b'},
+    {id:'was', tz:'America/New_York', ll:[-77.04,38.91], lab:'t', labSm:'r'}
   ];
   const arcs=document.getElementById('wmArcs'), cities=document.getElementById('wmCities');
   const [hx,hy]=P(...HUB.ll);
@@ -1251,11 +1285,19 @@ const WorldMap=(function(){
     el('circle',{class:'pulse',cx:x,cy:y,r:isHub?6:4},g);
     el('circle',{class:'pt',cx:x,cy:y,r:isHub?5.5:3.6},g);
     g._t=el('text',{},g); g._s=el('text',{class:'sub'},g);
-    g._pos=[x,y]; g._lab=c.lab; g._labSm=c.labSm; g._id=c.id;
+    g._pos=[x,y]; g._lab=c.lab; g._labSm=c.labSm; g._id=c.id; g._tz=c.tz;
     return g;
   }
   let small=false;
-  function setNames(){ cities.querySelectorAll('.wm-city').forEach(g=>{ const nm=t('city')[g._id]; g._t.textContent=nm[0]; g._s.textContent=nm[1]; }); }
+  const tmf={};
+  const clock=tz=>{ try{ return (tmf[tz]||(tmf[tz]=new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',hour12:false}))).format(new Date()); }catch(e){ return ''; } };
+  const clk=document.getElementById('wmClocks');
+  function setNames(){
+    const rows=[];
+    cities.querySelectorAll('.wm-city').forEach(g=>{ const nm=t('city')[g._id], tm=clock(g._tz); g._t.textContent=nm[0]; g._s.textContent=tm?`${nm[1]} · ${tm}`:nm[1]; g._s.style.display=small?'none':''; rows.push(`<span><b>${esc(nm[0])}</b>${esc(nm[1])}<i>${tm}</i></span>`); });
+    if(clk) clk.innerHTML=rows.join('');
+  }
+  setInterval(setNames,30000);
   function placeLabels(fs){
     cities.querySelectorAll('.wm-city').forEach(g=>{
       const [x,y]=g._pos, d=fs*0.85, lh=fs*1.05; let tx=x, ty=y, anc='middle';
@@ -1283,8 +1325,7 @@ const WorldMap=(function(){
     svg.setAttribute('viewBox',vb.join(' '));
     const sc=w/vb[2], fs=(small?10.5:13)/sc, fs2=10.5/sc;
     svg.style.setProperty('--wm-fs',fs.toFixed(1)+'px'); svg.style.setProperty('--wm-fs2',fs2.toFixed(1)+'px');
-    svg.querySelectorAll('.wm-city text.sub').forEach(e=>e.style.display=small?'none':'');
-    placeLabels(fs);
+    setNames(); placeLabels(fs);
   }
   setNames(); fit(); addEventListener('resize',fit);
   function finish(it){
@@ -1386,6 +1427,49 @@ const m=location.hash.match(/^#item-(.+)$/);
 if(m){ const i=BIZ.findIndex(d=>d.slug===m[1]); if(i>=0){ document.getElementById('business').scrollIntoView(); openDetail(i);} }
 setTimeout(maybePromo,800);
 
+// ===== 무역 빅데이터 조회 (TradeIt 안내 팝업) =====
+const BD={
+ ko:{lead:'TradeIt은 전 세계 선하증권(B/L)과 통관 기록을 모아, 어떤 회사가 무엇을 누구와 얼마나 거래하는지 보여주는 무역 데이터 플랫폼입니다.',
+  stats:[['200+','국가·지역'],['80억+','건의 무역 기록'],['AI','분석·요약']],
+  fh:'주요 기능',
+  f:[['buyer','바이어 발굴','우리 품목을 실제로 수입 중인 회사 찾기'],['box','공급처 찾기','원하는 제품을 수출하는 해외 제조사 확인'],['stats','경쟁사 분석','경쟁사의 거래처·물량·추세 파악'],['customs','거래 이력 조회','품목·HS코드·회사명으로 선적 내역 검색'],['globe','시장 동향','국가·품목별 수입 규모와 변화'],['ai','AI · 바이어 관리','AI 분석 요약, CRM·이메일 발송']],
+  how:'검색 방법 — 품목명, HS코드 또는 회사명을 입력하면 관련 회사와 거래 내역이 바로 나옵니다.',
+  btn:'조회하러 가기',
+  nh:'처음 이용하시나요?',
+  note:'TradeIt 계정이 없다면 위 버튼으로 들어가 무료 회원가입을 먼저 해 주세요. 가입 후 같은 화면에서 바로 조회를 시작할 수 있습니다.',
+  partner:'가우인터네셔널의 TradeIt 파트너 링크로 연결됩니다.'},
+ en:{lead:'TradeIt compiles bills of lading (B/L) and customs records worldwide to show which companies trade what, with whom and how much.',
+  stats:[['200+','countries & regions'],['8B+','trade records'],['AI','analysis & summaries']],
+  fh:'Key features',
+  f:[['buyer','Find buyers','Companies already importing your product'],['box','Find suppliers','Overseas makers exporting what you need'],['stats','Competitor analysis','Their customers, volumes and trends'],['customs','Shipment history','Search by product, HS code or company'],['globe','Market trends','Import size and change by country and product'],['ai','AI & CRM','AI summaries, buyer management, email outreach']],
+  how:'How to search — enter a product name, HS code or company name to see related companies and shipments.',
+  btn:'Start searching',
+  nh:'New to TradeIt?',
+  note:'If you don’t have an account yet, use the button above and sign up for free first. You can start searching right after signing up.',
+  partner:'Opens via GAWOO INTERNATIONAL’s TradeIt partner link.'},
+ ru:{lead:'TradeIt собирает коносаменты (B/L) и таможенные записи со всего мира и показывает, какие компании чем, с кем и в каких объёмах торгуют.',
+  stats:[['200+','стран и регионов'],['8 млрд+','торговых записей'],['ИИ','анализ и сводки']],
+  fh:'Основные функции',
+  f:[['buyer','Поиск покупателей','Компании, уже импортирующие ваш товар'],['box','Поиск поставщиков','Зарубежные производители нужного товара'],['stats','Анализ конкурентов','Их клиенты, объёмы и динамика'],['customs','История поставок','Поиск по товару, коду ТН ВЭД или компании'],['globe','Рыночные тренды','Объём и динамика импорта по странам и товарам'],['ai','ИИ и CRM','Сводки ИИ, работа с покупателями, рассылки']],
+  how:'Как искать — введите название товара, код ТН ВЭД или компанию, и сразу увидите связанные компании и поставки.',
+  btn:'Перейти к поиску',
+  nh:'Впервые в TradeIt?',
+  note:'Если у вас ещё нет аккаунта, перейдите по кнопке выше и сначала бесплатно зарегистрируйтесь. Сразу после регистрации можно начинать поиск.',
+  partner:'Ссылка-партнёр GAWOO INTERNATIONAL для TradeIt.'}
+};
+function bdBody(){
+  const d=BD[LANG]||BD.ko;
+  return `<div class="bd">
+    <p class="bd-lead">${esc(d.lead)}</p>
+    <div class="bd-stats">${d.stats.map(([a,b])=>`<div><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join('')}</div>
+    <h4 class="bd-h">${esc(d.fh)}</h4>
+    <ul class="bd-feat">${d.f.map(([ic,a,b])=>`<li><span class="bd-ic">${ticon(ic)}</span><div><b>${esc(a)}</b><small>${esc(b)}</small></div></li>`).join('')}</ul>
+    <p class="bd-how">${esc(d.how)}</p>
+    <div class="bd-cta"><a class="btn bd-go" href="${TRADEIT_URL}" target="_blank" rel="noopener sponsored">${esc(d.btn)} <span aria-hidden="true">→</span></a><small>${esc(d.partner)}</small></div>
+    <div class="bd-note"><b>${esc(d.nh)}</b><p>${esc(d.note)}</p></div>
+  </div>`;
+}
+
 // ===== 무역·물류 도구 모음 =====
 const TICON={
   cbm:'<path d="M24 6 40 15v18L24 42 8 33V15z"/><path d="M8 15l16 9 16-9M24 24v18"/>',
@@ -1424,7 +1508,7 @@ const TOOLS=[
   {id:'clock',short:{ko:'세계 시간',en:'World clock',ru:'Время'},g:'calc',icon:'clock',type:'modal',name:{ko:'세계 시간',en:'World clock',ru:'Мировое время'},desc:{ko:'거래국 현지 시각·업무시간',en:'Local time & office hours',ru:'Местное и рабочее время'}},
   {id:'incoterms',short:{ko:'인코텀즈',en:'Incoterms',ru:'Инкотермс'},g:'calc',icon:'terms',type:'modal',name:{ko:'인코텀즈 2020',en:'Incoterms 2020',ru:'Инкотермс 2020'},desc:{ko:'11개 조건 한눈에',en:'All 11 rules at a glance',ru:'Все 11 условий'}},
   {id:'unipass',short:{ko:'UNI-PASS',en:'UNI-PASS',ru:'UNI-PASS'},g:'lookup',icon:'customs',type:'link',url:'https://unipass.customs.go.kr',name:{ko:'관세청 UNI-PASS',en:'Korea Customs UNI-PASS',ru:'Таможня Кореи UNI-PASS'},desc:{ko:'통관·화물 조회 · 환율 · HS코드',en:'Customs, cargo, rates, HS codes',ru:'Таможня, грузы, курсы, ТН ВЭД'}},
-  {id:'bldata',short:{ko:'무역 빅데이터',en:'Trade data',ru:'Торг. данные'},g:'lookup',icon:'ai',type:'link',url:'https://www.tradeit.global/en?code=6KH0LP46',sponsored:true,hot:true,name:{ko:'무역 빅데이터 조회',en:'Trade big data search',ru:'Поиск по торговым данным'},desc:{ko:'B/L 기준 AI 거래·바이어 분석',en:'AI analysis of B/L shipments',ru:'ИИ-анализ поставок по B/L'}},
+  {id:'bldata',short:{ko:'무역 빅데이터',en:'Trade data',ru:'Торг. данные'},g:'lookup',icon:'ai',type:'modal',url:'https://www.tradeit.global/en?code=6KH0LP46',hot:true,name:{ko:'무역 빅데이터 조회',en:'Trade big data search',ru:'Поиск по торговым данным'},desc:{ko:'B/L 기준 AI 거래·바이어 분석',en:'AI analysis of B/L shipments',ru:'ИИ-анализ поставок по B/L'}},
   {id:'credit',short:{ko:'기업 신용조회',en:'Credit check',ru:'Проверка'},g:'lookup',icon:'credit',type:'link',url:'https://www.creport.co.kr/',name:{ko:'기업 신용정보 조회',en:'Company credit check',ru:'Проверка компаний'},desc:{ko:'국내·해외 기업 신용 확인 (CREPORT)',en:'Korean & overseas firms (CREPORT)',ru:'Компании Кореи и мира (CREPORT)'}},
   {id:'track',short:{ko:'컨테이너 추적',en:'Tracking',ru:'Трекинг'},g:'lookup',icon:'track',type:'link',url:'https://www.track-trace.com/container',name:{ko:'컨테이너 추적',en:'Container tracking',ru:'Отслеживание контейнера'},desc:{ko:'컨테이너 번호로 선사 조회',en:'By container number',ru:'По номеру контейнера'}},
   {id:'sg',short:{ko:'전략물자',en:'Strategic goods',ru:'Страт. товары'},g:'lookup',icon:'sgi',type:'anchor',url:'#compliance',hot:true,name:{ko:'전략물자 확인',en:'Strategic goods check',ru:'Стратегические товары'},desc:{ko:'판정 기준·무역안보관리원 연결',en:'Criteria · KOSTI links',ru:'Критерии · ссылки KOSTI'}},
@@ -1493,6 +1577,7 @@ const UNITS={
 let cbmRows=[{l:'',w:'',h:'',q:'1',kg:''}];
 let clockTimer=null;
 function toolBody(id){
+  if(id==='bldata') return bdBody();
   if(id==='cbm'){
     return `<div class="cbm">
       <div class="cbm-rows" id="cbmRows"></div>
