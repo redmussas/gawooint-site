@@ -1,61 +1,115 @@
 {
- "updated": "2026-11-04T00:56:15.734206+00:00",
+ "updated": "2026-11-05T01:06:02.944888+00:00",
  "keepDays": 30,
  "items": {
   "ko": [
    {
-    "title": "통상본부장, APEC 회의서 자유무역협정 확대 제안",
-    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE05X2xNaFN3dHNDR0RDOWk5aTQ2bUM3SzRqb3NPeGpFa1IzMnVCZUZRdlhsR3JaYy1PUi1uR1pJdDlXbW8tLTZFWmVzcngycFJwVmZKdlJQZVJvRE1qa0JWYlp6VHN2bTA?oc=5",
-    "source": "연합뉴스TV",
-    "date": "2026-11-04T00:32:00+00:00",
+    "title": "K-뷰티 美 수출 40% 급증에도 관세 부담…민주당 승리에도 불확실성",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9COFlXNnRkbnBTVkFlNFhQZmNybEdWS1BxQkdlVXdXRVpxWk5QczRnRVRERnBfNkFSN01MQzZ3b2paaHFRNVF6ZDFuamtmMU1PNDF3OFZ6aU1XU2NHb1h5V0pBS2dFbEpVc21N?oc=5",
+    "source": "www.hdnews.co.kr",
+    "date": "2026-11-05T00:42:15+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 6
+   },
+   {
+    "title": "AI가 삼켜버린 미국 통상... 고율 관세 넘어서며 수입 폭증을 이끌다",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTk9IVTJhRnhYZjI5a0FtSWRZY19XbE8xQTBEZ1UxcXhtZkQ1RlE1Y1lpMzFXZV9LRXZHTERtVGpvT214U2lMZ3BocktoOUNDWUJ1UDV1cmk1NXRwcVVVamU3T0tCaWxKaDFidlpRc21LLU9Pb0d5aXdlcm1abzJUcjFmdWZQYjhf?oc=5",
+    "source": "글로벌이코노믹",
+    "date": "2026-11-05T00:11:17+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 8
+   },
+   {
+    "title": "[수출 1조 달러 ③] 車, 관세 압박 속 '수출 호실적'···현지 생산 확대 '변수'",
+    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tdDhaNjhWUGI2MWlzZ0NUc1E2amtNWlJ5QnhQelotUGZvOFlPaWt6ZnRnUXBZOUNyZllsQkxBWG1RYnJIT3FNd052emU3QWVWMWozSklBSlpUTVFaN2psaUp6M2g1VEI0M0E?oc=5",
+    "source": "서울파이낸스",
+    "date": "2026-11-04T23:00:00+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 6
+   },
+   {
+    "title": "반도체 수출 호황이어도 다른 수출기업은 웃지 못하는 이유",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Hb25NZ2p5aTk0WG56Ty1sTDhTNlEzejNZalRMZmRjM1p4bGxkMWhMOVVzMFFfMlh5Qzh1VFd2SU9qMlBPd0sxekdRaTl1M0RrdmFMeDR0a295dW42aWlJb29TZlY?oc=5",
+    "source": "주간동아",
+    "date": "2026-11-04T22:00:02+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 5
+   },
+   {
+    "title": "의회 뺏긴 트럼프, 관세 쥐고 흔들 듯…韓통상 셈법 복잡",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxObTZtRmdRVjJPNlF4bXRBdm14dTU1R2dLMG4weGl5bkJDWUs1U2VRWE15WHhvQjN1dTRvdWhEcDlJRFQycEV6azduYWRNandFalFseHlWeUx2QUwxMG1icmlycGdPMjdSOWdKVU1SX1JsNFJPUVRWUWRoLUR2aUt5bA?oc=5",
+    "source": "이데일리",
+    "date": "2026-11-04T19:55:14+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 6
+   },
+   {
+    "title": "日, 러시아에 자동차 불법 수출한 한국 국적 남성 체포",
+    "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9oRnIxZm5OMnpHaU5iemhGdlBaWlJaMTc0c1dYWU83ZmY4dG1FNTEtY19GS0dUaFg4SmFpQ29pbG5xYWE1NG80aWhIMmRicHpiU2FUTmFR?oc=5",
+    "source": "중앙일보",
+    "date": "2026-11-04T16:51:52+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 5
+   },
+   {
+    "title": "관세청, 「코리아 커스텀즈 위크 2026」 성료… 수출기업 통관 장벽 완화",
+    "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9YR24ya2Y3SEZRVlUxM2V2cFMxTnlFQ0ExbnE5aUlINHhNam02U0tITzN1MlFrVVN5MzRfM0VTamFScGZtdmdDX0FiVVVBbExvRFRzdnY0dzA0LWpVVFU3cDFheVZMenptYWZv0gFrQVVfeXFMT1hHbjJrZjdIRlFWVTEzZXZwUzFOeUVDQTFucTlpSUg0eE1qbTZTS0hPM3UyUWtVU3kzNF8zRVNqYVJwZm12Z0NfQWJVVUFsTG9EVHN2djR3MDQtalVUVTdwMWF5Vkx6em1hZm8?oc=5",
+    "source": "한국관세신문",
+    "date": "2026-11-04T12:48:28+00:00",
     "day": "2026-11-04",
     "cat": "policy",
     "score": 8
    },
    {
-    "title": "통상본부장, APEC 외교·통상 각료회의서 FTA 확대 제안",
-    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1sYlA2cF9VM3JHSHJHTHQwZW5JRV8tNEl5ZmQ1Z0tJSHRPLVNGaXE5OUVoU2F4RXVWSHloOXg3YURMMTlsZXhycEN0Ry1BOUF5dmVvLXJYejU3SldOUzFlNV9kaDg?oc=5",
-    "source": "서울경제TV",
-    "date": "2026-11-04T00:20:30+00:00",
+    "title": "[기획-무역 FOCUS] 멕시코·캐나다 교역 18.3% 증가…미국 관세 속 통상 협력 강화",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE80X0M0UTRDVFIwTWk0YVdnRkNVWTl3Z2ttemItQ3dvbm41U2hnNUlrVzVNSnF2OWh6ZGVObmFkTWFzcVZZczY2dnFOMDVsZDU4VmdZOGlGb0pXcjVYdXVLSUx2RmNwNnZy?oc=5",
+    "source": "국제통상신문",
+    "date": "2026-11-04T09:28:43+00:00",
     "day": "2026-11-04",
     "cat": "policy",
-    "score": 6
+    "score": 9
    },
    {
-    "title": "[글로벌 통상·경제협력] 한국, APEC서 FTA 확대·AI 통상협력 제안…아태 경제통합 가속화 모색",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBwN0pLMTBsNWppeEk2cEFhUVktb251dExYaUR0eHF4ZDNfV2lURFdEbnRuSHZob3NfazVEQjVxdnpmZS1mQjZudWZHNzBJUGJ4eHR2cjVpREtVQWlrTTN1WHU1VWZramJGZW8yeTJB?oc=5",
-    "source": "코리아포스트 한글판",
-    "date": "2026-11-04T00:01:24+00:00",
+    "title": "포항상의, 영천 수출기업 대상 FTA 활용교육…대미 원산지 검증 대응 지원",
+    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9CQl9aSEYxdmFGRVN1ZlNqOFlwYW5EMXRkdzhjSHNXR0Z5bjA4UU9UbkFfMUJ5ckN4Z2phVndiYVhGZnRCOXJrYTJFb2poa0RidGNsR2F0QzlDYXZmUjJ6Y2xKOWE0Y2FsY3RDdg?oc=5",
+    "source": "페로타임즈",
+    "date": "2026-11-04T08:33:14+00:00",
     "day": "2026-11-04",
     "cat": "policy",
-    "score": 6
+    "score": 8
    },
    {
-    "title": "통상본부장 \"APEC 역내 FTA 확대해야…공급망 협력 강화\"",
-    "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1rV0laSHNLZDJ3MmlwdnRKejZpbnZzUEw5b3V0MjdsYVpnaWJ5V192S2NPR0d3aVdOX0pYY2FvWTQweElQTDZkbm5XSmZMZUtHNkZCMzJNcWtzSVdwdnBySFd2Tk5oTnowMjA0M3NKTDF6UTRxandCa9IBeEFVX3lxTE1rV0laSHNLZDJ3MmlwdnRKejZpbnZzUEw5b3V0MjdsYVpnaWJ5V192S2NPR0d3aVdOX0pYY2FvWTQweElQTDZkbm5XSmZMZUtHNkZCMzJNcWtzSVdwdnBySFd2Tk5oTnowMjA0M3NKTDF6UTRxandCaw?oc=5",
-    "source": "뉴시스",
-    "date": "2026-11-03T21:00:00+00:00",
+    "title": "통상본부장, APEC 각료회의서 FTA 확대·AI 공급망 협력 강화 제안",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5KZUdnOHJPemJFSkZhUjdLVUZ1UjJDQmdkdmV0U3M2WnJBbVdmTlFCd2dRVFNjV3U4NTBUN25VUUJrMmMtNkIxdzVXU1l0REdWNmNuMUFxek95UWw0YkxuMm1HMC0?oc=5",
+    "source": "매일일보",
+    "date": "2026-11-04T08:17:55+00:00",
     "day": "2026-11-04",
     "cat": "world",
     "score": 8
    },
    {
-    "title": "[사설] 수출 1조 달러 시대라는데 지역 기업은 환율 역풍에 고통",
-    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFB4NlZBVG5JZlJhQTB5dTdiNG9SUEJaYld3bS1tWUdycUhQb2k3Q1pJWXpaVk13SUxGa0NtbWRyaG9GZDlVTmgtOFFxZnNQdzM2elZKSlpZYjEzVDkxVFBLMVhjdG1ReHNYcjVzamhYbWdyeWZ0?oc=5",
-    "source": "부산일보",
-    "date": "2026-11-03T20:10:00+00:00",
+    "title": "인천FTA통상진흥센터, 인증수출자 제도·FTA 실무교육 실시",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE55cld0cmFpaWp5QXZxNHdsaDJiVHV6VnlYN1hSb05Lal9ualMxeHozMldWZWVEZUZKbDV5dHBJY3JXYmNqQW5Mc010RjBnMklPQlpxYnpmSjJvV2d0MDRqcHdLTjRRMlJ2WHoxYmowUQ?oc=5",
+    "source": "기호일보",
+    "date": "2026-11-04T06:51:25+00:00",
     "day": "2026-11-04",
     "cat": "policy",
-    "score": 5
+    "score": 9
    },
    {
-    "title": "러시아, 화학 원료 5종 수출 3개월 금지...우크라 공습 피해 속 내수 통제",
-    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPeDJ3ZnVUZGF3REZYRnpwbV9IbTE4dHVBQkFIWTl2Y1NISWVUWFBMNnpTMFZLakNUSVktQkFGcFZrbXl4VXo1TnE3MndtM2JGSjNJQ3lWUXFnV2p0VmlaMDZ3VlJpZ2tzZlhjNUF4Y1JPajFQRkFOZ0dIN1I0U0tZRnhCdnN4WHM?oc=5",
-    "source": "글로벌이코노믹",
-    "date": "2026-11-03T18:24:10+00:00",
+    "title": "인천FTA통상진흥센터, 인증수출자 이해를 위한 FTA 실무교육 성료",
+    "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1SWWY5WGNuZWNjbDhLUE4zNHdqQnNCS2g5dndvRkdLRzNBTjdNaGRVOF8wa1VlTVZaVkd2U2FrRDVzWl85dGQ2ZklDMmlGV1RmZzJDWkxWWm9DQ3RMQXo4RmRwZHRoUDFMeWNIeGlvOA?oc=5",
+    "source": "인천뉴스",
+    "date": "2026-11-04T05:13:55+00:00",
     "day": "2026-11-04",
-    "cat": "cis",
-    "score": 5
+    "cat": "policy",
+    "score": 9
    },
    {
     "title": "관세 변화에 FTA로 대응…영천 수출기업 맞춤교육",
@@ -1622,116 +1676,116 @@
     "day": "2026-10-06",
     "cat": "cis",
     "score": 7
-   },
-   {
-    "title": "중동 원유수출 전쟁전수준 회복에도 유가 안떨어지는 이유는?",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9LQWRuenZwd0tiNm1kUGo5Y3BxUE9TdHNnb3ZMb3JHR0RqZWJXdXE0UXpFNmVHbHZNazczTjZXYkw1ZUZidFR6eFZCbzRacjdnQUVjcFlQWURGUQ?oc=5",
-    "source": "한국경제",
-    "date": "2026-10-05T14:09:00+00:00",
-    "day": "2026-10-05",
-    "cat": "world",
-    "score": 3
-   },
-   {
-    "title": "(사)대구식품협회, 이철훈 대구본부세관장 초청 수출 협력 간담회 성황리 개최",
-    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE56LXhhQnhnUWJ0WXh1RXktdnNGNEtmV1JFd2tfWDVYMUNZaWRhMjJ5aTRPVG5ES2VfLWNXdFJ6WF9rQ0dBVy1xUnB1VWprckp0SU9UMFhGcFBaTHhGME1QcjFrOGRaSUxkY3V5cFlB0gFyQVVfeXFMUEJ4T3V6MkJCVG80dXRyZVRQbUVFV2RvZ0V5blY2d0VYbTl6NEZ1dXljZzFWMW5hQW42cjJpSE41eVV2R000SmFfaUZMSm02bVVqTDBBMExoY3BEVk5scllKN09sNF9OY29kM1JjQWpydHRB?oc=5",
-    "source": "잡포스트",
-    "date": "2026-10-05T12:23:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 3
-   },
-   {
-    "title": "3조 첫 송금했는데…트럼프 ‘추가 청구’에 15% 관세 다시 흔들",
-    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE05SnI4VW1KQ2NlTEV3X05UQmZuVmRkYWZxSnE1em5US3pfc09RRGJtcnlRSThOUTFQS081RmNERE15cVpwV19aSmYyMkw3cVBhdk1xVHZjU01yeDd3cnhGR1BXejc1bnBYVXfSAW5BVV95cUxQMVcwTlI5bEUtYkZjZkVMVXY1QTJxWl91Q0swWFlKSGNxRjM1blY5eUgzNHhKVTJCT0pKNnpBdlJ3TTRha0dZVWhpbXlMY1dncENOcFJ1VmViQ0pCR0JfV0RqdWlFQWZ4R0kzbGktUQ?oc=5",
-    "source": "파이낸셜투데이",
-    "date": "2026-10-05T08:55:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 3
-   },
-   {
-    "title": "안보·통상 위기 `산적`한데…멈출 기미 없는 여권 집안싸움",
-    "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9yOTV5c3lCcmVmc2tVWDdldFlWa0NsWWlTZlhCajV0SVpDQURGMmZGXzBxUW5mcFRtRWNLY2FNa3ZQX21qVzZnVEdYQkJ0T2JLRzJURnotMWNBVzhfVUlMQm93?oc=5",
-    "source": "매일신문",
-    "date": "2026-10-05T08:28:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 3
-   },
-   {
-    "title": "인건비·생산성 벽 여전한데...관세 앞세운 트럼프에 전력 기업들 전전긍긍",
-    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE80WngwZmtMZThVamxaZ1JUb1ZsTGF5bjhZOXJTZ3lmQ1EwVzJMUVR3c3hlZnBHU3FrRHdGYlhIQkdSQ0ZnLWVxSmNRV0xDd1pYcG5iTEdGXy0xQdIBWEFVX3lxTE1kLW5wdi1CRnNiQlR2OTVISS14bXZKNVRaVExmOC1WX2ZsRWo2dDFpbG1odUcxYW5fN0VCaEVCbzFYTFNpRHkyb2M3U2tqSUFqWnZtWjJtYTQ?oc=5",
-    "source": "아주경제",
-    "date": "2026-10-05T08:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 3
-   },
-   {
-    "title": "[포토] '북중 잇는 무역 거점' 내건 신압록강대교 통상구",
-    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBnVC1adG9sUTBWbzR6UmxYMElidlBVU3FFTVFwNE94MGFELXlRUU9OaGFtM0pxRVdGZ0laeUdLMlBqQVptM2NPZC10RQ?oc=5",
-    "source": "뉴스1",
-    "date": "2026-10-05T07:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 6
    }
   ],
   "en": [
    {
-    "title": "Kazakhstan sets five-year trade roadmap with Pakistan",
-    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQW1TNEwyU0MtV0ljTVpGS1JkamhGVzRQZWQ3UnV3QjcxcjkwTFd4TkxsYTVtM1RYbE1lOHdhQlJiOXdGb2xTRjRIanFoZUwyNmo5UjAwODduamtKMmFyX0lEZmQ5djAwaEhRcURKSHJTZnRfU0NpNEpWRHpnM29sOXlDOXZnNXhvTmNYTTIyb1Mwd05I0gGcAUFVX3lxTE9QNFRKVzhWQnJPd1plVHAtckZFSlE0UXhKRGpma3R0VGx3RmJ6UVBBdzRIOGlNZkpINXhzUzdUeGV4NWtuNHJaRWFOU2k0U2JXUWdjXzgycXk1cTd1OF9FMVVJLWdGTjJGa2dPUjJfcTVJV3YzSzZ5YjZWS3c0WG82c1FtZnZTVUkxNl9QZFgwZUhjYWNjYm1DVHpfdw?oc=5",
-    "source": "The Express Tribune",
-    "date": "2026-11-03T21:47:38+00:00",
+    "title": "Canada’s trade surplus with U.S. widens to $12.3 billion despite new tariffs",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbnF4eV9PSDZ6NnhnMHlnV0ZkTi1SYjlBeGtIamgtNTBUYUF4S0lvd0FTakd4dTJ6Mm9DQVhLdlBwM0NvN3cxQ3JvT3FuZDM5SVQzeU9Sb1Y2ME1BY1NkTmNjY0hwSFU1N01EMFg2cTZOVE4tNmhSNlFxRDNYd055Q09kT2JZTlR1N0dpYzVfcGgyb1J3WlE?oc=5",
+    "source": "Financial Post",
+    "date": "2026-11-04T21:32:58+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 9
+   },
+   {
+    "title": "Americans, farmers voted against tariffs, trade wars and inflation",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNmtCa1JmU1l2d21UdjRURHJkQVczbEtRMTJISTNDWHZaS3N0ZzI0ekhpbUY3TlJSQVhVa3FncTlkdmxYeDQ2UG9PSXk1cFoxXzhnRE1pWGNzdGlhbHJhRTE0d1h2cWRPTTBDaXV6dTNZQnBwdmNDQWVCWFBkNkpiVTJ3?oc=5",
+    "source": "The Western Producer",
+    "date": "2026-11-04T19:55:09+00:00",
+    "day": "2026-11-05",
+    "cat": "world",
+    "score": 9
+   },
+   {
+    "title": "US sanctions Indian couple for allegedly aiding Iran oil trade",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOMVhmWEphYmdVVVVUaG5ROWFoVzJkSThOVnRTUDNXZWo5cjZ0M0dYQk9XM3R0T19qa2RXUG9pTjc2RHFPMXpIcWNQRXh0TG1KM0dWRE5UT3hqRTh2T19malJyVDJjMzNOTHE4WHJPcUhweDFucVVnRm9rZUtaNlNHZDFUYlBKS3BuMkNsTW94cjNOX2l3NWdkblFnZDZOVTVqU215NTBjb0xxckU?oc=5",
+    "source": "NewsBytes",
+    "date": "2026-11-04T19:07:30+00:00",
+    "day": "2026-11-05",
+    "cat": "world",
+    "score": 9
+   },
+   {
+    "title": "Canada, China Extend Tariff Deal, Aim to Boost Canadian Exports",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVW9jSTEyNEUzdGFzNXppcElseDVIRE5hN0t5c0NhMVRjZEVjT0YxWXBXamFiWlFXRHliYmVYRE9Hb3ZrWUhHODU2U3VwSnE1YWJnSWFialRWa3NvLXlaYnhYVTJ6S0V2dERBOGY2NF80Tml2MlRNZkRGQWY5eEdMcExvU29Ea2ItcktDU1lUby1uV0c3c1dBQTZGeEthRW9nM1RSNDk0YmxVbjhSU29XUDRn?oc=5",
+    "source": "Bloomberg.com",
+    "date": "2026-11-04T17:27:47+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 10
+   },
+   {
+    "title": "German trade group expects Trump to maintain course on tariffs",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQcnRsOWJwakN2RHd2THZfZHBqcTluZDlJM1IzLWxMQ3NlZ2g1MVRCT2lvS2pERHZSa185d3BFc011OTVZM3dXSll6WDN6cWZPS3VMQmtoeTVrWFp6Y21RNENTZEhlcUVPZEFvSVZTM2Q2M2dSbVV2V0NnR282MXRHTFkwcE5rakVLOHlNQ3ZtTlRRejNEOVdEZDNvTnF0UQ?oc=5",
+    "source": "Yahoo Finance",
+    "date": "2026-11-04T16:48:28+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 9
+   },
+   {
+    "title": "AED Urges Canada-U.S. Trade Talks to Address Tariffs",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPSmRQX3FFQWdQOHVmWElPbnFNd3BsU0RNZzBVZC1uYm9zVEhvUTBqdnh0ZjR4cEZmWGhXTFJ6WU9zTFVkaWs5ekI5ck5uVnQ2b21PWTA5SVFpSzhTTVNnaUtsNmhHTXVwMjNzZU5mLUZpY0k3UnZ6S1BMVFdaMm95cDVKOFBMZGpLRHpOV24tUmQ0N2k3YUF5UTNLd1ZNZzBHdGFEZ2hhQWN0bjl4NTVoOHd0TUsyQk1kNFVCYzJLbkZ5c3JaR3Bn?oc=5",
+    "source": "Construction Owners",
+    "date": "2026-11-04T16:12:44+00:00",
+    "day": "2026-11-05",
+    "cat": "policy",
+    "score": 9
+   },
+   {
+    "title": "Higher Energy, Gold Exports Offset US Tariff Impact on Canada",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOWmEyTnRCX2tVWnlwZ0p2ZXV0Yld6ZTBic3RrQlBtSmE0VzFIUHozWnZwS3kyU1ZsQVNUeTB4anFKejEzODJPM3hlNmptMHF1ZFprZVJpRENqTF94N2dTaW9PU0hiMjhuS2FXX0ZqVDU5aUE4SmFuWmE4c3FZZ1FmMnU4VzhlMEZZWDZBMk8yTVY5Y1Q1dWp1cGxoc01TLXBjUURkS25ncFFITUx0TU1ZUQ?oc=5",
+    "source": "Bloomberg.com",
+    "date": "2026-11-04T14:58:26+00:00",
+    "day": "2026-11-04",
+    "cat": "policy",
+    "score": 9
+   },
+   {
+    "title": "US Trade Deficit Narrows Slightly on Pickup in Goods Exports",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdnp5b0c1bF9kMUZfMXhHRExtMXVvYnpCUjBHRTdlRUxmNnlQM2U3dGxDSERncTRHVDZMcVJLVzlGSlVoSFNCQS1fM2x3Um9ObXI1YTNsYUxZNTFIRU9PNDcyaVBxQU1BZGl4QTBNMjctZ29CUFJ6Vk42TUltMUpaTHFkV1RFMjBUX29jV19ZVUxTOFhMd1RsVzZpR2xJRW9vdjZyVkFkRG5zM2pHTk1JSQ?oc=5",
+    "source": "Bloomberg.com",
+    "date": "2026-11-04T14:16:34+00:00",
+    "day": "2026-11-04",
+    "cat": "policy",
+    "score": 9
+   },
+   {
+    "title": "Kazakhstan Proposes Wheat Exports to Israel Through Azerbaijan and Georgia",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZzE0SmlERjl4c0Z6ZWRrczVYTjVwX1F5dUtBUkN3dGUtS25QdHRDSFItX3lMMDJKNjNWd1o0Y291dnNiY0pJUHpkaWN5aHFBUmZveEF3TWZGMXlpN0JRWHNWUy1NV2JJRExPblNQS29kYjNCVTlGM0tZcGdJNk9BMEM4TUNucjE1N3VIRjdBbWdobkV3Wkk0d0VsUWJFalREenpoRy05VS1XTkU4NWc?oc=5",
+    "source": "Caspian Post",
+    "date": "2026-11-04T13:38:06+00:00",
     "day": "2026-11-04",
     "cat": "cis",
-    "score": 7
+    "score": 10
    },
    {
-    "title": "Glenn Stevens Jr. Talks Tariffs, Trade, and Michigan’s Automotive Industry With CBC",
-    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOVpyNnRCN3I4aXUxeUJjaUN1cDBIU2RJQi05WEhXUzB2ZE56YmJ0U2M1RTRaTV9DV1BzU2VfbVExWHI0S210WnduTzZ3N3l4UzI2UV94bTRvdDFybGZpbTVDeTQwbjhpQ1RFWHJjWWJnWlItam9lWno4djVIc09hRFNmd1dMbXhQenZZOHlWNzZvdFpDdGhCckVTVkRTVzJKOGNr?oc=5",
-    "source": "MichAuto",
-    "date": "2026-11-03T20:19:22+00:00",
+    "title": "Howard Lutnick quietly restarts Canada-U.S. trade talks — but only on steel, aluminum, lumber and auto tariffs",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMGt6MVN3MjUzZ1hFVmhnRG1JX2JBMWJzMEZHbld4MFVkV1BkQWxsMmw0ZkZfUGdiRFdGS3JEb3p4OGRxNkJRbzRNUWJHRjdfdnJNT3RBUkozSlRFOTdGV1NBd2VoZUJMNWxFckxnWGRoVmpmdURTOEVNNlEzN2dCSG1hY2ZmMm1BdS1CTHVkOUU?oc=5",
+    "source": "Yahoo! Finance Canada",
+    "date": "2026-11-04T13:00:00+00:00",
     "day": "2026-11-04",
-    "cat": "policy",
+    "cat": "world",
     "score": 9
    },
    {
-    "title": "Nairobi Protocol Offers Another Way to Mitigate Import Tariffs",
-    "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTTh1d0h1NlVrWEJzcUEyQ0FBQ2gzdWExOUFNZFV2Q0NvVk1xeEFySHNqMjJWLVhyUFNhVjdJRGdYLWJTN2U4LXIwMUJSd1JkUFU2dDBrY1ozSnlyTnhoWGtta0lmbC1vVXJuaVJaVWEyUkM3Nm1PbXhOWWpYQlR3VWZEcHM0am5zMGh6aDNBWVRmZ1RodTJkMkxUTlQxdnotSE1qbURnVkdBZFNFdlctMGZ1TnQ2aEo3RzF2aG1uOE04Z3V4b2w4dG1uSTB1SGc?oc=5",
-    "source": "Sandler, Travis & Rosenberg, P.A.",
-    "date": "2026-11-03T19:18:29+00:00",
+    "title": "U.S. midterm elections impact on India: Faster trade deal talks and higher tariffs likely",
+    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQb2gtR0ZuWXJNM2UwZUVHdGEzdmh1blRQSHJaWnZicWJ5dWJiMkZ6M3FkbnFEcXk4MDhoVWxzRVNNMWNyV0lYeXNyZUVtazNjODBHM0NKbzlDUUFGOXFNd1kySkFITFl0eVdqQTVMR040YWREUXJ2RVBVU3dqeVN5RXRJdkRvcVNaUlVHNW5EZFZyS2dLbVNfTHhJbDBNV2t6ZWRLZXF2VDlCMzBodTlqS1I3cFVWYmFIZUkwVFBBSTZ3dE9KNVFIMEdhNVc0U3R5eXItWVotRi1USnd2dTB0RnpB0gHoAUFVX3lxTE5QbnZQSy1CRjBSY0Uwc290eUVvZG83d1FCOFRua1lqRDREWlppNnVwQnJKbDlGYXF0UXRjdFpjTkxwT0tZN01jdHlVUmZUel92MlFfLUJYaXBkcE5EZDFLQU5MSDlmclhLY2lqOUFjM1lRbHpYTWZYMnhVX1Q3MndwLWNqYjhrZWt4WHdRZVdDRFA5WjNjbjFWY0NNalIzT0ppWThhS2tBbXFMYmJIdVVaQkVOajlGVzd4eGxGR1ZCbmdZS3ZUTHNBcXRhWWJkWEd3aC05NTlwR2tLdlNqblFuMHZ3Nko4cE8?oc=5",
+    "source": "The Hindu",
+    "date": "2026-11-04T10:13:43+00:00",
     "day": "2026-11-04",
     "cat": "policy",
-    "score": 8
+    "score": 10
    },
    {
-    "title": "Medtech Canada Urges Zero-for-zero Tariffs On Medical Technologies Trade With The U.S.",
-    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOU0JMS1otdDhpN2pORHpPU1pWeHluaXdnMHFWcHplR08yUmxDZTlTLTVnazZ1NG1xUnh0T0hvVzBaS0tIMVJERzBGZjBxYlNZZExWdUM2WEUtOW5pbkhvU0VTcTliemUzQ205SFBlLS0zdWtqQ1dvb0FmX0VwWlZ3dFc3anYtMkJ5a3lwV1Y1OS1WekkwelVhbUVLam12UHhkSFpXMjJYY2h4VExvelhjcm5fWDhvMTZUdkJ6ZlNZckVpNy11VF9pdGtDZW1wV0g0MnAteldSZGRRZGV4LWc?oc=5",
-    "source": "Canadian Manufacturing",
-    "date": "2026-11-03T17:59:36+00:00",
-    "day": "2026-11-04",
-    "cat": "policy",
-    "score": 9
-   },
-   {
-    "title": "Trump Delays Robotics Tariffs and Orders New Trade Negotiations",
-    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5vdHM0Vk1FTlE4bG5lV1ZJM1RRUlVQWVNoSm9oaXc2SUo4cU9RZk9QTERFZHR6U2xRM09yV21saXo0ZXhtdTdpSE83eklUME1oTVZya05hQ1UwakJSZ1V2Zkd0cVRfWFJnUmdxVkI1NEhmTzViRGtGWTRhQnI?oc=5",
-    "source": "Legis1",
-    "date": "2026-11-03T17:53:49+00:00",
-    "day": "2026-11-04",
-    "cat": "policy",
-    "score": 9
-   },
-   {
-    "title": "Pashinian Reaffirms EU Membership Drive As Russian Sanctions Loom",
-    "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1yLVcxVWstampwdFdkOWJldE51cXZkdUt1UUJFVEl4dXZuR1FQM1JnN08tWEJVR05sQk1zMk9Sdi1CMllEY0FTTDZuYlhod2ZwanfSAVRBVV95cUxNcjUtMlJVOFU1ald2VVQwUXFtUDh5ZHI1cjVrUXZHeV92UjBGci1hQWc1YW1pZEpNWFpjXzhCSE1BTV9MVVJZX3JOYjhGdllwMUNPUVo?oc=5",
-    "source": "Ազատություն Ռադիոկայան",
-    "date": "2026-11-03T16:37:53+00:00",
+    "title": "Hong Kong Imported 112 Tonnes of Russian Gold as Sanctions Redirect Trade",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOcGpjN1FUTFYtTUxxTmRFWS1NNG9IMWVUOE5qUVZRdmlqWGZqZUZ3T1lsZC1XQlg2a0ZKTnFHUjViS2g4ZTZzREhUSFNaRnhwOGk3VzJlUVZ0d2pyZU1CUUxMYnpyTjBpY1NEQXhWZklCNzJ5bVRQNnJ2NzhpbWM0UVZCYkZydFR6OFNUYjl2NWhlTXZfbC1COXUtTEx3WXRkN2dGb25MSmtBUQ?oc=5",
+    "source": "upday News",
+    "date": "2026-11-04T08:21:10+00:00",
     "day": "2026-11-04",
     "cat": "cis",
-    "score": 8
+    "score": 13
    },
    {
     "title": "Indonesian exports risk gap in EU tariff preferences before trade deal applies",
@@ -3298,116 +3352,116 @@
     "day": "2026-10-06",
     "cat": "cis",
     "score": 11
-   },
-   {
-    "title": "India-EU trade deal to boost exports in labour-intensive sectors like textiles, footwear, says FM Nirmala Sitharaman",
-    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNbzRfM2g5YWxxXy1vNzlfV3l6MU9FZHVIS3AzTmJOWG1hb0VTaDBiRmRzdU12MDBEbTJvYkhTQ3FhdGZXQlZIeV9GOHA3b2NpRGNEZnBrZnFBY3duTGtscFBzMVZCRUU1V0YyVTQ3RGVmNk5XZ3cwV1hRVE1aVUJpYzFEa3hTcTBkdU4zTmFaLVVaLS1YNWpXNFdJUzdpSHhwSU9sandkamFOQzM0QXVQdTFMeHQ3UDROY25hY3hDTzQ4MjhaMHJYSVotWm9LS1ZmSjBHc2lpdVVFdw?oc=5",
-    "source": "ChiniMandi",
-    "date": "2026-10-05T09:44:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 10
-   },
-   {
-    "title": "UK weighs tariffs on Chinese EVs as EU trade rules loom",
-    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPNFhwSk5kVGxVVHUwWl9zVDRmcE9zdzZrbWM0WUhfUy0zX0pQWHY2MENHM3U2WllIWmh5d1dlMi1EM3hEN1Fsc1NBQ1owX2NKVHhpcUVJV0x1MktjYUFBOXpPSjY0dnlDeGZRZjBraEN4dmNHenRsQi1NMkJDZEJVRnlUQ2pkN1RfaWRoVXdQZHZFT2lQTzF4NzJtdlczUEtZR2dTUy04LXhnNk91LXliT0JvYWZpRXF3TkJB?oc=5",
-    "source": "FleetPoint",
-    "date": "2026-10-05T09:28:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 9
-   },
-   {
-    "title": "Kazakhstan, Uzbekistan, UAE back railway linking Central Asia to Pakistan’s seaports",
-    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBxUTNkWUlWcTRXcWs4MVFUMV9nTGx4MFpWM3NTY1hKZUFNUmJSdnB2dmgzN1pMTHlIcUJzc3pqMVFxekFKUmVSR1lhcWFlMnJlbFJJY193bGFoY3Y3YWRpNm5WcFlJYmwwVk0tUw?oc=5",
-    "source": "The Jerusalem Post",
-    "date": "2026-10-05T09:09:00+00:00",
-    "day": "2026-10-05",
-    "cat": "cis",
-    "score": 12
-   },
-   {
-    "title": "Russian gold floods Hong Kong as Western sanctions redraw bullion trade",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQeXJ0WnczN2dvVE5MM3VKekI3RmZOUlZEWW9LS0lwVm4zWjZRSV9ZT3hJWmtHWGpVQVpCdEUwbEFWT0Z2SVVCamE3ZWRYX2QzQWdhVDBSY0o5bDIweXdsd1NKeUVncE41eDhYQjBBZjJBa3RxbjFiM2tUbTRPbExyQk5FNzk0QnU2QnfSAY8BQVVfeXFMTmw1MDJwRFN2TXlnQm4zVHFXaFl4Rnp5djJsZW83eUhNUFhXejg5NHNLbVFIa29fVmd6ZS1sRDduYzdRQ3Z6V1JaVHVzamh4NGRQRHZORmdoWTh5aF9NQTFHRFozTFNwOHN4V293M1BmRDZCZXg4RXJveVlYN2FOejZpOEJ4cVdwQWY4bzB2QjA?oc=5",
-    "source": "CNBC",
-    "date": "2026-10-05T07:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "cis",
-    "score": 11
-   },
-   {
-    "title": "Business News India-EU Trade Deal to Boost Exports in Labour-intensive Sectors Like Textiles, Footwear, Says FM Nirmala Sitharaman",
-    "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOLWRlaHJxQWhxUHNjTjBUNUVnemZNQnMyZklBMXlRb0lrQXd1TWJiOFpPckdWR0RQWWhoNU9BSVJwLTBUeGVKVU5Ba18tVHJxaUZwNHpWU09fX3RLZ1ozUG1WY1hUSWxnU0h4LUVBQk9nQjBfTEtqZG4xYms4SGZSZGlQWlV5SVZsTDNOaVZfSVN6XzROTUV3TmxzekpkRlA0eEFFa2FWbHJGc3hKdGc0MGszaDJabmdQdFNHaVBiMlpvdUgxZXNiTVhUdVFTMGlkMzdzcEJPSV9jaEI0c3czZUhIVFprUjQ4N3J3MTFDZWxsVVFOV1BIQlRwNmZQR1ZMNGw4TjZtN2ZBQQ?oc=5",
-    "source": "LatestLY",
-    "date": "2026-10-05T07:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 10
-   },
-   {
-    "title": "India-US trade talks hit 'plateau', finance minister says, as tariffs narrow room for deal",
-    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPM1J5UEt2X3M2VGctS2FVQnMtVkJoOEwzdUZ4SENyTzNJRUZkUmJBYjBjWkVCbkVUNG9ITHRueUJONGpBUHVpZ3VaajhUNGY3SThiYTJHQVB3U2l0MXlaaGNKY1NLbWZ6TXNYV3FmNm9BVjJ0Mktod2d3SWV6TWRjUDNkanRCVHdpRU9oZFgtc2RGbUx1TUwyMU0weVM2Ry0wOGJMN0VMZGM5VGhUdDJ5bWNjYWh0WHhWQlE?oc=5",
-    "source": "Reuters",
-    "date": "2026-10-05T07:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "policy",
-    "score": 10
    }
   ],
   "ru": [
    {
-    "title": "Импорт шотландского виски из Великобритании наливом в Индию в августе вырос почти на 1 000% после вступления в силу торгового соглашения",
-    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNTEstbW1HNlBIS1pVVWxheFF2U3BROUh5QlJxQ0l0SFhuRUl1aFI4UGxYNktnSm1VUEJUMlMydWNKaE9wcUhVRlVfRmxJVFM5UE92NlU4OWV6T3Z6SVZiSVhyR3BsYjQ3UVVDOHNWdk5xUmNZQWJaOGVIRzI4ZXAzWk9mUnVuVWRIT2lhdkRCNGlsaWoyRGNhMy1JT0VTaXRLUEg5blBGNFBDWXpuVTVGbnN6UjYzNFBxRVczTXhFR191U2pjWk9zMXpabFNVSHZwczhTbjNVNzJIN2xqNC03U2pn0gHnAUFVX3lxTE1kZ19BLXQ5MVRvd3RJYUcxeGNOck5xa19mdEQxT1MzSWlJSlNWQU1EX2NXbEVOYVdWZnBxem9ZRU9kTXltQ3lMVV8xMS1kbkNoUTZnV0pST3hRR3FFLTJ5SWRVLVNwR1pVLUVtRUpFelJkZDdYM0ROV2hBTEJSYkVNYUk3SHhFYVNtVkpGTkd3TmU2RnpLcWlaSU9PLWRGbzI3YlBQQVh5ME5sUUFmQXlKcFRfQ1BNa3hMTzdVdlQzSlMxNEZLcDU1MUpLSVF5a05MS1FIWHZLX3FFdHBuUnB2ZWdIbGh3cw?oc=5",
-    "source": "Vinetur",
-    "date": "2026-11-03T22:12:44+00:00",
-    "day": "2026-11-04",
+    "title": "Легкая промышленность Казахстана: производство и импорт",
+    "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5saGc2OHdJcWtPT1ZMWTRxUVV3TEJxM0JmT1ZpUC1EOWpiM0lPMFZpRG1EdmNBMHZSZkw5X3dKTVkyT3JfN3ZmWUcyMDhnOXpRQmxTUUdKeFR6NU0xRjlZUU1MN3lCdVFiRzRiUV9VNU5uZw?oc=5",
+    "source": "airpress.kz",
+    "date": "2026-11-04T21:50:29+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 6
+   },
+   {
+    "title": "Правительство РФ повысило пошлины на импорт крепкого алкоголя из недружественных стран",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQYUZtbXJqNXBBZjNMUk5xZ3RwNkxHbkYyWkFSNG5USG1ZRW1HNDRseXlvYkhGRUVPVUxZVDRDUkF4czBtcjBub3VBV0lDUk5LNlVlcEo0aTNjQjdTaUdaMndUdV9Sd0JjUmxrRjZFVzlibnNlVUFiQkViRjhjN0NfREwxcnNVeGE1VE5tV2Zsa3hmZ0Jwb0hwZW56X2pmZFR6SVloWE5BWUVFX2ZDUUpIbzNuYWtGZ1ZEa1JkeHljeVU?oc=5",
+    "source": "https://saomos.news/",
+    "date": "2026-11-04T21:45:00+00:00",
+    "day": "2026-11-05",
     "cat": "policy",
     "score": 5
    },
    {
-    "title": "Экспорт Казахстана вырос на 27% за полгода",
-    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1LU1dSX2RIQXNCaFJESWFESHNybEZjTHZGbWNGajBUUGM1ZEhKc0Vab21xQ0tQWVpNaks4b0NHaXJRZ2w2MEhPdV9tMU02VmJvTUNnWmJ1WVRUV1F0T0M2THhPQmlzQ0R0T2hZWHJndTdncmZaZVJtYnZWSQ?oc=5",
+    "title": "ЕАЭС изучит возможность заключения соглашения о свободной торговле с Иорданией",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPcGlFRmdaWUEtV21nNk5rOWlla21UcE9ERy1IWXRnUTRySkYzLTFmU1dnT3BMbWNzZEotMHNGd05mY253TG5lR3ROZ0QzRmpMVnktY08tb3ExckdHSWJ2cDBrV2l1aHJNa2JfM0liRkJHMWNYazZMLXpaQW9zYWdNRE51SlE1Z1NlXzJVeHdUX19tNURPeHZIWlBSRnVzZ2tfZ2FULWJfQ20xR3dCaXUxNHNkRWg?oc=5",
     "source": "Inbusiness.kz",
-    "date": "2026-11-03T21:10:18+00:00",
+    "date": "2026-11-04T21:13:56+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 6
+   },
+   {
+    "title": "Новый стандарт торговли в Казахстане поставил посредников под запрет",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNME53Z1JHZHRaUVl6VWFfYjM0bmRIei1NQ3NPRHJzczNKaWZyTmJHdDR0X2xneXNydkdSRklxczYzZHE1MW9naUJzOGMycHh4WjlmMkpiNFlUbmRVd0pPR2V3dm9maFUtaWVTX1dvWnVzRW1CeFlHTS1mZHg3ZG5aakhoYTBya1UycGQyRmF4NVVpMjZmaVBlTzh6ajRqX2c?oc=5",
+    "source": "Inbusiness.kz",
+    "date": "2026-11-04T17:42:52+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 7
+   },
+   {
+    "title": "Казахстан открыл торговый офис в Стамбуле",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOUHd6TFhLeUplaklzR2FOV1pNVzlXVkRKTG1yNVRRRExsWGxybXhPZ0xjV3ZMaWgzNW1xdk5hNUlVNzlwRjAxUzlTenZ5cTRfZmFpTzg2U2hnZm9NcWtONlpISjlrN3VKWmViZXJTQlRBZUsxLXhHMGJjbzBUeldKMtIBgAFBVV95cUxOUHd6TFhLeUplaklzR2FOV1pNVzlXVkRKTG1yNVRRRExsWGxybXhPZ0xjV3ZMaWgzNW1xdk5hNUlVNzlwRjAxUzlTenZ5cTRfZmFpTzg2U2hnZm9NcWtONlpISjlrN3VKWmViZXJTQlRBZUsxLXhHMGJjbzBUeldKMg?oc=5",
+    "source": "Казинформ",
+    "date": "2026-11-04T16:45:00+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 7
+   },
+   {
+    "title": "Эстония перешла на авиаперевозки скота в Узбекистан после закрытия транзита через Россию",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSThHQl94UkxYbmV4eWJYZXQ2UE1rUGx2UDF1SWd6RTVZMldQeWtQNUJBVFpIcjhkOVFKclZMOWwzRWE5cnRVZVZxeXVCWFM3ZzZ3SkxSX3dpNHh3eUlna043djNzQVlJc0M5VXVsdFltWnFjN3NIQUNwbjJWUXZmeEpnM3dYZS03V3NmWWg1WUY4eV9QR0pBMkpjRFNKNUlkMGlLX19VMnFWU3ptTlVWbGlqSHdxTFZtMzZyU19Hblc0ZEpFcERkbE11TVVZUHQ2Ty04SkNnVQ?oc=5",
+    "source": "TKS.RU",
+    "date": "2026-11-04T16:03:24+00:00",
+    "day": "2026-11-05",
+    "cat": "cis",
+    "score": 6
+   },
+   {
+    "title": "Казахстан хочет экспортировать пшеницу в Израиль",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOeTh3LUR2UUZnaGFPY2pZN1diWlJnbXZqRkROWUpSVjRLUjVEcjRZMkFTdE5yRnZHOWNDa0t3TXBpS1V0SGV0eC1SMV9mM1RWbUhEYzBwRXpoSk9jR2x0R2ZXYndVeUdydmpmelFtMUxvY21qallCX25sVndsaHpWLTQtcFI3X1hKanBZ?oc=5",
+    "source": "Forbes.kz",
+    "date": "2026-11-04T12:24:00+00:00",
     "day": "2026-11-04",
     "cat": "cis",
     "score": 7
    },
    {
-    "title": "Казахстан засыпал пшеницей новые рынки: экспорт вырос на 15%",
-    "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0gwdjM5RnF1NllwekI2QTh3SktWS1VzOW9nSVdSRTlLU0tweXVSLU1WRGxMX2dIY0hGTEdfQ052cXJFcWdmcTVUQzAxSTZrQmNEZjE4VlBoTlV5OUxjZVp1clhITGRzZEctRkJMazZxemY5ak01czRTRFBVLWRmajFueUFoNW5BOS1kaTJTSTRWX1k?oc=5",
-    "source": "Inbusiness.kz",
-    "date": "2026-11-03T20:54:08+00:00",
+    "title": "СМИ Казахстана: Узбекистан готовится к проведению 22-й Международной выставки «Транспорт и логистика»",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOS3dycTBTdnNUMGhNU0JnYkFKaFUtT1RSd21QMTVzMXc2UENuR3pzTjVLTy1TMGZXV1hoLU5NaTBLNGxzN05lXzk3MGlISXpsWE1RTWhwMnRMSl9fajJrSE5mbnd0UHRRdHZBUXlUSVdkZ3RXbzdwZlViQlQ3ZHhDRFFHV3Q3Znd3ME5ZZzZFb3Fwc1ByRGtRZktjVU1jRXFxdWc0ZnV3TkhPTGhraGNyWA?oc=5",
+    "source": "Dunyo",
+    "date": "2026-11-04T12:03:40+00:00",
+    "day": "2026-11-04",
+    "cat": "cis",
+    "score": 10
+   },
+   {
+    "title": "Экспорт цифровых услуг Казахстана превысил миллиард долларов",
+    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1zNnRjM1cwSzEzQWt0UzZscGNmUzZRb1M5clVZVlZuVy1UWGZDbEsyQjNHY3BCbFcwUlJzOW9zY1A4bjVHZ01BZmJ6QWdGSTA?oc=5",
+    "source": "CentralAsia.media",
+    "date": "2026-11-04T10:07:16+00:00",
     "day": "2026-11-04",
     "cat": "cis",
     "score": 7
    },
    {
-    "title": "Фабио Каннаваро может покинуть сборную Узбекистана из-за переноса Кубка Азии",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQ0VwZTNFRnJiQmtSTlFhaWpCUkJSZm5hMFRuUjN6b2Z3cjVrOVgwQkVWREpXNjRMbmstZXRRemxwLWNMdkI1eFF6cllaUnZVTzFoZGIydUhoWEdnMktaLWdqNUhCaERSaXRya0xPMHJ3b1l4d3laLXgteGdxbnRraTczNTFNNW9mSHRYM3kxZlhFbXZwVjVScFZwbERxdVMxYThHendlQm5SdEp3RFpqRC1CSGc5OTQ?oc=5",
-    "source": "Football-Fun-Live.com",
-    "date": "2026-11-03T18:48:54+00:00",
+    "title": "Казахстан впервые определил понятие «непродуктивный посредник» в национальном стандарте торговли",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQVkx0V05tbS0xdHE2R3pxY0R1LXh6bGVZcnRxNUdjN3VzMDJaZnVxejU1c0VtNkw0cU9tXzdiUWVKc2V6OFNuLXNtZHBTS3pMLU13UlAyeE55TFl1MVo4dWhGYTk5azlMNXEzTE5RVWkteFJ0SmlvZFZjeWdJQ3UxYldTZDhqRFJCTVgtOU93UTMtaS1McEFrN0plWEtuSlZseGxEQXFOYTFXeldVeEJFUkhDOHpzTU1qTkg1R2R0MTJmZy1KdDYxdlZlRGQwMVBKOUR3M0I4Mms?oc=5",
+    "source": "Dairynews.today",
+    "date": "2026-11-04T09:39:41+00:00",
     "day": "2026-11-04",
     "cat": "cis",
-    "score": 4
+    "score": 7
    },
    {
-    "title": "В России ввели пошлины на импорт резиновой крошки из недружественных стран",
-    "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBHbHNnSkRyMnVBOE9MNHJtSFgwMi1WM1pfd3FhTkxQRWpNYzFVV0tjTWlxbzJSdi1tejR3UVhLWHNJeWs0Mm5weU4xUlphZ2vSAUtBVV95cUxPbXItTU5tcmtZSXB3WkpqaXFMWFY4UnlWTlJGRWRqVGtZVjM0dFE2VVp1by1GVVNscnEyNENDVk80QTNtT1gxcS1vT2c?oc=5",
-    "source": "Интерфакс",
-    "date": "2026-11-03T18:13:00+00:00",
+    "title": "Экспорт казахстанского зерна вырос на 11%: какие страны являются главными покупателями",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQMXRNbEVsS3BkRl9qX1dqWUFadFhyRzJzc1ZUdWR0NzdMMFF6T1Q4SzkxellLTl9wNm56TzFobWNwQnNIaHlKUndFOENBeW5EdW01NExPZy1ZaXU5Z0daa1VpV0lVZUxRRGlldFN3MFlrQWFQOTZWWlhVUUNUeWdhOVcyQlNDSUh0UnpuNUY1a2d6dnUxeURMNm5pNkgybFhBYlluUnRVYWJoNkpFcFFvUWxtLUpJYkxhZkFUY2RtbndVNUc1bnRn0gHHAUFVX3lxTFAxdE1sRWxLcGRGX2pfV2pZQVp0WHJHMnNzVlR1ZHQ3N0wwUXpPVDhLOTF6WUtOX3A2bnpPMWhtY3BCc0hoeUpSd0U4Q0F5bkR1bTU0TE9nLVlpdTlnR1prVWlXSVVlTFFEaWV0U3cwWWtBYVA5NlZaWFVRQ1R5Z2E5VzJCU0NJSHRSem41RjVrZ3p2dTF5REw2bmk2SDJsWEFiWW5SdFVhYmg2SkVwUW9RbG0tSkliTGFmQVRjZG1ud1U1RzVudGc?oc=5",
+    "source": "BAQ.KZ",
+    "date": "2026-11-04T09:21:00+00:00",
     "day": "2026-11-04",
     "cat": "cis",
-    "score": 5
+    "score": 7
    },
    {
-    "title": "В Узбекистане объяснили разницу в данных о выработке электроэнергии",
-    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMFNwRnJsNFlmb3YwWndTUlpKTnkwNnpYa0ROVDkwcEo4RHl4dWh2Uzd6TS1MMXFHVzJPRFFGOFJFV2lRSTloU0tGXy1sVjRNV000RmgzWnZCYjRXeEoxUWtTclh0SUdiZXJxUl9jalJjNjhkRlFCNm5RY1BIWURwZlh1dlFRUVRneTBCaUYwdHRTejBpbDRITUpNV3E?oc=5",
+    "title": "Камчатка предложила Узбекистану развивать прямую торговлю и обмены",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQMXB5U0I5SmhmYVVrc0FKRTRKNWtUQ04zb1U5ZzFaZU1NdzR1S29ndVdFWkVsOWJXejNpOXdRdVBhQ05kWkhZTHpKV0ZUalVjdUxqa0lZTUxiM055dTJTS0lQMExVMU5FWmNnYmtkck1YcUZoMnFWTlZfMllyVnMxTjNNRnpLUDR4ai1Hc1MwVUQ5QWZXYTRpWUpDR0c3Zw?oc=5",
     "source": "UzDaily.uz",
-    "date": "2026-11-03T16:10:00+00:00",
+    "date": "2026-11-04T08:30:00+00:00",
     "day": "2026-11-04",
     "cat": "cis",
-    "score": 4
+    "score": 7
    },
    {
     "title": "Узбекистан за девять месяцев экспортировал более 1,5 млн тонн плодоовощной продукции",
@@ -4956,33 +5010,6 @@
     "day": "2026-10-06",
     "cat": "cis",
     "score": 11
-   },
-   {
-    "title": "В Марий Эл экспортируют продукцию АПК в 17 стран мира, в том числе в Узбекистан, Таджикистан и Белоруссию",
-    "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBZQ2ViQWJPZ0ZPYWZXZnFWblZXRTVSQmppVV9hU09wZXQtX1pvekJTQzJ6ZGRaUGxMVFpDTU41MzBvZUF0aElURVdQU2h3dw?oc=5",
-    "source": "www.vpgazeta.ru",
-    "date": "2026-10-05T13:14:00+00:00",
-    "day": "2026-10-05",
-    "cat": "cis",
-    "score": 7
-   },
-   {
-    "title": "Казахстан лидирует в Центральной Азии по готовности интернет-рынка: данные Internet Society",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUjFCS2dGenRndGNTQXFNdU80Rnk2aUg2QmVvZGkxX0ZKVkJISlZwOVZSZ2xnVzlMQ1Q0dVI0NUEyeUE4SjNBYnNiWnotcHQ2eDZyN0JpUDRIRXZzcWtzMXNTeEh1dVExTF9ud3ZqUF9MQmc2Ry1ZbWp6MXMyZ0dld3l3OHpSY2FGdnBMbGhuM0syeWFtMFlUSVFsYjk3T2RLUEwteE9yY1Bqd05IY2FBZHhCV2hUeENtTnBHedIByAFBVV95cUxPVmlDWXhvSnBSWWxTOGFzY1J5YkllQlpOcC11OXdCMFRFU3NGdm9FNno3STYyM0NFQXpnTnhxYktiWW9zTTBtX0NuTlpmLVBaNUpqdHFZTUd4V2g2T0FJVGVWQnRIQmYzYU9hcjFNZEt2RDVwQmhTXzIzajcyQW0xUXlHUXA0WTNLanVDRTNlLXhkUVlKbVRxUmFlZ0x2ellPc3JtOHIyZTFfdUxoaXJtNzVfV0VzYW5zWEw0WlFZVlI0MGdiMFAyZg?oc=5",
-    "source": "BAQ.KZ",
-    "date": "2026-10-05T11:41:00+00:00",
-    "day": "2026-10-05",
-    "cat": "cis",
-    "score": 7
-   },
-   {
-    "title": "Казахстан и Оман за семь месяцев наторговали на $305 тысяч",
-    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM0VoR1J4S0R1MmVBSFdjN1czaEYwZERhUWZaYXRmQUNaMUhTVFNldUZET0pTdVFzaDBQVDE3c1RtdnRVSU5tanh6VUl6aEN2X1l2cEx6QXZnQk9VbHJBR0x2c2E3aFp6dm9DZ0czZGN0d0F3OTdNTDdySjNaS0EwYmpUSmh2RVRwRGMyYmoxM2RzU0xaajdUTldLZjBuQjUtUlZ5UdIBqgFBVV95cUxPZHNLVGFVRnBxS1BHN0Zudld2SGpBT2J0Z2w3SjJRMDl4TVkySzc4R1ZuQ2J5TFNVbHBwODBoUzZwS0FJUkZ0VnZnWUotcGNOZEU4ZzhYb2UxQm5HaTlWZmRZOGNRenc0eUwyU3hOMzJpZmdpYkd3MW1qdTZ0Vlo5c3M3ZUYtNTdHTHFoT3A5aGpCUmNKSHpYNXV0RmVlc1Q4SEJwRTlYUFJlUQ?oc=5",
-    "source": "24.kz",
-    "date": "2026-10-05T07:00:00+00:00",
-    "day": "2026-10-05",
-    "cat": "cis",
-    "score": 7
    }
   ]
  }
