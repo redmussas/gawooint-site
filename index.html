@@ -509,6 +509,28 @@ dialog.tooldlg::backdrop{background:rgba(20,28,62,.6)}
 .fab-grid .tool-tile{height:44px}
 .fab-grid .tt-tx b{font-size:13px}
 
+/* Tender sites */
+.td-lead{font-size:15px;line-height:1.6}
+.td-chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+.td-chip{border:1px solid var(--line);background:#fff;border-radius:999px;font:inherit;font-size:13.5px;padding:6px 13px;cursor:pointer;color:var(--muted)}
+.td-chip[aria-pressed="true"]{background:var(--indigo);border-color:var(--indigo);color:#fff}
+.td-tip{background:#FFF4DC;border-left:4px solid var(--saffron);border-radius:0 8px 8px 0;padding:9px 12px;font-size:13.5px;line-height:1.55}
+.td-grp h4{font-size:15px;font-weight:800;margin:16px 0 8px}
+.td-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.td-card{display:flex;flex-direction:column;gap:3px;border:1px solid var(--line);border-radius:8px;padding:10px 12px;text-decoration:none;color:var(--ink);transition:border-color .15s,background .15s}
+.td-card:hover{border-color:var(--tile);background:#F2FAFA}
+.td-card.star{border-color:var(--saffron);background:#FFFCF4}
+.td-top{display:flex;align-items:center;gap:6px}
+.td-top b{font-size:15px}
+.td-top em{font-style:normal;font-size:11px;font-weight:700;background:var(--saffron);color:var(--indigo-deep);border-radius:4px;padding:1px 6px}
+.td-flag{font-style:normal;font-size:11px;font-weight:800;color:#fff;background:var(--tile);border-radius:4px;padding:1px 5px}
+.td-ext{margin-left:auto;width:15px;height:15px;color:#9AA1B5;flex:none}
+.td-ext svg{width:15px;height:15px}
+.td-card small{font-size:13px;color:var(--muted);line-height:1.45}
+.td-host{font-size:12px;color:var(--tile)}
+.td-ask{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;margin-top:16px;border-top:1px solid var(--line);padding-top:12px;font-size:14px}
+.td-ask a{text-decoration:none;border-style:solid}
+@media (max-width:640px){.td-grid{grid-template-columns:1fr}}
 /* TradeIt popup */
 .bd-lead{font-size:15.5px;line-height:1.65}
 .bd-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0 4px}
@@ -1416,7 +1438,7 @@ promo.querySelector('.promo-later').addEventListener('click',()=>{ store.set('ga
 promo.addEventListener('click',e=>{ if(e.target===promo) closePromo(); });
 function maybePromo(){
   if(store.get('gawoo-promo-hide')===today()) return;
-  if(/^#item-/.test(location.hash)||dlg.open) return;
+  if(/^#item-/.test(location.hash)||dlg.open||window.__toolDeepLink) return;
   promo.showModal();
 }
 
@@ -1526,6 +1548,7 @@ const TICON={
   news:'<rect x="7" y="9" width="34" height="30" rx="2"/><path d="M13 16h22M13 22h10M13 28h10M13 34h22"/><rect x="27" y="21" width="8" height="8"/>',
   freight:'<path d="M6 38h36"/><path d="M8 32l9-10 7 6 9-12 7 5"/><circle cx="17" cy="22" r="1.5"/><circle cx="24" cy="28" r="1.5"/><circle cx="33" cy="16" r="1.5"/>',
   calendar:'<rect x="7" y="10" width="34" height="31" rx="3"/><path d="M7 19h34M16 6v8M32 6v8"/><path d="M15 27h4M22 27h4M29 27h4M15 33h4M22 33h4"/>',
+  tender:'<path d="M14 6h15l7 7v29H14z"/><path d="M29 6v7h7M19 21h12M19 27h12M19 33h7"/><circle cx="35" cy="36" r="5"/><path d="M38.5 39.5 42 43"/>',
   globe:'<circle cx="24" cy="24" r="17"/><ellipse cx="24" cy="24" rx="7.5" ry="17"/><path d="M7 24h34M10 15h28M10 33h28"/>',
   fta:'<path d="M13 6h16l8 8v28H13z"/><path d="M29 6v8h8"/><path d="M18 28l4 4 8-9"/>',
   ai:'<circle cx="20" cy="20" r="12"/><path d="M29 29l12 12"/><path d="M20 13l1.8 4.2L26 19l-4.2 1.8L20 25l-1.8-4.2L14 19l4.2-1.8z"/><path d="M37 6l.9 2.1L40 9l-2.1.9L37 12l-.9-2.1L34 9l2.1-.9z"/>',
@@ -1557,6 +1580,7 @@ const TOOLS=[
   {id:'news',short:{ko:'무역 뉴스',en:'News',ru:'Новости'},g:'market',icon:'news',type:'anchor',url:'#news',hot:true,name:{ko:'오늘의 무역 뉴스',en:'Trade news today',ru:'Новости торговли'},desc:{ko:'매일 자동으로 고른 핵심 기사',en:'Key headlines picked daily',ru:'Главные заголовки дня'}},
   {id:'scfi',short:{ko:'운임지수',en:'SCFI',ru:'SCFI'},g:'market',icon:'freight',type:'link',url:'https://en.sse.net.cn/indices/scfinew.jsp',name:{ko:'해상운임지수',en:'Freight index (SCFI)',ru:'Индекс фрахта (SCFI)'},desc:{ko:'상하이 컨테이너 운임지수',en:'Shanghai freight index',ru:'Шанхайский индекс фрахта'}},
   {id:'holiday',short:{ko:'공휴일',en:'Holidays',ru:'Праздники'},g:'market',icon:'calendar',type:'link',url:'https://www.timeanddate.com/holidays/',name:{ko:'국가별 공휴일',en:'Public holidays',ru:'Праздники по странам'},desc:{ko:'선적·미팅 일정 확인',en:'Plan shipments & meetings',ru:'Планирование отгрузок'}},
+  {id:'tenders',short:{ko:'해외 입찰',en:'Tenders',ru:'Тендеры'},g:'market',icon:'tender',type:'modal',hot:true,name:{ko:'해외 입찰사이트',en:'International tenders',ru:'Международные тендеры'},desc:{ko:'유엔·개발은행·각국 정부조달',en:'UN, development banks, governments',ru:'ООН, банки развития, госзакупки'}},
   {id:'buykorea',short:{ko:'buyKOREA',en:'buyKOREA',ru:'buyKOREA'},g:'market',icon:'globe',type:'link',url:'https://www.buykorea.org',name:{ko:'buyKOREA',en:'buyKOREA',ru:'buyKOREA'},desc:{ko:'KOTRA 온라인 수출 플랫폼',en:'KOTRA B2B export platform',ru:'B2B-платформа KOTRA'}}
 ];
 
@@ -1616,8 +1640,51 @@ const UNITS={
 
 let cbmRows=[{l:'',w:'',h:'',q:'1',kg:''}];
 let clockTimer=null;
+// ===== 해외 입찰사이트 =====
+const TD_CAT=[
+ {id:'org',name:{ko:'국제기구·개발은행',en:'UN & development banks',ru:'ООН и банки развития'}},
+ {id:'gov',name:{ko:'국가별 정부조달',en:'Government procurement',ru:'Госзакупки по странам'}},
+ {id:'kr',name:{ko:'한국어로 보기',en:'In Korean',ru:'На корейском'}},
+ {id:'agg',name:{ko:'통합 검색',en:'Aggregators',ru:'Агрегаторы'}}
+];
+const TD=[
+ {c:'org',n:'UNGM',u:'https://www.ungm.org',star:true,d:{ko:'유엔 조달 기본 창구 — 한 번 등록하면 30여 개 유엔 기구 입찰에 참여',en:'Main UN procurement portal — one registration covers 30+ UN agencies',ru:'Главный портал закупок ООН — одна регистрация для 30+ агентств'}},
+ {c:'org',n:'World Bank',u:'https://projects.worldbank.org/en/projects-operations/procurement',d:{ko:'세계은행 차관 사업 입찰',en:'World Bank–financed project tenders',ru:'Тендеры проектов Всемирного банка'}},
+ {c:'org',n:'ADB',u:'https://www.adb.org/projects/tenders',d:{ko:'아시아·중앙아시아 개발사업 입찰',en:'Asia & Central Asia development tenders',ru:'Тендеры АБР в Азии и Центральной Азии'}},
+ {c:'org',n:'EBRD (ECEPP)',u:'https://ecepp.ebrd.com',d:{ko:'동유럽·CIS 사업 입찰',en:'Eastern Europe & CIS tenders',ru:'Тендеры ЕБРР в Восточной Европе и СНГ'}},
+ {c:'gov',n:'TED',f:'EU',u:'https://ted.europa.eu',d:{ko:'EU 전체 공공입찰',en:'All EU public tenders',ru:'Все госзакупки ЕС'}},
+ {c:'gov',n:'SAM.gov',f:'US',u:'https://sam.gov',d:{ko:'미국 연방정부 입찰',en:'US federal tenders',ru:'Федеральные закупки США'}},
+ {c:'gov',n:'xarid.uzex.uz',f:'UZ',u:'https://xarid.uzex.uz',star:true,d:{ko:'우즈베키스탄 정부조달 기본 포털 (모든 유형)',en:'Uzbekistan main public procurement portal',ru:'Основной портал госзакупок Узбекистана'}},
+ {c:'gov',n:'etender.uzex.uz',f:'UZ',u:'https://etender.uzex.uz',d:{ko:'우즈베키스탄 입찰·제안요청 전용',en:'Uzbekistan tenders & requests for proposals',ru:'Узбекистан: тендеры и запросы предложений'}},
+ {c:'gov',n:'xt-xarid.uz',f:'UZ',u:'https://xt-xarid.uz',d:{ko:'우즈베키스탄 전 품목 조달',en:'Uzbekistan procurement, all goods',ru:'Узбекистан: закупки всех товаров'}},
+ {c:'gov',n:'tender.mc.uz',f:'UZ',u:'https://tender.mc.uz',d:{ko:'우즈베키스탄 건설 분야 전용',en:'Uzbekistan construction tenders',ru:'Узбекистан: строительные тендеры'}},
+ {c:'gov',n:'zakupki.gov.ru',f:'RU',u:'https://zakupki.gov.ru',d:{ko:'러시아 통합 조달 포털 (EIS)',en:'Russia unified procurement system (EIS)',ru:'Единая информационная система (ЕИС)'}},
+ {c:'gov',n:'goszakup.gov.kz',f:'KZ',u:'https://goszakup.gov.kz',d:{ko:'카자흐스탄 정부조달 포털',en:'Kazakhstan public procurement portal',ru:'Портал госзакупок Казахстана'}},
+ {c:'kr',n:'조달청 해외조달정보센터',u:'https://www.globalkoreamarket.go.kr',star:true,d:{ko:'해외 입찰 공고 한글 요약, 해외조달 지원사업 안내',en:'Korean summaries of overseas tenders, PPS support programs',ru:'Обзоры зарубежных тендеров на корейском, программы поддержки'}},
+ {c:'kr',n:'KOTRA 해외시장뉴스',u:'https://dream.kotra.or.kr',d:{ko:'국가별 프로젝트·입찰 정보',en:'Country project & tender news (KOTRA)',ru:'Проекты и тендеры по странам (KOTRA)'}},
+ {c:'agg',n:'dgMarket',u:'https://www.dgmarket.com',d:{ko:'전 세계 입찰 통합 검색 (일부 유료)',en:'Global tender search (partly paid)',ru:'Поиск тендеров по миру (частично платно)'}},
+ {c:'agg',n:'TendersInfo',u:'https://www.tendersinfo.com',d:{ko:'국가·품목별 입찰 검색 (일부 유료)',en:'Tenders by country & sector (partly paid)',ru:'Тендеры по странам и отраслям (частично платно)'}},
+ {c:'agg',n:'Global Tenders',u:'https://www.globaltenders.com',d:{ko:'국제 입찰 알림 서비스 (일부 유료)',en:'International tender alerts (partly paid)',ru:'Уведомления о тендерах (частично платно)'}}
+];
+const TDT={
+ ko:{all:'전체',lead:'용도별로 대표적인 해외 입찰사이트를 모았습니다. 원하는 곳을 눌러 바로 이동하세요.',tip:'처음이라면 — 조달청 해외조달정보센터에서 한글로 흐름을 본 뒤, UNGM에 공급업체 등록부터 해 두는 순서를 권합니다.',rec:'추천',ask:'품목·국가에 맞는 입찰 찾기와 등록 절차를 도와드립니다',btn:'입찰 상담 문의'},
+ en:{all:'All',lead:'Key international tender sites by purpose. Click any card to open it.',tip:'New to tenders? Start with Korea PPS’s overseas procurement center, then register as a supplier on UNGM.',rec:'Start here',ask:'We can find tenders for your product and market and help with registration',btn:'Ask about tenders'},
+ ru:{all:'Все',lead:'Основные международные площадки тендеров по назначению. Нажмите на карточку, чтобы перейти.',tip:'Если вы впервые — начните с обзоров на портале PPS Кореи, затем зарегистрируйтесь как поставщик в UNGM.',rec:'С чего начать',ask:'Поможем подобрать тендеры по товару и стране и пройти регистрацию',btn:'Консультация по тендерам'}
+};
+let tdCat='all';
+function tdBody(){
+  const x=TDT[LANG]||TDT.ko;
+  const chips=`<button type="button" class="td-chip" data-c="all" aria-pressed="${tdCat==='all'}">${esc(x.all)}</button>`+TD_CAT.map(c=>`<button type="button" class="td-chip" data-c="${c.id}" aria-pressed="${tdCat===c.id}">${esc(L(c.name))}</button>`).join('');
+  const groups=TD_CAT.filter(c=>tdCat==='all'||tdCat===c.id).map(c=>`<section class="td-grp"><h4>${esc(L(c.name))}</h4><div class="td-grid">${TD.filter(t=>t.c===c.id).map(t=>`<a class="td-card${t.star?' star':''}" href="${t.u}" target="_blank" rel="noopener"><span class="td-top">${t.f?`<i class="td-flag">${t.f}</i>`:''}<b>${esc(t.n)}</b>${t.star?`<em>${esc(x.rec)}</em>`:''}<span class="td-ext">${ticon('ext')}</span></span><small>${esc(L(t.d))}</small><span class="td-host">${esc(t.u.replace(/^https?:\/\/(www\.)?/,'').split('/')[0])}</span></a>`).join('')}</div></section>`).join('');
+  return `<div class="td"><p class="td-lead">${esc(x.lead)}</p><div class="td-chips" role="group">${chips}</div><div class="td-tip">${esc(x.tip)}</div><div id="tdList">${groups}</div><div class="td-ask"><span>${esc(x.ask)}</span><a class="btn-line sm" href="#contact" data-close-tool>${esc(x.btn)}</a></div></div>`;
+}
+function tdInit(root){
+  root.querySelectorAll('.td-chip').forEach(b=>b.addEventListener('click',()=>{ tdCat=b.dataset.c; root.innerHTML=tdBody(); tdInit(root); }));
+  const a=root.querySelector('[data-close-tool]'); if(a) a.addEventListener('click',()=>toolDlg.close());
+}
 function toolBody(id){
   if(id==='bldata') return bdBody();
+  if(id==='tenders') return tdBody();
   if(id==='cbm'){
     return `<div class="cbm">
       <div class="cbm-rows" id="cbmRows"></div>
@@ -1642,6 +1709,7 @@ function toolBody(id){
   return '';
 }
 function initTool(id,root){
+  if(id==='tenders'){ tdInit(root); return; }
   if(id==='cbm'){
     const rowsEl=root.querySelector('#cbmRows'), out=root.querySelector('#cbmOut');
     const draw=()=>{
@@ -1723,6 +1791,13 @@ fabPanel.querySelector('.fab-all').addEventListener('click',()=>{ closeFab(); })
 document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&!fabPanel.hidden) closeFab(); });
 document.addEventListener('click',e=>{ if(!fabPanel.hidden && !fab.contains(e.target)) closeFab(); });
 renderTools();
+// 주소 끝에 #tradeit 또는 #tool-<id> 를 붙이면 해당 도구 팝업을 바로 엽니다
+(function(){
+  const h=location.hash.replace('#',''); const id=h==='tradeit'?'bldata':(h.startsWith('tool-')?h.slice(5):'');
+  const tl=id&&TOOLS.find(x=>x.id===id&&x.type==='modal'); if(!tl) return;
+  window.__toolDeepLink=true; openTool(id);
+  toolDlg.addEventListener('close',()=>{ if(/^#(tradeit|tool-)/.test(location.hash)) history.replaceState(null,'',location.pathname+location.search); },{once:true});
+})();
 
 // ===== 오늘의 무역 뉴스 (data/news.json, GitHub Actions가 매일 갱신) =====
 const NT={
